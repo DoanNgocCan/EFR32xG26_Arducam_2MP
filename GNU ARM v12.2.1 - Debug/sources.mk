@@ -3,16 +3,32 @@
 ################################################################################
 
 S79_SRCS := 
-OBJ_SRCS := 
-S_SRCS := 
+C++M_SRCS := 
 ASM_SRCS := 
-C_SRCS := 
+CPP_SRCS := 
 S79_UPPER_SRCS := 
 S_UPPER_SRCS := 
 O_SRCS := 
+C_UPPER_SRCS := 
+CXX_SRCS := 
+CCM_SRCS := 
+C++_SRCS := 
+OBJ_SRCS := 
+S_SRCS := 
+CC_SRCS := 
+C_SRCS := 
+CXXM_SRCS := 
+CC_DEPS := 
+C++_DEPS := 
+CCM_DEPS := 
 EXECUTABLES := 
 OBJS := 
+C_UPPER_DEPS := 
+CXX_DEPS := 
+CXXM_DEPS := 
+C++M_DEPS := 
 C_DEPS := 
+CPP_DEPS := 
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
@@ -20,6 +36,9 @@ SUBDIRS := \
 arducam \
 arducam/drivers/m2mp \
 autogen \
+cpputils \
+jlink_stream \
+logging \
 simplicity_sdk_2025.6.0/hardware/board/src \
 simplicity_sdk_2025.6.0/hardware/driver/configuration_over_swo/src \
 simplicity_sdk_2025.6.0/hardware/driver/mx25_flash_shutdown/src/sl_mx25_flash_shutdown_eusart \

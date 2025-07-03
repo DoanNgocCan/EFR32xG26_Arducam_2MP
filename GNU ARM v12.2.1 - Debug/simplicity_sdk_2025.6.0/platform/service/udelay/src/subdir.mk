@@ -3,11 +3,11 @@
 ################################################################################
 
 # Add inputs and outputs from these tool invocations to the build variables 
-C_SRCS += \
-C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk/platform/service/udelay/src/sl_udelay.c 
-
 S_UPPER_SRCS += \
 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk/platform/service/udelay/src/sl_udelay_armv6m_gcc.S 
+
+C_SRCS += \
+C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk/platform/service/udelay/src/sl_udelay.c 
 
 OBJS += \
 ./simplicity_sdk_2025.6.0/platform/service/udelay/src/sl_udelay.o \
