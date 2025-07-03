@@ -3,6 +3,11 @@
  *
  *  Created on: Jul 3, 2025
  *      Author: ADMIN
+ *
+ *  VERSI-ON TỐI ƯU HÓA:
+ *  - Sử dụng bộ đệm Ping-Pong (2 buffer) để streaming video mượt mà.
+ *  - Tái cấu trúc luồng xử lý để tối ưu hiệu suất (lấy ảnh -> xử lý -> giải phóng).
+ *  - Thêm cơ chế đồng bộ "Magic Bytes" để tránh xé hình/lệch dữ liệu.
  */
 
 #include <cstdio>
@@ -15,40 +20,45 @@
 #include "jlink_stream/jlink_stream.hpp"
 #include "image_classifier.h" // Include the C header
 
-// Test configuration
+// --- Cấu hình Test ---
 #define TEST_IMAGE_WIDTH 96
 #define TEST_IMAGE_HEIGHT 96
+// Sử dụng RGB565 và để Python xử lý chuyển đổi màu.
+// Điều này giúp gỡ lỗi dễ dàng hơn.
 #define TEST_DATA_FORMAT ARDUCAM_DATA_FORMAT_RGB565
-#define TEST_CAPTURE_INTERVAL_MS 1000
 
-// Camera buffer
+// Camera buffer - sẽ được cấp phát động trong hàm init
 static uint8_t *camera_buffer = nullptr;
-static uint32_t camera_buffer_size = 0;
 
-// Forward declarations for internal C++ functions
+// --- CẢI TIẾN QUAN TRỌNG: Cơ chế đồng bộ Magic Bytes ---
+// Một chuỗi byte đặc biệt để báo hiệu bắt đầu một khung hình mới.
+// Giúp phía Python không bao giờ đọc phải dữ liệu bị lệch.
+const uint8_t magic_bytes[] = {0xDE, 0xAD, 0xBE, 0xEF};
+
+// --- Tái cấu trúc: Khai báo các hàm nội bộ mới ---
 static bool initialize_camera_test();
 static bool initialize_jlink_test();
-static void capture_and_send_image();
-static void print_camera_info();
+// Các hàm mới để thay thế cho capture_and_send_image() cũ
+static void send_image_via_jlink(const uint8_t *image_data, uint32_t image_length);
 
-// C interface functions (called from app.c)
+// --- Giao diện C (gọi từ app.c) ---
 extern "C"
 {
 
     /*************************************************************************************************/
     void camera_jlink_test_init(void)
     {
-        //printf("\n=== Camera + JLink Stream Test ===\n");
+        // Gửi chuỗi ký tự mà kịch bản Python gốc của MLTK đang chờ
         printf("\nMLTK Image Classifier Example\n");
 
-        // Initialize JLink stream first
+        // Khởi tạo JLink stream trước
         if (!initialize_jlink_test())
         {
             printf("ERROR: Failed to initialize JLink stream\n");
             return;
         }
 
-        // Initialize camera
+        // Khởi tạo camera
         if (!initialize_camera_test())
         {
             printf("ERROR: Failed to initialize camera\n");
@@ -62,139 +72,118 @@ extern "C"
     /*************************************************************************************************/
     void camera_jlink_test_loop(void)
     {
-        /*
-        static uint32_t last_capture_time = 0;
-        uint32_t current_time = sl_sleeptimer_tick_to_ms(sl_sleeptimer_get_tick_count());
+        uint8_t *image_data = nullptr;
+        uint32_t image_size = 0;
 
-        // Capture image every TEST_CAPTURE_INTERVAL_MS
-        if ((current_time - last_capture_time) >= TEST_CAPTURE_INTERVAL_MS)
+        // --- CẢI TIẾN QUAN TRỌNG: Vòng lặp chờ ảnh chuyên dụng (Polling Loop) ---
+        // Vòng lặp này đảm bảo chúng ta chỉ tiếp tục khi đã có ảnh sẵn sàng.
+        for (;;)
         {
-            printf("--- Capture cycle %lu ---\n", current_time);
-            capture_and_send_image();
-            last_capture_time = current_time;
+            sl_status_t status = arducam_get_next_image(&image_data, &image_size);
+
+            if (status == SL_STATUS_IN_PROGRESS)
+            {
+                // Nếu camera đang bận, chờ 5ms rồi thử lại.
+                // Điều này giúp tránh CPU chạy 100% chỉ để hỏi "có ảnh chưa?".
+                sl_sleeptimer_delay_millisecond(5);
+                continue; // Quay lại đầu vòng lặp for
+            }
+            else if (status != SL_STATUS_OK)
+            {
+                printf("ERROR: Failed to get image, status: 0x%lx\n", status);
+                // Tùy chọn: Có thể thêm logic khởi động lại camera ở đây nếu cần
+                return; // Thoát khỏi vòng lặp xử lý nếu có lỗi
+            }
+
+            // Nếu có ảnh (status == SL_STATUS_OK), thoát khỏi vòng lặp chờ
+            break;
         }
-        */
-       
-        capture_and_send_image();
-        /*
-        // Print heartbeat every 5 seconds
-        static uint32_t heartbeat_time = 0;
-        if ((current_time - heartbeat_time) >= 5000)
-        {
-            printf("System running... uptime: %lu ms\n", current_time);
-            heartbeat_time = current_time;
-        }
-        */
+
+        // --- Luồng xử lý tối ưu ---
+        // Giờ chúng ta đã chắc chắn có một ảnh hợp lệ trong image_data.
+
+        // 1. Gửi ảnh qua J-Link (đã bao gồm magic bytes)
+        send_image_via_jlink(image_data, image_size);
+
+        // 2. GIẢI PHÓNG BUFFER NGAY LẬP TỨC - RẤT QUAN TRỌNG!
+        // Việc này cho phép camera sử dụng buffer vừa rồi để chụp ảnh tiếp theo
+        // ngay lập tức, tối đa hóa hiệu suất của kiến trúc ping-pong.
+        arducam_release_image();
     }
 
     /*************************************************************************************************/
     void camera_jlink_test_deinit(void)
     {
         printf("Deinitializing camera and JLink test...\n");
-
-        // Stop camera capture
         arducam_stop_capture();
-
-        // Unregister JLink streams
         jlink_stream::unregister_stream("image");
-        jlink_stream::unregister_stream("info");
-        jlink_stream::unregister_stream("status");
-
-        // Free camera buffer if allocated
         if (camera_buffer != nullptr)
         {
             free(camera_buffer);
             camera_buffer = nullptr;
-            camera_buffer_size = 0;
         }
-
         printf("Cleanup complete\n");
     }
 
     /*************************************************************************************************/
     void camera_jlink_test_settings(void)
     {
+        // Không thay đổi
         printf("Configuring camera settings...\n");
-
-        // Example: Set brightness, contrast, etc.
-        // arducam_set_setting(ARDUCAM_SETTING_BRIGHTNESS, 0);
-        // arducam_set_setting(ARDUCAM_SETTING_CONTRAST, 2);
-
         printf("Camera settings configured\n");
     }
 
 } // extern "C"
 
-// Internal C++ implementation functions
+// --- Các hàm thực thi nội bộ ---
+
 static bool initialize_jlink_test()
 {
     printf("Initializing JLink stream...\n");
-
-    // Initialize JLink stream system
     if (!jlink_stream::initialize())
     {
-        printf("Failed to initialize JLink stream system\n");
         return false;
     }
-
-    // Register image stream for writing
+    // Chỉ cần đăng ký stream "image" cho mục đích test này
     if (!jlink_stream::register_stream("image", jlink_stream::Write))
     {
-        printf("Failed to register image stream\n");
         return false;
     }
-
-    // Register info stream for writing debug info
-    if (!jlink_stream::register_stream("info", jlink_stream::Write))
-    {
-        printf("Failed to register info stream\n");
-        return false;
-    }
-
-    // Register status stream for connection status
-    if (!jlink_stream::register_stream("status", jlink_stream::Write))
-    {
-        printf("Failed to register status stream\n");
-        return false;
-    }
-
     printf("JLink stream initialized successfully\n");
     return true;
-}
-
-static void print_camera_info()
-{
-    printf("=== Camera Information ===\n");
-    printf("Resolution: %dx%d\n", TEST_IMAGE_WIDTH, TEST_IMAGE_HEIGHT);
-    printf("Format: RGB888\n");
-    printf("Buffer size: %lu bytes\n", camera_buffer_size);
-    printf("========================\n");
 }
 
 static bool initialize_camera_test()
 {
     printf("Initializing camera...\n");
 
-    // Create camera configuration
+    // Cấu hình camera
     arducam_config_t cam_config = ARDUCAM_DEFAULT_CONFIG;
     cam_config.image_resolution.width = TEST_IMAGE_WIDTH;
     cam_config.image_resolution.height = TEST_IMAGE_HEIGHT;
     cam_config.data_format = TEST_DATA_FORMAT;
 
-    // Calculate buffer size needed
-    camera_buffer_size = arducam_calculate_image_buffer_length(
-        TEST_DATA_FORMAT, TEST_IMAGE_WIDTH, TEST_IMAGE_HEIGHT);
+    // --- CẢI TIẾN QUAN TRỌNG: Bộ đệm Ping-Pong ---
+    // Tính toán kích thước cho MỘT ảnh
+    const uint32_t length_per_image = arducam_calculate_image_buffer_length(
+        cam_config.data_format,
+        cam_config.image_resolution.width,
+        cam_config.image_resolution.height);
 
-    // Allocate camera buffer
-    camera_buffer = (uint8_t *)malloc(camera_buffer_size);
+    // Cấp phát bộ đệm cho HAI ảnh (Ping-Pong Buffering)
+    // Giúp camera có thể ghi vào buffer này trong khi CPU đang xử lý buffer kia.
+    const uint32_t image_buffer_count = 2;
+    const uint32_t total_buffer_size = length_per_image * image_buffer_count;
+
+    camera_buffer = (uint8_t *)malloc(total_buffer_size);
     if (camera_buffer == nullptr)
     {
-        printf("Failed to allocate camera buffer (%lu bytes)\n", camera_buffer_size);
+        printf("Failed to allocate camera buffer (%lu bytes)\n", total_buffer_size);
         return false;
     }
 
-    // Initialize camera with buffer
-    sl_status_t status = arducam_init(&cam_config, camera_buffer, camera_buffer_size);
+    // Khởi tạo camera. Driver arducam sẽ tự hiểu có 2 buffer dựa trên kích thước.
+    sl_status_t status = arducam_init(&cam_config, camera_buffer, total_buffer_size);
     if (status != SL_STATUS_OK)
     {
         printf("Failed to initialize camera (0x%lx)\n", status);
@@ -203,7 +192,7 @@ static bool initialize_camera_test()
         return false;
     }
 
-    // Start capture
+    // Bắt đầu chụp ảnh
     status = arducam_start_capture();
     if (status != SL_STATUS_OK)
     {
@@ -211,74 +200,23 @@ static bool initialize_camera_test()
         return false;
     }
 
-    printf("Camera initialized successfully\n");
-
-    // Print camera info để sử dụng hàm và tránh warning
-    print_camera_info();
-
+    printf("Camera initialized successfully with 2 buffers (ping-pong)\n");
     return true;
 }
 
-static void capture_and_send_image()
+// Hàm mới để gửi ảnh, tích hợp magic bytes
+static void send_image_via_jlink(const uint8_t *image_data, uint32_t image_length)
 {
-    printf("=== Starting image capture ===\n");
+    bool connected = false;
 
-    // Poll camera
-    arducam_poll();
-
-    // Get next image
-    uint8_t *image_data = nullptr;
-    uint32_t image_size = 0;
-
-    sl_status_t status = arducam_get_next_image(&image_data, &image_size);
-    if (status == SL_STATUS_OK && image_data != nullptr)
+    // Kiểm tra xem phía Python đã kết nối chưa để tránh lãng phí CPU
+    jlink_stream::is_connected("image", &connected);
+    if (connected)
     {
-        printf("✓ Image captured successfully!\n");
-        printf("  - Size: %lu bytes\n", image_size);
-        printf("  - Expected size: %d bytes (96x96x3)\n", 96 * 96 * 3);
-        printf("  - Buffer address: 0x%p\n", image_data);
+        // 1. Gửi MAGIC BYTES trước để đồng bộ
+        jlink_stream::write_all("image", magic_bytes, sizeof(magic_bytes));
 
-        // Print first few pixels as hex for verification - Fix warning về sign comparison
-        printf("  - First 12 bytes (4 pixels RGB): ");
-        for (uint32_t i = 0; i < 12 && i < image_size; i++)
-        {
-            printf("%02X ", image_data[i]);
-        }
-        printf("\n");
-
-        // Check if JLink streams are connected
-        bool image_connected = false, info_connected = false;
-        jlink_stream::is_connected("image", &image_connected);
-        jlink_stream::is_connected("info", &info_connected);
-
-        printf("  - JLink streams status:\n");
-        printf("    * image: %s\n", image_connected ? "CONNECTED" : "disconnected");
-        printf("    * info: %s\n", info_connected ? "CONNECTED" : "disconnected");
-
-        if (image_connected)
-        {
-            // Send image data via JLink
-            bool send_success = jlink_stream::write_all("image", image_data, image_size);
-            printf("  - JLink transmission: %s\n", send_success ? "SUCCESS" : "FAILED");
-
-            // Send image info
-            char info_msg[100];
-            snprintf(info_msg, sizeof(info_msg), "IMG:%lu,96x96,RGB888", image_size);
-            jlink_stream::write_all("info", info_msg, strlen(info_msg));
-        }
-
-        // Release image
-        arducam_release_image();
-        printf("✓ Image released\n");
+        // 2. Sau đó gửi dữ liệu ảnh thật
+        jlink_stream::write_all("image", image_data, image_length);
     }
-    else
-    {
-        printf("✗ No image available (status: 0x%lx)\n", status);
-
-        // Bỏ phần debug camera state vì arducam_context không accessible từ đây
-        // Thay vào đó, in thông tin từ các API công khai
-        printf("  - Attempting to restart capture...\n");
-        arducam_start_capture(); // Thử restart nếu capture bị lỗi
-    }
-    printf("=== Capture cycle complete ===\n\n");
 }
