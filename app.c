@@ -15,14 +15,16 @@
  *
  ******************************************************************************/
 
-#include "app_iostream_usart.h"
+//#include "app_iostream_usart.h"
+#include "image_classifier.h"
 
 /***************************************************************************//**
  * Initialize application.
  ******************************************************************************/
 void app_init(void)
 {
-  app_iostream_usart_init();
+  //app_iostream_usart_init();
+  camera_jlink_test_init();
 }
 
 /***************************************************************************//**
@@ -30,5 +32,6 @@ void app_init(void)
  ******************************************************************************/
 void app_process_action(void)
 {
-  app_iostream_usart_process_action();
+  //app_iostream_usart_process_action();
+  camera_jlink_test_loop();
 }
