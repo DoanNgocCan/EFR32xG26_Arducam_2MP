@@ -28,7 +28,7 @@ MAGIC_BYTES = b'\xDE\xAD\xBE\xEF'
 
 # Thư mục để lưu ảnh (nếu bật)
 OUTPUT_DIR = "captured_images"
-SAVE_IMAGES = True  # Đặt là True để lưu ảnh, False để chỉ xem
+SAVE_IMAGES = False  # Đặt là True để lưu ảnh, False để chỉ xem
 # -------------------------------------------------- #
 
 # Biến toàn cục để báo hiệu cho luồng dừng lại
@@ -129,9 +129,11 @@ def jlink_image_processor():
             # 1. Chuyển đổi dữ liệu byte thành mảng NumPy 16-bit
             #    Sử dụng '<u2' để chỉ định rõ là số nguyên không dấu 16-bit, little-endian
             img_buffer_16bit = np.frombuffer(img_bytes, dtype='<u2').reshape((IMAGE_HEIGHT, IMAGE_WIDTH))
+            #img_buffer = np.frombuffer(img_bytes, dtype=np.uint8)
 
             # 2. Chuyển đổi màu từ RGB565 sang BGR bằng hàm tự viết
             img = convert_rgb565_to_bgr(img_buffer_16bit)
+            #img = np.reshape(img_buffer, (IMAGE_HEIGHT, IMAGE_WIDTH))
 
             # 3. Hiển thị ảnh lên màn hình
             cv2.imshow('Live Camera Feed from EFR32xG26', img)
