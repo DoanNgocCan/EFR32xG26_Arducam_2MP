@@ -2,7 +2,7 @@
  * image_classifier.cc
  *
  *  Created on: Jul 3, 2025
- *      Author: ADMIN
+ *      Author: Can Doan
  *
  *  VERSI-ON TỐI ƯU HÓA:
  *  - Sử dụng bộ đệm Ping-Pong (2 buffer) để streaming video mượt mà.
@@ -23,8 +23,8 @@
 // --- Cấu hình Test ---
 #define TEST_IMAGE_WIDTH 96
 #define TEST_IMAGE_HEIGHT 96
-// Sử dụng RGB565 và để Python xử lý chuyển đổi màu.
-// Điều này giúp gỡ lỗi dễ dàng hơn.
+// ARDUCAM_DATA_FORMAT_RGB565 cho ảnh màu RGB (2 bytes/pixel)
+// ARDUCAM_DATA_FORMAT_GRAYSCALE cho ảnh xám (1 byte/pixel)
 #define TEST_DATA_FORMAT ARDUCAM_DATA_FORMAT_GRAYSCALE
 
 // Camera buffer - sẽ được cấp phát động trong hàm init
@@ -171,7 +171,7 @@ static bool initialize_camera_test()
         cam_config.image_resolution.height);
 
     // Cấp phát bộ đệm cho HAI ảnh (Ping-Pong Buffering)
-    // Giúp camera có thể ghi vào buffer này trong khi CPU đang xử lý buffer kia.
+    // Giúp camera có thể ghi vào buffer này trong khi CPU đang xử lý buffer kia (như gửi ảnh qua J-Link).
     const uint32_t image_buffer_count = 2;
     const uint32_t total_buffer_size = length_per_image * image_buffer_count;
 

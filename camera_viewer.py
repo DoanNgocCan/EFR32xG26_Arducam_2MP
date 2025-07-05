@@ -16,7 +16,8 @@ except ImportError:
 # Các tham số này phải khớp chính xác với firmware của bạn
 IMAGE_WIDTH = 96
 IMAGE_HEIGHT = 96
-# Firmware đang gửi định dạng RGB565, tức là 2 byte mỗi pixel
+# - Nếu XG26 gửi ảnh màu RGB565: IMAGE_CHANNELS = 2 (2 bytes/pixel)
+# - Nếu XG26 gửi ảnh xám (grayscale): IMAGE_CHANNELS = 1 (1 byte/pixel)
 IMAGE_CHANNELS = 1
 
 # Tên của JLink stream mà firmware đang ghi dữ liệu vào
@@ -126,13 +127,16 @@ def jlink_image_processor():
                 continue
 
             # --- Xử lý dữ liệu ảnh ---
-            # 1. Chuyển đổi dữ liệu byte thành mảng NumPy 16-bit
-            #    Sử dụng '<u2' để chỉ định rõ là số nguyên không dấu 16-bit, little-endian
+            # 1. Chuyển đổi dữ liệu byte thành mảng NumPy
+            # Nếu sử dụng ảnh màu RGB565 từ XG26:
             #img_buffer_16bit = np.frombuffer(img_bytes, dtype='<u2').reshape((IMAGE_HEIGHT, IMAGE_WIDTH))
+            # Nếu sử dụng ảnh xám (grayscale): 
             img_buffer = np.frombuffer(img_bytes, dtype=np.uint8)
 
-            # 2. Chuyển đổi màu từ RGB565 sang BGR bằng hàm tự viết
+            # 2. Chuyển đổi màu và tạo ảnh cuối cùng
+            # Nếu sử dụng ảnh màu RGB565 từ XG26: 
             #img = convert_rgb565_to_bgr(img_buffer_16bit)
+            # Nếu sử dụng ảnh xám (grayscale): 
             img = np.reshape(img_buffer, (IMAGE_HEIGHT, IMAGE_WIDTH))
 
             # 3. Hiển thị ảnh lên màn hình
