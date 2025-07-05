@@ -25,7 +25,7 @@
 #define TEST_IMAGE_HEIGHT 96
 // Sử dụng RGB565 và để Python xử lý chuyển đổi màu.
 // Điều này giúp gỡ lỗi dễ dàng hơn.
-#define TEST_DATA_FORMAT ARDUCAM_DATA_FORMAT_RGB565
+#define TEST_DATA_FORMAT ARDUCAM_DATA_FORMAT_GRAYSCALE
 
 // Camera buffer - sẽ được cấp phát động trong hàm init
 static uint8_t *camera_buffer = nullptr;
