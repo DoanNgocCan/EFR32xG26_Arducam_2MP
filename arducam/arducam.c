@@ -429,6 +429,7 @@ static void increment_buffer_pointer(uint8_t** ptr)
 }
 
 /*************************************************************************************************/
+/*
 static void convert_image_color_space(uint8_t* img)
 {
     // Convert for RGB565 to grayscale
@@ -471,6 +472,52 @@ static void convert_image_color_space(uint8_t* img)
         if(dst > img + arducam_context.image_size_bytes)
         {
             ARDUCAM_DEBUG("overflow!");
+        }
+    }
+}
+*/
+// Hàm cải tiến để chuyển đổi màu sắc ảnh từ RGB565 sang Grayscale
+static void convert_image_color_space(uint8_t *img)
+{
+    // Chỉ thực hiện khi định dạng yêu cầu là Grayscale
+    if (arducam_context.data_format == ARDUCAM_DATA_FORMAT_GRAYSCALE)
+    {
+        // src trỏ đến đầu dữ liệu RGB565 (2 byte/pixel)
+        const uint8_t *src = img;
+        // dst trỏ đến đầu buffer, nơi ta sẽ ghi đè dữ liệu grayscale (1 byte/pixel)
+        uint8_t *dst = img;
+
+        // Tính tổng số pixel cần xử lý
+        const uint32_t pixel_count = arducam_context.buffer.read_length / 2;
+
+        // Lặp qua từng pixel
+        for (uint32_t i = 0; i < pixel_count; ++i)
+        {
+            // === Bước 1: Đọc và tái tạo giá trị 16-bit (Giả định Little Endian) ===
+            // Tương đương: lb = src[0]; hb = src[1];
+            const uint8_t lb = *src++;
+            const uint8_t hb = *src++;
+            // Tương đương: rgb565 = (hb << 8) | lb;
+            const uint16_t rgb565 = (hb << 8) | lb;
+
+            // === Bước 2: Tách kênh màu (Bit Masking & Shifting) ===
+            // Tương đương: r5 = (rgb565 >> 11) & 0x1F; ...
+            const uint8_t r5 = (rgb565 >> 11) & 0x1F;
+            const uint8_t g6 = (rgb565 >> 5) & 0x3F;
+            const uint8_t b5 = rgb565 & 0x1F;
+
+            // === Bước 3: Mở rộng kênh màu lên 8-bit (Cách hiệu quả) ===
+            // Tương đương: r8 = (r5 << 3) | (r5 >> 2); ...
+            const uint8_t r8 = (r5 << 3) | (r5 >> 2);
+            const uint8_t g8 = (g6 << 2) | (g6 >> 4);
+            const uint8_t b8 = (b5 << 3) | (b5 >> 2);
+
+            // === Bước 4: Tính Grayscale (CẢI TIẾN - Dùng công thức có trọng số) ===
+            // Thay vì (r8 + g8 + b8) / 3, chúng ta dùng công thức chuẩn hơn.
+            // Y = 0.299*R + 0.587*G + 0.114*B
+            // Xấp xỉ bằng phép toán số nguyên: Y = (R*77 + G*150 + B*29) / 256
+            // Phép chia cho 256 tương đương dịch phải 8 bit (>> 8), rất nhanh.
+            *dst++ = (uint8_t)((r8 * 77 + g8 * 150 + b8 * 29) >> 8);
         }
     }
 }
