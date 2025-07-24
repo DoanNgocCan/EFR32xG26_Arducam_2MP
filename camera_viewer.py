@@ -14,8 +14,8 @@ except ImportError:
 
 # ------------------- CẤU HÌNH ------------------- #
 # Các tham số này phải khớp chính xác với firmware của bạn
-IMAGE_WIDTH = 96
-IMAGE_HEIGHT = 96
+IMAGE_WIDTH = 112
+IMAGE_HEIGHT = 112
 # - Nếu XG26 gửi ảnh màu RGB565: IMAGE_CHANNELS = 2 (2 bytes/pixel)
 # - Nếu XG26 gửi ảnh xám (grayscale): IMAGE_CHANNELS = 1 (1 byte/pixel)
 IMAGE_CHANNELS = 1
@@ -28,8 +28,8 @@ JLINK_STREAM_NAME = "image"
 MAGIC_BYTES = b'\xDE\xAD\xBE\xEF'
 
 # Thư mục để lưu ảnh (nếu bật)
-OUTPUT_DIR = "captured_images"
-SAVE_IMAGES = False  # Đặt là True để lưu ảnh, False để chỉ xem
+OUTPUT_DIR = "captured_images/test_images"
+SAVE_IMAGES = True  # Đặt là True để lưu ảnh, False để chỉ xem
 # -------------------------------------------------- #
 
 # Biến toàn cục để báo hiệu cho luồng dừng lại

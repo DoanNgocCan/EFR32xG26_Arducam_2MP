@@ -121,6 +121,38 @@
 // [EUSART3]$
 
 // $[USART0]
+// USART0 CLK on PC11
+#ifndef USART0_CLK_PORT                         
+#define USART0_CLK_PORT                          SL_GPIO_PORT_C
+#endif
+#ifndef USART0_CLK_PIN                          
+#define USART0_CLK_PIN                           11
+#endif
+
+// USART0 CS on PC10
+#ifndef USART0_CS_PORT                          
+#define USART0_CS_PORT                           SL_GPIO_PORT_C
+#endif
+#ifndef USART0_CS_PIN                           
+#define USART0_CS_PIN                            10
+#endif
+
+// USART0 RX on PC12
+#ifndef USART0_RX_PORT                          
+#define USART0_RX_PORT                           SL_GPIO_PORT_C
+#endif
+#ifndef USART0_RX_PIN                           
+#define USART0_RX_PIN                            12
+#endif
+
+// USART0 TX on PC13
+#ifndef USART0_TX_PORT                          
+#define USART0_TX_PORT                           SL_GPIO_PORT_C
+#endif
+#ifndef USART0_TX_PIN                           
+#define USART0_TX_PIN                            13
+#endif
+
 // [USART0]$
 
 // $[USART1]

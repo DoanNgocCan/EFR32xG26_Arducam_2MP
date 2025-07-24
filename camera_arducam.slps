@@ -4,7 +4,7 @@
     <properties key="projectCommon.sdkId" value="com.silabs.sdk.stack.sisdk:2025.6.0._2068787729"/>
     <properties key="universalConfig.relativeWorkspacePath" value="..\camera_arducam.slcw"/>
     <properties key="universalConfig.generationDirectory" value=""/>
-    <properties key="universalConfig.toolchainCompatibility" value="iar gcc"/>
+    <properties key="universalConfig.toolchainCompatibility" value="gcc"/>
     <properties key="projectCommon.overwriteCopiedSources" value="false"/>
     <properties key="projectCommon.boardIds" value="brd2608a:0.0.0.A02"/>
     <properties key="projectCommon.kitId" value=""/>
