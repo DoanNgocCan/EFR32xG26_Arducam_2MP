@@ -8,11 +8,9 @@ autogen/sl_event_handler.o: ../autogen/sl_event_handler.c \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_code_classification.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sli_code_classification.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\hardware\board\inc\sl_board_control.h \
+ c:\users\admin\simplicitystudio\sdks\simplicity_sdk\extension\aiml-extension\inc\sl_tflite_micro_init.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\driver\debug\inc\sl_debug_swo.h \
- c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\driver\gpio\inc\sl_gpio.h \
- c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_gpio.h \
- ../autogen/sl_i2cspm_instances.h \
- c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\driver\i2cspm\inc\sl_i2cspm.h \
+ c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\compute\driver\mvp\inc\sl_mvp.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\efr32mg26\include\em_device.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\efr32mg26\include\efr32mg26b510f3200im68.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\cmsis\core\include\core_cm33.h \
@@ -72,6 +70,12 @@ autogen/sl_event_handler.o: ../autogen/sl_event_handler.c \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\efr32mg26\include\efr32mg26_dma_descriptor.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\efr32mg26\include\efr32mg26_ldmaxbar_defines.h \
  C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam\autogen/sl_component_catalog.h \
+ c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\compute\math\inc\sl_math_types.h \
+ c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\compute\driver\mvp\inc\sl_mvp_types.h \
+ c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\driver\gpio\inc\sl_gpio.h \
+ c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_gpio.h \
+ ../autogen/sl_i2cspm_instances.h \
+ c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\driver\i2cspm\inc\sl_i2cspm.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emlib\inc\em_i2c.h \
  ../autogen/sl_iostream_init_eusart_instances.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\iostream\inc\sl_iostream.h \
@@ -104,11 +108,9 @@ c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_mana
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_code_classification.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sli_code_classification.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\hardware\board\inc\sl_board_control.h:
+c:\users\admin\simplicitystudio\sdks\simplicity_sdk\extension\aiml-extension\inc\sl_tflite_micro_init.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\driver\debug\inc\sl_debug_swo.h:
-c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\driver\gpio\inc\sl_gpio.h:
-c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_gpio.h:
-../autogen/sl_i2cspm_instances.h:
-c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\driver\i2cspm\inc\sl_i2cspm.h:
+c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\compute\driver\mvp\inc\sl_mvp.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\efr32mg26\include\em_device.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\efr32mg26\include\efr32mg26b510f3200im68.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\cmsis\core\include\core_cm33.h:
@@ -168,6 +170,12 @@ c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\efr32mg26\include\efr32mg26_dma_descriptor.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\efr32mg26\include\efr32mg26_ldmaxbar_defines.h:
 C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam\autogen/sl_component_catalog.h:
+c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\compute\math\inc\sl_math_types.h:
+c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\compute\driver\mvp\inc\sl_mvp_types.h:
+c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\driver\gpio\inc\sl_gpio.h:
+c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_gpio.h:
+../autogen/sl_i2cspm_instances.h:
+c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\driver\i2cspm\inc\sl_i2cspm.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emlib\inc\em_i2c.h:
 ../autogen/sl_iostream_init_eusart_instances.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\iostream\inc\sl_iostream.h:

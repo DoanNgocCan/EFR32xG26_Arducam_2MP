@@ -1,0 +1,5 @@
+2025-07-25 01:46:27,662 - root - DEBUG - Input directory: C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam\config\tflite
+2025-07-25 01:46:27,663 - root - DEBUG - Output directory: C:\Users\ADMIN\AppData\Local\Temp\apack_mvp_compiler5072615042105826149\output
+2025-07-25 01:46:27,663 - root - DEBUG - Part Number: efr32mg26b510f3200im68
+2025-07-25 01:46:27,663 - root - DEBUG - Found tflite file: C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam\config\tflite\train_model.tflite
+2025-07-25 01:46:27,663 - root - DEBUG - Board platform selected: efr32

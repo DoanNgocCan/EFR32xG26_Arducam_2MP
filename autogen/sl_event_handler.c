@@ -3,7 +3,9 @@
 #include "sl_board_init.h"
 #include "sl_clock_manager.h"
 #include "sl_board_control.h"
+#include "sl_tflite_micro_init.h"
 #include "sl_debug_swo.h"
+#include "sl_mvp.h"
 #include "sl_gpio.h"
 #include "sl_i2cspm_instances.h"
 #include "sl_iostream_init_eusart_instances.h"
@@ -42,6 +44,7 @@ void sli_internal_init_early(void)
 void sl_driver_init(void)
 {
   sl_debug_swo_init();
+  sli_mvp_init();
   sl_gpio_init();
   sl_i2cspm_init_instances();
   sl_spidrv_init_instances();
@@ -61,6 +64,7 @@ void sl_stack_init(void)
 
 void sl_internal_app_init(void)
 {
+  sl_tflite_micro_init();
 }
 
 void sli_platform_process_action(void)

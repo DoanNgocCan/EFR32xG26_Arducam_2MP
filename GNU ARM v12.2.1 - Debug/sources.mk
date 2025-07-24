@@ -32,6 +32,9 @@ CPP_DEPS :=
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
+aiml_2.1.0/siliconlabs \
+aiml_2.1.0/src \
+aiml_2.1.0/third_party/tflite-micro/tensorflow/lite/micro/kernels/cmsis_nn \
 . \
 arducam \
 arducam/drivers/m2mp \
@@ -44,6 +47,12 @@ simplicity_sdk_2025.6.0/hardware/driver/configuration_over_swo/src \
 simplicity_sdk_2025.6.0/hardware/driver/mx25_flash_shutdown/src/sl_mx25_flash_shutdown_eusart \
 simplicity_sdk_2025.6.0/platform/Device/SiliconLabs/EFR32MG26/Source \
 simplicity_sdk_2025.6.0/platform/common/src \
+simplicity_sdk_2025.6.0/platform/compute/driver/mvp/src \
+simplicity_sdk_2025.6.0/platform/compute/math/mvp/src \
+simplicity_sdk_2025.6.0/platform/compute/math/src \
+simplicity_sdk_2025.6.0/platform/compute/nn/mvp/src \
+simplicity_sdk_2025.6.0/platform/compute/nn/src \
+simplicity_sdk_2025.6.0/platform/compute/util/src \
 simplicity_sdk_2025.6.0/platform/driver/debug/src \
 simplicity_sdk_2025.6.0/platform/driver/gpio/src \
 simplicity_sdk_2025.6.0/platform/driver/i2cspm/src \

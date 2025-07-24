@@ -77,21 +77,44 @@
 // <<< sl:start pin_tool >>>
 // <usart signal=TX,RX,CLK,(CS)> SL_SPIDRV_USART_CAMERA
 // $[USART_SL_SPIDRV_USART_CAMERA]
-//#warning "SPIDRV USART peripheral not configured"
+#ifndef SL_SPIDRV_USART_CAMERA_PERIPHERAL       
 #define SL_SPIDRV_USART_CAMERA_PERIPHERAL        USART0
+#endif
+#ifndef SL_SPIDRV_USART_CAMERA_PERIPHERAL_NO    
 #define SL_SPIDRV_USART_CAMERA_PERIPHERAL_NO     0
+#endif
 
+// USART0 TX on PC13
+#ifndef SL_SPIDRV_USART_CAMERA_TX_PORT          
 #define SL_SPIDRV_USART_CAMERA_TX_PORT           SL_GPIO_PORT_C
+#endif
+#ifndef SL_SPIDRV_USART_CAMERA_TX_PIN           
 #define SL_SPIDRV_USART_CAMERA_TX_PIN            13
+#endif
 
+// USART0 RX on PC12
+#ifndef SL_SPIDRV_USART_CAMERA_RX_PORT          
 #define SL_SPIDRV_USART_CAMERA_RX_PORT           SL_GPIO_PORT_C
+#endif
+#ifndef SL_SPIDRV_USART_CAMERA_RX_PIN           
 #define SL_SPIDRV_USART_CAMERA_RX_PIN            12
+#endif
 
+// USART0 CLK on PC11
+#ifndef SL_SPIDRV_USART_CAMERA_CLK_PORT         
 #define SL_SPIDRV_USART_CAMERA_CLK_PORT          SL_GPIO_PORT_C
+#endif
+#ifndef SL_SPIDRV_USART_CAMERA_CLK_PIN          
 #define SL_SPIDRV_USART_CAMERA_CLK_PIN           11
+#endif
 
+// USART0 CS on PC10
+#ifndef SL_SPIDRV_USART_CAMERA_CS_PORT          
 #define SL_SPIDRV_USART_CAMERA_CS_PORT           SL_GPIO_PORT_C
+#endif
+#ifndef SL_SPIDRV_USART_CAMERA_CS_PIN           
 #define SL_SPIDRV_USART_CAMERA_CS_PIN            10
+#endif
 // [USART_SL_SPIDRV_USART_CAMERA]$
 // <<< sl:end pin_tool >>>
 
