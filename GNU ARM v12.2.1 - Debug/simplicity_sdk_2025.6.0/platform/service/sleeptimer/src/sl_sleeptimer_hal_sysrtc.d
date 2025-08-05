@@ -1,6 +1,6 @@
 simplicity_sdk_2025.6.0/platform/service/sleeptimer/src/sl_sleeptimer_hal_sysrtc.o: \
  C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk/platform/service/sleeptimer/src/sl_sleeptimer_hal_sysrtc.c \
- C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam\autogen/sl_component_catalog.h \
+ C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\autogen/sl_component_catalog.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\peripheral\inc\sl_hal_sysrtc.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\efr32mg26\include\em_device.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\efr32mg26\include\efr32mg26b510f3200im68.h \
@@ -71,13 +71,13 @@ simplicity_sdk_2025.6.0/platform/service/sleeptimer/src/sl_sleeptimer_hal_sysrtc
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_assert.h \
  C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk/platform/service/sleeptimer/src/sli_sleeptimer_hal.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\sleeptimer\inc\sli_sleeptimer.h \
- C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam\config/sl_sleeptimer_config.h \
+ C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\config/sl_sleeptimer_config.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\clock_manager\inc\sl_clock_manager.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_clock.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_peripheral.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_peripheral_types.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_clock.h
-C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam\autogen/sl_component_catalog.h:
+C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\autogen/sl_component_catalog.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\peripheral\inc\sl_hal_sysrtc.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\efr32mg26\include\em_device.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\efr32mg26\include\efr32mg26b510f3200im68.h:
@@ -148,7 +148,7 @@ c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_commo
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_assert.h:
 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk/platform/service/sleeptimer/src/sli_sleeptimer_hal.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\sleeptimer\inc\sli_sleeptimer.h:
-C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam\config/sl_sleeptimer_config.h:
+C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\config/sl_sleeptimer_config.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\clock_manager\inc\sl_clock_manager.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_clock.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_peripheral.h:

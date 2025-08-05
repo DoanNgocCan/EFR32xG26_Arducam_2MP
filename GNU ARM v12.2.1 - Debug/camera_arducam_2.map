@@ -456,7 +456,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x18 ./simplicity_sdk_2025.6.0/platform/service/sleeptimer/src/sl_sleeptimer_hal_burtc.o
  .debug_line    0x00000000       0x8e ./simplicity_sdk_2025.6.0/platform/service/sleeptimer/src/sl_sleeptimer_hal_burtc.o
- .debug_str     0x00000000      0x25f ./simplicity_sdk_2025.6.0/platform/service/sleeptimer/src/sl_sleeptimer_hal_burtc.o
+ .debug_str     0x00000000      0x261 ./simplicity_sdk_2025.6.0/platform/service/sleeptimer/src/sl_sleeptimer_hal_burtc.o
  .comment       0x00000000       0x46 ./simplicity_sdk_2025.6.0/platform/service/sleeptimer/src/sl_sleeptimer_hal_burtc.o
  .ARM.attributes
                 0x00000000       0x3c ./simplicity_sdk_2025.6.0/platform/service/sleeptimer/src/sl_sleeptimer_hal_burtc.o
@@ -485,7 +485,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x18 ./simplicity_sdk_2025.6.0/platform/service/sleeptimer/src/sl_sleeptimer_hal_timer.o
  .debug_line    0x00000000       0x8e ./simplicity_sdk_2025.6.0/platform/service/sleeptimer/src/sl_sleeptimer_hal_timer.o
- .debug_str     0x00000000      0x25f ./simplicity_sdk_2025.6.0/platform/service/sleeptimer/src/sl_sleeptimer_hal_timer.o
+ .debug_str     0x00000000      0x261 ./simplicity_sdk_2025.6.0/platform/service/sleeptimer/src/sl_sleeptimer_hal_timer.o
  .comment       0x00000000       0x46 ./simplicity_sdk_2025.6.0/platform/service/sleeptimer/src/sl_sleeptimer_hal_timer.o
  .ARM.attributes
                 0x00000000       0x3c ./simplicity_sdk_2025.6.0/platform/service/sleeptimer/src/sl_sleeptimer_hal_timer.o
@@ -792,7 +792,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x18 ./simplicity_sdk_2025.6.0/platform/service/device_manager/src/sl_device_clock.o
  .debug_line    0x00000000      0x1f2 ./simplicity_sdk_2025.6.0/platform/service/device_manager/src/sl_device_clock.o
- .debug_str     0x00000000      0xd01 ./simplicity_sdk_2025.6.0/platform/service/device_manager/src/sl_device_clock.o
+ .debug_str     0x00000000      0xd03 ./simplicity_sdk_2025.6.0/platform/service/device_manager/src/sl_device_clock.o
  .comment       0x00000000       0x46 ./simplicity_sdk_2025.6.0/platform/service/device_manager/src/sl_device_clock.o
  .ARM.attributes
                 0x00000000       0x3c ./simplicity_sdk_2025.6.0/platform/service/device_manager/src/sl_device_clock.o
@@ -1156,7 +1156,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x18 ./simplicity_sdk_2025.6.0/platform/service/device_manager/src/sl_device_gpio.o
  .debug_line    0x00000000      0x1f0 ./simplicity_sdk_2025.6.0/platform/service/device_manager/src/sl_device_gpio.o
- .debug_str     0x00000000      0x7d7 ./simplicity_sdk_2025.6.0/platform/service/device_manager/src/sl_device_gpio.o
+ .debug_str     0x00000000      0x7d9 ./simplicity_sdk_2025.6.0/platform/service/device_manager/src/sl_device_gpio.o
  .comment       0x00000000       0x46 ./simplicity_sdk_2025.6.0/platform/service/device_manager/src/sl_device_gpio.o
  .ARM.attributes
                 0x00000000       0x3c ./simplicity_sdk_2025.6.0/platform/service/device_manager/src/sl_device_gpio.o
@@ -1520,7 +1520,7 @@ Discarded input sections
                 0x00000000      0x278 ./simplicity_sdk_2025.6.0/platform/service/device_manager/src/sl_device_peripheral.o
  .debug_ranges  0x00000000      0x268 ./simplicity_sdk_2025.6.0/platform/service/device_manager/src/sl_device_peripheral.o
  .debug_line    0x00000000      0x842 ./simplicity_sdk_2025.6.0/platform/service/device_manager/src/sl_device_peripheral.o
- .debug_str     0x00000000     0x25ca ./simplicity_sdk_2025.6.0/platform/service/device_manager/src/sl_device_peripheral.o
+ .debug_str     0x00000000     0x25cc ./simplicity_sdk_2025.6.0/platform/service/device_manager/src/sl_device_peripheral.o
  .comment       0x00000000       0x46 ./simplicity_sdk_2025.6.0/platform/service/device_manager/src/sl_device_peripheral.o
  .debug_frame   0x00000000      0x4d0 ./simplicity_sdk_2025.6.0/platform/service/device_manager/src/sl_device_peripheral.o
  .ARM.attributes
@@ -1993,7 +1993,7 @@ Discarded input sections
                 0x00000000      0x188 ./simplicity_sdk_2025.6.0/platform/peripheral/src/sl_hal_eusart.o
  .debug_ranges  0x00000000      0x1d0 ./simplicity_sdk_2025.6.0/platform/peripheral/src/sl_hal_eusart.o
  .debug_line    0x00000000     0x1a72 ./simplicity_sdk_2025.6.0/platform/peripheral/src/sl_hal_eusart.o
- .debug_str     0x00000000     0x3ac2 ./simplicity_sdk_2025.6.0/platform/peripheral/src/sl_hal_eusart.o
+ .debug_str     0x00000000     0x3ac4 ./simplicity_sdk_2025.6.0/platform/peripheral/src/sl_hal_eusart.o
  .comment       0x00000000       0x46 ./simplicity_sdk_2025.6.0/platform/peripheral/src/sl_hal_eusart.o
  .debug_frame   0x00000000      0x500 ./simplicity_sdk_2025.6.0/platform/peripheral/src/sl_hal_eusart.o
  .ARM.attributes
@@ -2111,7 +2111,7 @@ Discarded input sections
                 0x00000000       0x80 ./simplicity_sdk_2025.6.0/platform/peripheral/src/sl_hal_prs.o
  .debug_ranges  0x00000000       0xe8 ./simplicity_sdk_2025.6.0/platform/peripheral/src/sl_hal_prs.o
  .debug_line    0x00000000      0x838 ./simplicity_sdk_2025.6.0/platform/peripheral/src/sl_hal_prs.o
- .debug_str     0x00000000     0x775a ./simplicity_sdk_2025.6.0/platform/peripheral/src/sl_hal_prs.o
+ .debug_str     0x00000000     0x775c ./simplicity_sdk_2025.6.0/platform/peripheral/src/sl_hal_prs.o
  .comment       0x00000000       0x46 ./simplicity_sdk_2025.6.0/platform/peripheral/src/sl_hal_prs.o
  .debug_frame   0x00000000      0x164 ./simplicity_sdk_2025.6.0/platform/peripheral/src/sl_hal_prs.o
  .ARM.attributes
@@ -2165,7 +2165,7 @@ Discarded input sections
                 0x00000000       0x50 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_burtc.o
  .debug_ranges  0x00000000       0x80 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_burtc.o
  .debug_line    0x00000000      0x66a ./simplicity_sdk_2025.6.0/platform/emlib/src/em_burtc.o
- .debug_str     0x00000000      0x557 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_burtc.o
+ .debug_str     0x00000000      0x559 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_burtc.o
  .comment       0x00000000       0x46 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_burtc.o
  .debug_frame   0x00000000       0xb4 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_burtc.o
  .ARM.attributes
@@ -2366,7 +2366,7 @@ Discarded input sections
                 0x00000000       0x80 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_msc.o
  .debug_ranges  0x00000000      0x148 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_msc.o
  .debug_line    0x00000000      0xb0f ./simplicity_sdk_2025.6.0/platform/emlib/src/em_msc.o
- .debug_str     0x00000000     0x1fb1 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_msc.o
+ .debug_str     0x00000000     0x1fb3 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_msc.o
  .comment       0x00000000       0x46 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_msc.o
  .debug_frame   0x00000000      0x178 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_msc.o
  .ARM.attributes
@@ -2403,7 +2403,7 @@ Discarded input sections
                 0x00000000       0x68 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_prs.o
  .debug_ranges  0x00000000       0x88 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_prs.o
  .debug_line    0x00000000      0x6e9 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_prs.o
- .debug_str     0x00000000     0x655f ./simplicity_sdk_2025.6.0/platform/emlib/src/em_prs.o
+ .debug_str     0x00000000     0x6561 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_prs.o
  .comment       0x00000000       0x46 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_prs.o
  .debug_frame   0x00000000      0x104 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_prs.o
  .ARM.attributes
@@ -2444,7 +2444,7 @@ Discarded input sections
                 0x00000000       0x78 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_system.o
  .debug_ranges  0x00000000       0x80 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_system.o
  .debug_line    0x00000000      0x4b7 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_system.o
- .debug_str     0x00000000     0x168d ./simplicity_sdk_2025.6.0/platform/emlib/src/em_system.o
+ .debug_str     0x00000000     0x168f ./simplicity_sdk_2025.6.0/platform/emlib/src/em_system.o
  .comment       0x00000000       0x46 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_system.o
  .debug_frame   0x00000000       0xd8 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_system.o
  .ARM.attributes
@@ -2477,7 +2477,7 @@ Discarded input sections
                 0x00000000       0x50 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_timer.o
  .debug_ranges  0x00000000       0xb8 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_timer.o
  .debug_line    0x00000000      0x91a ./simplicity_sdk_2025.6.0/platform/emlib/src/em_timer.o
- .debug_str     0x00000000     0x4496 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_timer.o
+ .debug_str     0x00000000     0x4498 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_timer.o
  .comment       0x00000000       0x46 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_timer.o
  .debug_frame   0x00000000       0xd4 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_timer.o
  .ARM.attributes
@@ -2662,7 +2662,7 @@ Discarded input sections
                 0x00000000       0x28 ./simplicity_sdk_2025.6.0/platform/compute/util/src/sl_compute_util.o
  .debug_ranges  0x00000000       0x58 ./simplicity_sdk_2025.6.0/platform/compute/util/src/sl_compute_util.o
  .debug_line    0x00000000      0x383 ./simplicity_sdk_2025.6.0/platform/compute/util/src/sl_compute_util.o
- .debug_str     0x00000000      0x2fc ./simplicity_sdk_2025.6.0/platform/compute/util/src/sl_compute_util.o
+ .debug_str     0x00000000      0x2fe ./simplicity_sdk_2025.6.0/platform/compute/util/src/sl_compute_util.o
  .comment       0x00000000       0x46 ./simplicity_sdk_2025.6.0/platform/compute/util/src/sl_compute_util.o
  .debug_frame   0x00000000       0x4c ./simplicity_sdk_2025.6.0/platform/compute/util/src/sl_compute_util.o
  .ARM.attributes
@@ -2683,7 +2683,7 @@ Discarded input sections
                 0x00000000       0x30 ./simplicity_sdk_2025.6.0/platform/compute/nn/src/sl_nn_util.o
  .debug_ranges  0x00000000       0x20 ./simplicity_sdk_2025.6.0/platform/compute/nn/src/sl_nn_util.o
  .debug_line    0x00000000      0x142 ./simplicity_sdk_2025.6.0/platform/compute/nn/src/sl_nn_util.o
- .debug_str     0x00000000      0x298 ./simplicity_sdk_2025.6.0/platform/compute/nn/src/sl_nn_util.o
+ .debug_str     0x00000000      0x29a ./simplicity_sdk_2025.6.0/platform/compute/nn/src/sl_nn_util.o
  .comment       0x00000000       0x46 ./simplicity_sdk_2025.6.0/platform/compute/nn/src/sl_nn_util.o
  .debug_frame   0x00000000       0x48 ./simplicity_sdk_2025.6.0/platform/compute/nn/src/sl_nn_util.o
  .ARM.attributes
@@ -2702,7 +2702,7 @@ Discarded input sections
                 0x00000000       0x28 ./simplicity_sdk_2025.6.0/platform/compute/nn/mvp/src/sl_mvp_ml_add.o
  .debug_ranges  0x00000000       0x48 ./simplicity_sdk_2025.6.0/platform/compute/nn/mvp/src/sl_mvp_ml_add.o
  .debug_line    0x00000000      0x617 ./simplicity_sdk_2025.6.0/platform/compute/nn/mvp/src/sl_mvp_ml_add.o
- .debug_str     0x00000000      0xbad ./simplicity_sdk_2025.6.0/platform/compute/nn/mvp/src/sl_mvp_ml_add.o
+ .debug_str     0x00000000      0xbaf ./simplicity_sdk_2025.6.0/platform/compute/nn/mvp/src/sl_mvp_ml_add.o
  .comment       0x00000000       0x46 ./simplicity_sdk_2025.6.0/platform/compute/nn/mvp/src/sl_mvp_ml_add.o
  .debug_frame   0x00000000       0x78 ./simplicity_sdk_2025.6.0/platform/compute/nn/mvp/src/sl_mvp_ml_add.o
  .ARM.attributes
@@ -2730,7 +2730,7 @@ Discarded input sections
                 0x00000000       0x28 ./simplicity_sdk_2025.6.0/platform/compute/nn/mvp/src/sl_mvp_ml_mul.o
  .debug_ranges  0x00000000       0x48 ./simplicity_sdk_2025.6.0/platform/compute/nn/mvp/src/sl_mvp_ml_mul.o
  .debug_line    0x00000000      0x5ff ./simplicity_sdk_2025.6.0/platform/compute/nn/mvp/src/sl_mvp_ml_mul.o
- .debug_str     0x00000000      0xb70 ./simplicity_sdk_2025.6.0/platform/compute/nn/mvp/src/sl_mvp_ml_mul.o
+ .debug_str     0x00000000      0xb72 ./simplicity_sdk_2025.6.0/platform/compute/nn/mvp/src/sl_mvp_ml_mul.o
  .comment       0x00000000       0x46 ./simplicity_sdk_2025.6.0/platform/compute/nn/mvp/src/sl_mvp_ml_mul.o
  .debug_frame   0x00000000       0x60 ./simplicity_sdk_2025.6.0/platform/compute/nn/mvp/src/sl_mvp_ml_mul.o
  .ARM.attributes
@@ -2763,7 +2763,7 @@ Discarded input sections
                 0x00000000       0x58 ./simplicity_sdk_2025.6.0/platform/compute/nn/mvp/src/sl_mvp_ml_pooling.o
  .debug_ranges  0x00000000      0x790 ./simplicity_sdk_2025.6.0/platform/compute/nn/mvp/src/sl_mvp_ml_pooling.o
  .debug_line    0x00000000     0x18e3 ./simplicity_sdk_2025.6.0/platform/compute/nn/mvp/src/sl_mvp_ml_pooling.o
- .debug_str     0x00000000     0x1182 ./simplicity_sdk_2025.6.0/platform/compute/nn/mvp/src/sl_mvp_ml_pooling.o
+ .debug_str     0x00000000     0x1184 ./simplicity_sdk_2025.6.0/platform/compute/nn/mvp/src/sl_mvp_ml_pooling.o
  .comment       0x00000000       0x46 ./simplicity_sdk_2025.6.0/platform/compute/nn/mvp/src/sl_mvp_ml_pooling.o
  .debug_frame   0x00000000      0x160 ./simplicity_sdk_2025.6.0/platform/compute/nn/mvp/src/sl_mvp_ml_pooling.o
  .ARM.attributes
@@ -2786,7 +2786,7 @@ Discarded input sections
                 0x00000000       0x30 ./simplicity_sdk_2025.6.0/platform/compute/nn/mvp/src/sl_mvp_ml_transpose_conv2d.o
  .debug_ranges  0x00000000      0x1f0 ./simplicity_sdk_2025.6.0/platform/compute/nn/mvp/src/sl_mvp_ml_transpose_conv2d.o
  .debug_line    0x00000000      0x89b ./simplicity_sdk_2025.6.0/platform/compute/nn/mvp/src/sl_mvp_ml_transpose_conv2d.o
- .debug_str     0x00000000      0xf09 ./simplicity_sdk_2025.6.0/platform/compute/nn/mvp/src/sl_mvp_ml_transpose_conv2d.o
+ .debug_str     0x00000000      0xf0b ./simplicity_sdk_2025.6.0/platform/compute/nn/mvp/src/sl_mvp_ml_transpose_conv2d.o
  .comment       0x00000000       0x46 ./simplicity_sdk_2025.6.0/platform/compute/nn/mvp/src/sl_mvp_ml_transpose_conv2d.o
  .debug_frame   0x00000000       0x84 ./simplicity_sdk_2025.6.0/platform/compute/nn/mvp/src/sl_mvp_ml_transpose_conv2d.o
  .ARM.attributes
@@ -2808,7 +2808,7 @@ Discarded input sections
                 0x00000000       0x20 ./simplicity_sdk_2025.6.0/platform/compute/math/src/sl_math_matrix.o
  .debug_ranges  0x00000000       0x10 ./simplicity_sdk_2025.6.0/platform/compute/math/src/sl_math_matrix.o
  .debug_line    0x00000000      0x19c ./simplicity_sdk_2025.6.0/platform/compute/math/src/sl_math_matrix.o
- .debug_str     0x00000000      0x23f ./simplicity_sdk_2025.6.0/platform/compute/math/src/sl_math_matrix.o
+ .debug_str     0x00000000      0x241 ./simplicity_sdk_2025.6.0/platform/compute/math/src/sl_math_matrix.o
  .comment       0x00000000       0x46 ./simplicity_sdk_2025.6.0/platform/compute/math/src/sl_math_matrix.o
  .debug_frame   0x00000000       0x20 ./simplicity_sdk_2025.6.0/platform/compute/math/src/sl_math_matrix.o
  .ARM.attributes
@@ -2825,7 +2825,7 @@ Discarded input sections
                 0x00000000       0x20 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_complex_matrix_mult.o
  .debug_ranges  0x00000000       0x10 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_complex_matrix_mult.o
  .debug_line    0x00000000      0x5af ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_complex_matrix_mult.o
- .debug_str     0x00000000      0x900 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_complex_matrix_mult.o
+ .debug_str     0x00000000      0x902 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_complex_matrix_mult.o
  .comment       0x00000000       0x46 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_complex_matrix_mult.o
  .debug_frame   0x00000000       0x48 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_complex_matrix_mult.o
  .ARM.attributes
@@ -2842,7 +2842,7 @@ Discarded input sections
                 0x00000000       0x20 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_complex_vector_conjugate.o
  .debug_ranges  0x00000000       0x10 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_complex_vector_conjugate.o
  .debug_line    0x00000000      0x565 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_complex_vector_conjugate.o
- .debug_str     0x00000000      0x92f ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_complex_vector_conjugate.o
+ .debug_str     0x00000000      0x931 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_complex_vector_conjugate.o
  .comment       0x00000000       0x46 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_complex_vector_conjugate.o
  .debug_frame   0x00000000       0x34 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_complex_vector_conjugate.o
  .ARM.attributes
@@ -2859,7 +2859,7 @@ Discarded input sections
                 0x00000000       0x20 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_complex_vector_dot_product.o
  .debug_ranges  0x00000000       0x10 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_complex_vector_dot_product.o
  .debug_line    0x00000000      0x5b9 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_complex_vector_dot_product.o
- .debug_str     0x00000000      0x93d ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_complex_vector_dot_product.o
+ .debug_str     0x00000000      0x93f ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_complex_vector_dot_product.o
  .comment       0x00000000       0x46 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_complex_vector_dot_product.o
  .debug_frame   0x00000000       0x38 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_complex_vector_dot_product.o
  .ARM.attributes
@@ -2876,7 +2876,7 @@ Discarded input sections
                 0x00000000       0x20 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_complex_vector_magnitude_squared.o
  .debug_ranges  0x00000000       0x10 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_complex_vector_magnitude_squared.o
  .debug_line    0x00000000      0x595 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_complex_vector_magnitude_squared.o
- .debug_str     0x00000000      0x950 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_complex_vector_magnitude_squared.o
+ .debug_str     0x00000000      0x952 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_complex_vector_magnitude_squared.o
  .comment       0x00000000       0x46 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_complex_vector_magnitude_squared.o
  .debug_frame   0x00000000       0x38 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_complex_vector_magnitude_squared.o
  .ARM.attributes
@@ -2895,7 +2895,7 @@ Discarded input sections
                 0x00000000       0x28 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_complex_vector_mult.o
  .debug_ranges  0x00000000       0x18 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_complex_vector_mult.o
  .debug_line    0x00000000      0x794 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_complex_vector_mult.o
- .debug_str     0x00000000      0x930 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_complex_vector_mult.o
+ .debug_str     0x00000000      0x932 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_complex_vector_mult.o
  .comment       0x00000000       0x46 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_complex_vector_mult.o
  .debug_frame   0x00000000       0x68 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_complex_vector_mult.o
  .ARM.attributes
@@ -2914,7 +2914,7 @@ Discarded input sections
                 0x00000000       0x28 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_matrix_add.o
  .debug_ranges  0x00000000       0x18 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_matrix_add.o
  .debug_line    0x00000000      0x66d ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_matrix_add.o
- .debug_str     0x00000000      0x907 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_matrix_add.o
+ .debug_str     0x00000000      0x909 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_matrix_add.o
  .comment       0x00000000       0x46 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_matrix_add.o
  .debug_frame   0x00000000       0x74 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_matrix_add.o
  .ARM.attributes
@@ -2931,7 +2931,7 @@ Discarded input sections
                 0x00000000       0x20 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_matrix_mult.o
  .debug_ranges  0x00000000       0x30 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_matrix_mult.o
  .debug_line    0x00000000      0x5f7 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_matrix_mult.o
- .debug_str     0x00000000      0x903 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_matrix_mult.o
+ .debug_str     0x00000000      0x905 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_matrix_mult.o
  .comment       0x00000000       0x46 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_matrix_mult.o
  .debug_frame   0x00000000       0x50 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_matrix_mult.o
  .ARM.attributes
@@ -2948,7 +2948,7 @@ Discarded input sections
                 0x00000000       0x20 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_matrix_scale.o
  .debug_ranges  0x00000000       0x10 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_matrix_scale.o
  .debug_line    0x00000000      0x385 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_matrix_scale.o
- .debug_str     0x00000000      0x30d ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_matrix_scale.o
+ .debug_str     0x00000000      0x30f ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_matrix_scale.o
  .comment       0x00000000       0x46 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_matrix_scale.o
  .debug_frame   0x00000000       0x30 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_matrix_scale.o
  .ARM.attributes
@@ -2967,7 +2967,7 @@ Discarded input sections
                 0x00000000       0x28 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_matrix_sub.o
  .debug_ranges  0x00000000       0x18 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_matrix_sub.o
  .debug_line    0x00000000      0x66d ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_matrix_sub.o
- .debug_str     0x00000000      0x907 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_matrix_sub.o
+ .debug_str     0x00000000      0x909 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_matrix_sub.o
  .comment       0x00000000       0x46 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_matrix_sub.o
  .debug_frame   0x00000000       0x74 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_matrix_sub.o
  .ARM.attributes
@@ -2988,7 +2988,7 @@ Discarded input sections
                 0x00000000       0x30 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_matrix_transpose.o
  .debug_ranges  0x00000000       0x20 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_matrix_transpose.o
  .debug_line    0x00000000      0x541 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_matrix_transpose.o
- .debug_str     0x00000000      0x8ef ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_matrix_transpose.o
+ .debug_str     0x00000000      0x8f1 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_matrix_transpose.o
  .comment       0x00000000       0x46 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_matrix_transpose.o
  .debug_frame   0x00000000       0x58 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_matrix_transpose.o
  .ARM.attributes
@@ -3005,7 +3005,7 @@ Discarded input sections
                 0x00000000       0x20 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_matrix_vector_mult.o
  .debug_ranges  0x00000000       0x28 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_matrix_vector_mult.o
  .debug_line    0x00000000      0x575 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_matrix_vector_mult.o
- .debug_str     0x00000000      0x8f5 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_matrix_vector_mult.o
+ .debug_str     0x00000000      0x8f7 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_matrix_vector_mult.o
  .comment       0x00000000       0x46 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_matrix_vector_mult.o
  .debug_frame   0x00000000       0x44 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_matrix_vector_mult.o
  .ARM.attributes
@@ -3024,7 +3024,7 @@ Discarded input sections
                 0x00000000       0x28 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_util.o
  .debug_ranges  0x00000000       0x18 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_util.o
  .debug_line    0x00000000      0x2d3 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_util.o
- .debug_str     0x00000000      0x30a ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_util.o
+ .debug_str     0x00000000      0x30c ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_util.o
  .comment       0x00000000       0x46 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_util.o
  .debug_frame   0x00000000       0x3c ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_util.o
  .ARM.attributes
@@ -3041,7 +3041,7 @@ Discarded input sections
                 0x00000000       0x20 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_abs.o
  .debug_ranges  0x00000000       0x10 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_abs.o
  .debug_line    0x00000000      0x5c9 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_abs.o
- .debug_str     0x00000000      0x920 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_abs.o
+ .debug_str     0x00000000      0x922 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_abs.o
  .comment       0x00000000       0x46 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_abs.o
  .debug_frame   0x00000000       0x3c ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_abs.o
  .ARM.attributes
@@ -3060,7 +3060,7 @@ Discarded input sections
                 0x00000000       0x28 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_add.o
  .debug_ranges  0x00000000       0x18 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_add.o
  .debug_line    0x00000000      0x4e1 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_add.o
- .debug_str     0x00000000      0xae8 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_add.o
+ .debug_str     0x00000000      0xaea ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_add.o
  .comment       0x00000000       0x46 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_add.o
  .debug_frame   0x00000000       0x6c ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_add.o
  .ARM.attributes
@@ -3080,7 +3080,7 @@ Discarded input sections
                 0x00000000       0x20 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_clip.o
  .debug_ranges  0x00000000       0x10 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_clip.o
  .debug_line    0x00000000      0x5d2 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_clip.o
- .debug_str     0x00000000      0x957 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_clip.o
+ .debug_str     0x00000000      0x959 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_clip.o
  .comment       0x00000000       0x46 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_clip.o
  .debug_frame   0x00000000       0x50 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_clip.o
  .ARM.attributes
@@ -3097,7 +3097,7 @@ Discarded input sections
                 0x00000000       0x20 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_copy.o
  .debug_ranges  0x00000000       0x10 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_copy.o
  .debug_line    0x00000000      0x597 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_copy.o
- .debug_str     0x00000000      0x910 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_copy.o
+ .debug_str     0x00000000      0x912 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_copy.o
  .comment       0x00000000       0x46 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_copy.o
  .debug_frame   0x00000000       0x3c ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_copy.o
  .ARM.attributes
@@ -3116,7 +3116,7 @@ Discarded input sections
                 0x00000000       0x20 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_dot_product.o
  .debug_ranges  0x00000000       0x10 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_dot_product.o
  .debug_line    0x00000000      0x623 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_dot_product.o
- .debug_str     0x00000000      0x95d ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_dot_product.o
+ .debug_str     0x00000000      0x95f ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_dot_product.o
  .comment       0x00000000       0x46 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_dot_product.o
  .debug_frame   0x00000000       0x40 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_dot_product.o
  .ARM.attributes
@@ -3133,7 +3133,7 @@ Discarded input sections
                 0x00000000       0x20 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_fill.o
  .debug_ranges  0x00000000       0x10 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_fill.o
  .debug_line    0x00000000      0x57f ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_fill.o
- .debug_str     0x00000000      0x943 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_fill.o
+ .debug_str     0x00000000      0x945 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_fill.o
  .comment       0x00000000       0x46 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_fill.o
  .debug_frame   0x00000000       0x3c ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_fill.o
  .ARM.attributes
@@ -3150,7 +3150,7 @@ Discarded input sections
                 0x00000000       0x20 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_mult.o
  .debug_ranges  0x00000000       0x10 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_mult.o
  .debug_line    0x00000000      0x5d2 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_mult.o
- .debug_str     0x00000000      0x919 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_mult.o
+ .debug_str     0x00000000      0x91b ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_mult.o
  .comment       0x00000000       0x46 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_mult.o
  .debug_frame   0x00000000       0x3c ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_mult.o
  .ARM.attributes
@@ -3167,7 +3167,7 @@ Discarded input sections
                 0x00000000       0x20 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_negate.o
  .debug_ranges  0x00000000       0x10 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_negate.o
  .debug_line    0x00000000      0x599 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_negate.o
- .debug_str     0x00000000      0x914 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_negate.o
+ .debug_str     0x00000000      0x916 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_negate.o
  .comment       0x00000000       0x46 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_negate.o
  .debug_frame   0x00000000       0x3c ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_negate.o
  .ARM.attributes
@@ -3184,7 +3184,7 @@ Discarded input sections
                 0x00000000       0x20 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_offset.o
  .debug_ranges  0x00000000       0x10 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_offset.o
  .debug_line    0x00000000      0x5b6 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_offset.o
- .debug_str     0x00000000      0x954 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_offset.o
+ .debug_str     0x00000000      0x956 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_offset.o
  .comment       0x00000000       0x46 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_offset.o
  .debug_frame   0x00000000       0x3c ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_offset.o
  .ARM.attributes
@@ -3201,7 +3201,7 @@ Discarded input sections
                 0x00000000       0x20 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_scale.o
  .debug_ranges  0x00000000       0x10 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_scale.o
  .debug_line    0x00000000      0x5b3 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_scale.o
- .debug_str     0x00000000      0x951 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_scale.o
+ .debug_str     0x00000000      0x953 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_scale.o
  .comment       0x00000000       0x46 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_scale.o
  .debug_frame   0x00000000       0x3c ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_scale.o
  .ARM.attributes
@@ -3218,7 +3218,7 @@ Discarded input sections
                 0x00000000       0x20 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_sub.o
  .debug_ranges  0x00000000       0x10 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_sub.o
  .debug_line    0x00000000      0x472 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_sub.o
- .debug_str     0x00000000      0x44a ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_sub.o
+ .debug_str     0x00000000      0x44c ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_sub.o
  .comment       0x00000000       0x46 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_sub.o
  .debug_frame   0x00000000       0x40 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_sub.o
  .ARM.attributes
@@ -3350,7 +3350,7 @@ Discarded input sections
                 0x00000000       0x50 ./simplicity_sdk_2025.6.0/platform/common/src/sl_string.o
  .debug_ranges  0x00000000       0xb0 ./simplicity_sdk_2025.6.0/platform/common/src/sl_string.o
  .debug_line    0x00000000      0x513 ./simplicity_sdk_2025.6.0/platform/common/src/sl_string.o
- .debug_str     0x00000000      0x32b ./simplicity_sdk_2025.6.0/platform/common/src/sl_string.o
+ .debug_str     0x00000000      0x32d ./simplicity_sdk_2025.6.0/platform/common/src/sl_string.o
  .comment       0x00000000       0x46 ./simplicity_sdk_2025.6.0/platform/common/src/sl_string.o
  .debug_frame   0x00000000       0xb8 ./simplicity_sdk_2025.6.0/platform/common/src/sl_string.o
  .ARM.attributes
@@ -3376,7 +3376,7 @@ Discarded input sections
                 0x00000000       0x68 ./simplicity_sdk_2025.6.0/platform/common/src/sl_syscalls.o
  .debug_ranges  0x00000000       0x58 ./simplicity_sdk_2025.6.0/platform/common/src/sl_syscalls.o
  .debug_line    0x00000000      0x1a6 ./simplicity_sdk_2025.6.0/platform/common/src/sl_syscalls.o
- .debug_str     0x00000000      0x21f ./simplicity_sdk_2025.6.0/platform/common/src/sl_syscalls.o
+ .debug_str     0x00000000      0x221 ./simplicity_sdk_2025.6.0/platform/common/src/sl_syscalls.o
  .comment       0x00000000       0x46 ./simplicity_sdk_2025.6.0/platform/common/src/sl_syscalls.o
  .debug_frame   0x00000000       0xb0 ./simplicity_sdk_2025.6.0/platform/common/src/sl_syscalls.o
  .ARM.attributes
@@ -3438,7 +3438,7 @@ Discarded input sections
                 0x00000000       0x20 ./logging/default_writer.o
  .debug_ranges  0x00000000       0x10 ./logging/default_writer.o
  .debug_line    0x00000000      0x32d ./logging/default_writer.o
- .debug_str     0x00000000      0x734 ./logging/default_writer.o
+ .debug_str     0x00000000      0x736 ./logging/default_writer.o
  .comment       0x00000000       0x46 ./logging/default_writer.o
  .debug_frame   0x00000000       0x2c ./logging/default_writer.o
  .ARM.attributes
@@ -3515,8 +3515,8 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0xd0 ./logging/logger.o
  .debug_ranges  0x00000000      0x3e0 ./logging/logger.o
- .debug_line    0x00000000      0xee7 ./logging/logger.o
- .debug_str     0x00000000     0x2bf1 ./logging/logger.o
+ .debug_line    0x00000000      0xeeb ./logging/logger.o
+ .debug_str     0x00000000     0x2bf3 ./logging/logger.o
  .comment       0x00000000       0x46 ./logging/logger.o
  .debug_frame   0x00000000      0x2e0 ./logging/logger.o
  .ARM.attributes
@@ -3556,8 +3556,8 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x68 ./logging/logging.o
  .debug_ranges  0x00000000       0xe0 ./logging/logging.o
- .debug_line    0x00000000      0x9af ./logging/logging.o
- .debug_str     0x00000000     0x25bf ./logging/logging.o
+ .debug_line    0x00000000      0x9b3 ./logging/logging.o
+ .debug_str     0x00000000     0x25c1 ./logging/logging.o
  .comment       0x00000000       0x46 ./logging/logging.o
  .debug_frame   0x00000000      0x180 ./logging/logging.o
  .ARM.attributes
@@ -3606,8 +3606,8 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x48 ./jlink_stream/jlink_stream_command.o
  .debug_ranges  0x00000000       0x78 ./jlink_stream/jlink_stream_command.o
- .debug_line    0x00000000      0x8dc ./jlink_stream/jlink_stream_command.o
- .debug_str     0x00000000     0x1a70 ./jlink_stream/jlink_stream_command.o
+ .debug_line    0x00000000      0x8e2 ./jlink_stream/jlink_stream_command.o
+ .debug_str     0x00000000     0x1a72 ./jlink_stream/jlink_stream_command.o
  .comment       0x00000000       0x46 ./jlink_stream/jlink_stream_command.o
  .debug_frame   0x00000000       0xc0 ./jlink_stream/jlink_stream_command.o
  .ARM.attributes
@@ -3644,8 +3644,8 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x48 ./cpputils/buffer.o
  .debug_ranges  0x00000000       0x38 ./cpputils/buffer.o
- .debug_line    0x00000000      0x594 ./cpputils/buffer.o
- .debug_str     0x00000000      0x7fa ./cpputils/buffer.o
+ .debug_line    0x00000000      0x596 ./cpputils/buffer.o
+ .debug_str     0x00000000      0x7fc ./cpputils/buffer.o
  .comment       0x00000000       0x46 ./cpputils/buffer.o
  .debug_frame   0x00000000       0xac ./cpputils/buffer.o
  .ARM.attributes
@@ -3701,8 +3701,8 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0xc0 ./cpputils/dict.o
  .debug_ranges  0x00000000      0x168 ./cpputils/dict.o
- .debug_line    0x00000000      0x9f3 ./cpputils/dict.o
- .debug_str     0x00000000      0xccf ./cpputils/dict.o
+ .debug_line    0x00000000      0x9f5 ./cpputils/dict.o
+ .debug_str     0x00000000      0xcd1 ./cpputils/dict.o
  .comment       0x00000000       0x46 ./cpputils/dict.o
  .debug_frame   0x00000000      0x1e8 ./cpputils/dict.o
  .ARM.attributes
@@ -3740,8 +3740,8 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x50 ./cpputils/heap.o
  .debug_ranges  0x00000000       0x90 ./cpputils/heap.o
- .debug_line    0x00000000      0x7e0 ./cpputils/heap.o
- .debug_str     0x00000000      0x702 ./cpputils/heap.o
+ .debug_line    0x00000000      0x7e2 ./cpputils/heap.o
+ .debug_str     0x00000000      0x704 ./cpputils/heap.o
  .comment       0x00000000       0x46 ./cpputils/heap.o
  .debug_frame   0x00000000       0xbc ./cpputils/heap.o
  .ARM.attributes
@@ -3769,8 +3769,8 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x50 ./cpputils/linked_list.o
  .debug_ranges  0x00000000       0x58 ./cpputils/linked_list.o
- .debug_line    0x00000000      0x771 ./cpputils/linked_list.o
- .debug_str     0x00000000      0xaff ./cpputils/linked_list.o
+ .debug_line    0x00000000      0x773 ./cpputils/linked_list.o
+ .debug_str     0x00000000      0xb01 ./cpputils/linked_list.o
  .comment       0x00000000       0x46 ./cpputils/linked_list.o
  .debug_frame   0x00000000       0xd4 ./cpputils/linked_list.o
  .ARM.attributes
@@ -3820,8 +3820,8 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x88 ./cpputils/list.o
  .debug_ranges  0x00000000       0x90 ./cpputils/list.o
- .debug_line    0x00000000      0x9ba ./cpputils/list.o
- .debug_str     0x00000000      0xc05 ./cpputils/list.o
+ .debug_line    0x00000000      0x9bc ./cpputils/list.o
+ .debug_str     0x00000000      0xc07 ./cpputils/list.o
  .comment       0x00000000       0x46 ./cpputils/list.o
  .debug_frame   0x00000000      0x188 ./cpputils/list.o
  .ARM.attributes
@@ -3841,8 +3841,8 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x28 ./cpputils/prng.o
  .debug_ranges  0x00000000       0x18 ./cpputils/prng.o
- .debug_line    0x00000000      0x508 ./cpputils/prng.o
- .debug_str     0x00000000      0x4bf ./cpputils/prng.o
+ .debug_line    0x00000000      0x50a ./cpputils/prng.o
+ .debug_str     0x00000000      0x4c1 ./cpputils/prng.o
  .comment       0x00000000       0x46 ./cpputils/prng.o
  .debug_frame   0x00000000       0x50 ./cpputils/prng.o
  .ARM.attributes
@@ -3892,8 +3892,8 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x88 ./cpputils/semver.o
  .debug_ranges  0x00000000       0xb0 ./cpputils/semver.o
- .debug_line    0x00000000      0x84d ./cpputils/semver.o
- .debug_str     0x00000000      0xea3 ./cpputils/semver.o
+ .debug_line    0x00000000      0x84f ./cpputils/semver.o
+ .debug_str     0x00000000      0xea5 ./cpputils/semver.o
  .comment       0x00000000       0x46 ./cpputils/semver.o
  .debug_frame   0x00000000      0x154 ./cpputils/semver.o
  .ARM.attributes
@@ -3912,7 +3912,7 @@ Discarded input sections
                 0x00000000       0x28 ./cpputils/std_formatted_string.o
  .debug_ranges  0x00000000      0x170 ./cpputils/std_formatted_string.o
  .debug_line    0x00000000      0xa08 ./cpputils/std_formatted_string.o
- .debug_str     0x00000000     0x92ce ./cpputils/std_formatted_string.o
+ .debug_str     0x00000000     0x92d0 ./cpputils/std_formatted_string.o
  .comment       0x00000000       0x46 ./cpputils/std_formatted_string.o
  .debug_frame   0x00000000       0x68 ./cpputils/std_formatted_string.o
  .ARM.attributes
@@ -3946,8 +3946,8 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x40 ./cpputils/string.o
  .debug_ranges  0x00000000       0x60 ./cpputils/string.o
- .debug_line    0x00000000      0x5e9 ./cpputils/string.o
- .debug_str     0x00000000      0xb31 ./cpputils/string.o
+ .debug_line    0x00000000      0x5eb ./cpputils/string.o
+ .debug_str     0x00000000      0xb33 ./cpputils/string.o
  .comment       0x00000000       0x46 ./cpputils/string.o
  .debug_frame   0x00000000       0xb4 ./cpputils/string.o
  .ARM.attributes
@@ -4077,7 +4077,7 @@ Discarded input sections
                 0x00000000       0x50 ./aiml_2.1.0/third_party/tflite-micro/tensorflow/lite/micro/kernels/cmsis_nn/svdf.o
  .debug_ranges  0x00000000       0x58 ./aiml_2.1.0/third_party/tflite-micro/tensorflow/lite/micro/kernels/cmsis_nn/svdf.o
  .debug_line    0x00000000     0x1149 ./aiml_2.1.0/third_party/tflite-micro/tensorflow/lite/micro/kernels/cmsis_nn/svdf.o
- .debug_str     0x00000000     0x3245 ./aiml_2.1.0/third_party/tflite-micro/tensorflow/lite/micro/kernels/cmsis_nn/svdf.o
+ .debug_str     0x00000000     0x3247 ./aiml_2.1.0/third_party/tflite-micro/tensorflow/lite/micro/kernels/cmsis_nn/svdf.o
  .comment       0x00000000       0x46 ./aiml_2.1.0/third_party/tflite-micro/tensorflow/lite/micro/kernels/cmsis_nn/svdf.o
  .debug_frame   0x00000000      0x10c ./aiml_2.1.0/third_party/tflite-micro/tensorflow/lite/micro/kernels/cmsis_nn/svdf.o
  .ARM.attributes
@@ -4335,7 +4335,7 @@ Discarded input sections
                 0x00000000       0xa8 ./aiml_2.1.0/siliconlabs/mul.o
  .debug_ranges  0x00000000      0x338 ./aiml_2.1.0/siliconlabs/mul.o
  .debug_line    0x00000000     0x200a ./aiml_2.1.0/siliconlabs/mul.o
- .debug_str     0x00000000     0x3de2 ./aiml_2.1.0/siliconlabs/mul.o
+ .debug_str     0x00000000     0x3de4 ./aiml_2.1.0/siliconlabs/mul.o
  .comment       0x00000000       0x46 ./aiml_2.1.0/siliconlabs/mul.o
  .debug_frame   0x00000000      0x284 ./aiml_2.1.0/siliconlabs/mul.o
  .ARM.attributes
@@ -4390,7 +4390,7 @@ Discarded input sections
                 0x00000000       0x88 ./aiml_2.1.0/siliconlabs/pooling.o
  .debug_ranges  0x00000000      0x4f0 ./aiml_2.1.0/siliconlabs/pooling.o
  .debug_line    0x00000000     0x21c0 ./aiml_2.1.0/siliconlabs/pooling.o
- .debug_str     0x00000000     0x3c05 ./aiml_2.1.0/siliconlabs/pooling.o
+ .debug_str     0x00000000     0x3c07 ./aiml_2.1.0/siliconlabs/pooling.o
  .comment       0x00000000       0x46 ./aiml_2.1.0/siliconlabs/pooling.o
  .debug_frame   0x00000000      0x224 ./aiml_2.1.0/siliconlabs/pooling.o
  .ARM.attributes
@@ -4445,7 +4445,7 @@ Discarded input sections
                 0x00000000       0x88 ./aiml_2.1.0/siliconlabs/transpose_conv.o
  .debug_ranges  0x00000000      0x5e8 ./aiml_2.1.0/siliconlabs/transpose_conv.o
  .debug_line    0x00000000     0x22d1 ./aiml_2.1.0/siliconlabs/transpose_conv.o
- .debug_str     0x00000000     0x403e ./aiml_2.1.0/siliconlabs/transpose_conv.o
+ .debug_str     0x00000000     0x4040 ./aiml_2.1.0/siliconlabs/transpose_conv.o
  .comment       0x00000000       0x46 ./aiml_2.1.0/siliconlabs/transpose_conv.o
  .debug_frame   0x00000000      0x214 ./aiml_2.1.0/siliconlabs/transpose_conv.o
  .ARM.attributes
@@ -4483,8 +4483,8 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x28 ./app_iostream_usart.o
  .debug_ranges  0x00000000       0x48 ./app_iostream_usart.o
- .debug_line    0x00000000      0x74d ./app_iostream_usart.o
- .debug_str     0x00000000      0xadb ./app_iostream_usart.o
+ .debug_line    0x00000000      0x751 ./app_iostream_usart.o
+ .debug_str     0x00000000      0xadd ./app_iostream_usart.o
  .comment       0x00000000       0x46 ./app_iostream_usart.o
  .debug_frame   0x00000000       0x5c ./app_iostream_usart.o
  .ARM.attributes
@@ -7794,7 +7794,7 @@ text_application_ram
                 0x080001b4                __rodata_start__ = .
                 0x080001b4                __rodata_end__ = .
 
-.text           0x080001c0    0x67308
+.text           0x080001c0    0x67310
                 0x080001c0                linker_code_begin = .
  *(SORT_BY_ALIGNMENT(.text*))
  .text          0x080001c0        0x8 ./simplicity_sdk_2025.6.0/platform/service/udelay/src/sl_udelay_armv6m_gcc.o
@@ -8359,120 +8359,120 @@ text_application_ram
                 0x08009404       0x6c ./arducam/drivers/m2mp/arducam_m_2mp_driver.o
                 0x08009404                arducam_driver_spi_read_reg
  .text.arducam_driver_init
-                0x08009470      0x1c0 ./arducam/drivers/m2mp/arducam_m_2mp_driver.o
+                0x08009470      0x1bc ./arducam/drivers/m2mp/arducam_m_2mp_driver.o
                 0x08009470                arducam_driver_init
  .text.arducam_driver_spi_burst_read
-                0x08009630       0x60 ./arducam/drivers/m2mp/arducam_m_2mp_driver.o
-                0x08009630                arducam_driver_spi_burst_read
+                0x0800962c       0x60 ./arducam/drivers/m2mp/arducam_m_2mp_driver.o
+                0x0800962c                arducam_driver_spi_burst_read
  .text.set_format
-                0x08009690       0x38 ./arducam/drivers/m2mp/ov2640.o
+                0x0800968c       0x38 ./arducam/drivers/m2mp/ov2640.o
  .text.set_framesize
-                0x080096c8       0xcc ./arducam/drivers/m2mp/ov2640.o
+                0x080096c4       0xcc ./arducam/drivers/m2mp/ov2640.o
  .text.ov2640_init
-                0x08009794       0xf0 ./arducam/drivers/m2mp/ov2640.o
-                0x08009794                ov2640_init
+                0x08009790       0xf0 ./arducam/drivers/m2mp/ov2640.o
+                0x08009790                ov2640_init
  .text.arducam_poll
-                0x08009884       0xe0 ./arducam/arducam.o
-                0x08009884                arducam_poll
+                0x08009880       0xe0 ./arducam/arducam.o
+                0x08009880                arducam_poll
  .text.arducam_start_capture
-                0x08009964       0x4c ./arducam/arducam.o
-                0x08009964                arducam_start_capture
+                0x08009960       0x4c ./arducam/arducam.o
+                0x08009960                arducam_start_capture
  .text.arducam_get_next_image
-                0x080099b0       0xb0 ./arducam/arducam.o
-                0x080099b0                arducam_get_next_image
+                0x080099ac       0xb0 ./arducam/arducam.o
+                0x080099ac                arducam_get_next_image
  .text.arducam_release_image
-                0x08009a60       0x54 ./arducam/arducam.o
-                0x08009a60                arducam_release_image
+                0x08009a5c       0x54 ./arducam/arducam.o
+                0x08009a5c                arducam_release_image
  .text.arducam_calculate_image_size
-                0x08009ab4       0x18 ./arducam/arducam.o
-                0x08009ab4                arducam_calculate_image_size
+                0x08009ab0       0x18 ./arducam/arducam.o
+                0x08009ab0                arducam_calculate_image_size
  .text.arducam_init
-                0x08009acc       0x74 ./arducam/arducam.o
-                0x08009acc                arducam_init
+                0x08009ac8       0x74 ./arducam/arducam.o
+                0x08009ac8                arducam_init
  .text._Z9AbortImplv
-                0x08009b40       0x10 ./aiml_2.1.0/third_party/tflite-micro/tensorflow/lite/micro/kernels/cmsis_nn/softmax.o
-                0x08009b40                AbortImpl()
+                0x08009b3c       0x10 ./aiml_2.1.0/third_party/tflite-micro/tensorflow/lite/micro/kernels/cmsis_nn/softmax.o
+                0x08009b3c                AbortImpl()
  .text._ZN6tflite12_GLOBAL__N_17PrepareEP13TfLiteContextP10TfLiteNode
-                0x08009b50      0x138 ./aiml_2.1.0/third_party/tflite-micro/tensorflow/lite/micro/kernels/cmsis_nn/softmax.o
+                0x08009b4c      0x138 ./aiml_2.1.0/third_party/tflite-micro/tensorflow/lite/micro/kernels/cmsis_nn/softmax.o
  .text._ZN6tflite13reference_ops7SoftmaxERKNS_13SoftmaxParamsERKNS_12RuntimeShapeEPKfS6_Pf
-                0x08009c88       0xe4 ./aiml_2.1.0/third_party/tflite-micro/tensorflow/lite/micro/kernels/cmsis_nn/softmax.o
-                0x08009c88                tflite::reference_ops::Softmax(tflite::SoftmaxParams const&, tflite::RuntimeShape const&, float const*, tflite::RuntimeShape const&, float*)
+                0x08009c84       0xe4 ./aiml_2.1.0/third_party/tflite-micro/tensorflow/lite/micro/kernels/cmsis_nn/softmax.o
+                0x08009c84                tflite::reference_ops::Softmax(tflite::SoftmaxParams const&, tflite::RuntimeShape const&, float const*, tflite::RuntimeShape const&, float*)
  .text._ZN6tflite12_GLOBAL__N_111SoftmaxEvalEP13TfLiteContextP10TfLiteNode
-                0x08009d6c       0xdc ./aiml_2.1.0/third_party/tflite-micro/tensorflow/lite/micro/kernels/cmsis_nn/softmax.o
+                0x08009d68       0xdc ./aiml_2.1.0/third_party/tflite-micro/tensorflow/lite/micro/kernels/cmsis_nn/softmax.o
  .text._ZN6tflite16Register_SOFTMAXEv
-                0x08009e48       0x28 ./aiml_2.1.0/third_party/tflite-micro/tensorflow/lite/micro/kernels/cmsis_nn/softmax.o
-                0x08009e48                tflite::Register_SOFTMAX()
+                0x08009e44       0x28 ./aiml_2.1.0/third_party/tflite-micro/tensorflow/lite/micro/kernels/cmsis_nn/softmax.o
+                0x08009e44                tflite::Register_SOFTMAX()
  .text._ZNK6tflite22MicroMutableOpResolverILj6EE15GetOpDataParserENS_15BuiltinOperatorE
-                0x08009e70       0x38 ./aiml_2.1.0/src/sl_tflite_micro_init.o
-                0x08009e70                tflite::MicroMutableOpResolver<6u>::GetOpDataParser(tflite::BuiltinOperator) const
+                0x08009e6c       0x38 ./aiml_2.1.0/src/sl_tflite_micro_init.o
+                0x08009e6c                tflite::MicroMutableOpResolver<6u>::GetOpDataParser(tflite::BuiltinOperator) const
  .text._ZN6tflite22MicroMutableOpResolverILj6EE10AddBuiltinENS_15BuiltinOperatorERK16TFLMRegistrationPF12TfLiteStatusPKNS_8OperatorEPNS_13ErrorReporterEPNS_20BuiltinDataAllocatorEPPvE.isra.0
-                0x08009ea8       0xa8 ./aiml_2.1.0/src/sl_tflite_micro_init.o
+                0x08009ea4       0xa8 ./aiml_2.1.0/src/sl_tflite_micro_init.o
  .text._Z31sl_tflite_micro_opcode_resolverv
-                0x08009f50       0xd4 ./aiml_2.1.0/src/sl_tflite_micro_init.o
-                0x08009f50                sl_tflite_micro_opcode_resolver()
+                0x08009f4c       0xd4 ./aiml_2.1.0/src/sl_tflite_micro_init.o
+                0x08009f4c                sl_tflite_micro_opcode_resolver()
  .text.sl_tflite_micro_init
-                0x0800a024      0x104 ./aiml_2.1.0/src/sl_tflite_micro_init.o
-                0x0800a024                sl_tflite_micro_init
+                0x0800a020      0x104 ./aiml_2.1.0/src/sl_tflite_micro_init.o
+                0x0800a020                sl_tflite_micro_init
  .text._ZN6tflite2sl6conv2d37PopulateConvolutionQuantizationParamsEP13TfLiteContextPK12TfLiteTensorS6_PS4_RK21TfLiteFusedActivationPlSB_PDhif
-                0x0800a128       0xa0 ./aiml_2.1.0/siliconlabs/conv.o
-                0x0800a128                tflite::sl::conv2d::PopulateConvolutionQuantizationParams(TfLiteContext*, TfLiteTensor const*, TfLiteTensor const*, TfLiteTensor*, TfLiteFusedActivation const&, long*, long*, half*, int, float)
+                0x0800a124       0xa0 ./aiml_2.1.0/siliconlabs/conv.o
+                0x0800a124                tflite::sl::conv2d::PopulateConvolutionQuantizationParams(TfLiteContext*, TfLiteTensor const*, TfLiteTensor const*, TfLiteTensor*, TfLiteFusedActivation const&, long*, long*, half*, int, float)
  .text._ZN6tflite2sl6conv2d7PrepareEP13TfLiteContextP10TfLiteNode
-                0x0800a1c8      0x384 ./aiml_2.1.0/siliconlabs/conv.o
-                0x0800a1c8                tflite::sl::conv2d::Prepare(TfLiteContext*, TfLiteNode*)
+                0x0800a1c4      0x384 ./aiml_2.1.0/siliconlabs/conv.o
+                0x0800a1c4                tflite::sl::conv2d::Prepare(TfLiteContext*, TfLiteNode*)
  .text._ZN6tflite2sl6conv2d13eval_mvp_int8EP13TfLiteContextPNS1_6OpDataEPK16TfLiteEvalTensorS8_PS6_
-                0x0800a54c       0x6c ./aiml_2.1.0/siliconlabs/conv.o
-                0x0800a54c                tflite::sl::conv2d::eval_mvp_int8(TfLiteContext*, tflite::sl::conv2d::OpData*, TfLiteEvalTensor const*, TfLiteEvalTensor const*, TfLiteEvalTensor*)
+                0x0800a548       0x6c ./aiml_2.1.0/siliconlabs/conv.o
+                0x0800a548                tflite::sl::conv2d::eval_mvp_int8(TfLiteContext*, tflite::sl::conv2d::OpData*, TfLiteEvalTensor const*, TfLiteEvalTensor const*, TfLiteEvalTensor*)
  .text._ZN6tflite2sl6conv2d10eval_floatEP16TfLiteConvParamsPKNS1_6OpDataEPK16TfLiteEvalTensorS9_S9_PS7_
-                0x0800a5b8      0x254 ./aiml_2.1.0/siliconlabs/conv.o
-                0x0800a5b8                tflite::sl::conv2d::eval_float(TfLiteConvParams*, tflite::sl::conv2d::OpData const*, TfLiteEvalTensor const*, TfLiteEvalTensor const*, TfLiteEvalTensor const*, TfLiteEvalTensor*)
+                0x0800a5b4      0x254 ./aiml_2.1.0/siliconlabs/conv.o
+                0x0800a5b4                tflite::sl::conv2d::eval_float(TfLiteConvParams*, tflite::sl::conv2d::OpData const*, TfLiteEvalTensor const*, TfLiteEvalTensor const*, TfLiteEvalTensor const*, TfLiteEvalTensor*)
  .text._ZN6tflite16Register_CONV_2DEv
-                0x0800a80c       0x28 ./aiml_2.1.0/siliconlabs/conv.o
-                0x0800a80c                tflite::Register_CONV_2D()
+                0x0800a808       0x28 ./aiml_2.1.0/siliconlabs/conv.o
+                0x0800a808                tflite::Register_CONV_2D()
  .text.DebugLog
-                0x0800a834       0x2c ./aiml_2.1.0/siliconlabs/debug_log.o
-                0x0800a834                DebugLog
+                0x0800a830       0x2c ./aiml_2.1.0/siliconlabs/debug_log.o
+                0x0800a830                DebugLog
  .text._ZN6tflite13reference_ops13DepthwiseConvERKNS_15DepthwiseParamsERKNS_12RuntimeShapeEPKfS6_S8_S6_S8_S6_Pf
-                0x0800a860      0x230 ./aiml_2.1.0/siliconlabs/depthwise_conv.o
-                0x0800a860                tflite::reference_ops::DepthwiseConv(tflite::DepthwiseParams const&, tflite::RuntimeShape const&, float const*, tflite::RuntimeShape const&, float const*, tflite::RuntimeShape const&, float const*, tflite::RuntimeShape const&, float*)
+                0x0800a85c      0x230 ./aiml_2.1.0/siliconlabs/depthwise_conv.o
+                0x0800a85c                tflite::reference_ops::DepthwiseConv(tflite::DepthwiseParams const&, tflite::RuntimeShape const&, float const*, tflite::RuntimeShape const&, float const*, tflite::RuntimeShape const&, float const*, tflite::RuntimeShape const&, float*)
  .text._ZN6tflite2sl16depthwise_conv2d37PopulateConvolutionQuantizationParamsEP13TfLiteContextPK12TfLiteTensorS6_PS4_RK21TfLiteFusedActivationPlSB_PDhif
-                0x0800aa90       0xa0 ./aiml_2.1.0/siliconlabs/depthwise_conv.o
-                0x0800aa90                tflite::sl::depthwise_conv2d::PopulateConvolutionQuantizationParams(TfLiteContext*, TfLiteTensor const*, TfLiteTensor const*, TfLiteTensor*, TfLiteFusedActivation const&, long*, long*, half*, int, float)
+                0x0800aa8c       0xa0 ./aiml_2.1.0/siliconlabs/depthwise_conv.o
+                0x0800aa8c                tflite::sl::depthwise_conv2d::PopulateConvolutionQuantizationParams(TfLiteContext*, TfLiteTensor const*, TfLiteTensor const*, TfLiteTensor*, TfLiteFusedActivation const&, long*, long*, half*, int, float)
  .text._ZN6tflite2sl16depthwise_conv2d7PrepareEP13TfLiteContextP10TfLiteNode
-                0x0800ab30      0x364 ./aiml_2.1.0/siliconlabs/depthwise_conv.o
-                0x0800ab30                tflite::sl::depthwise_conv2d::Prepare(TfLiteContext*, TfLiteNode*)
+                0x0800ab2c      0x364 ./aiml_2.1.0/siliconlabs/depthwise_conv.o
+                0x0800ab2c                tflite::sl::depthwise_conv2d::Prepare(TfLiteContext*, TfLiteNode*)
  .text._ZN6tflite2sl16depthwise_conv2d13eval_mvp_int8EP13TfLiteContextPNS1_6OpDataEPK16TfLiteEvalTensorS8_PS6_
-                0x0800ae94       0x60 ./aiml_2.1.0/siliconlabs/depthwise_conv.o
-                0x0800ae94                tflite::sl::depthwise_conv2d::eval_mvp_int8(TfLiteContext*, tflite::sl::depthwise_conv2d::OpData*, TfLiteEvalTensor const*, TfLiteEvalTensor const*, TfLiteEvalTensor*)
+                0x0800ae90       0x60 ./aiml_2.1.0/siliconlabs/depthwise_conv.o
+                0x0800ae90                tflite::sl::depthwise_conv2d::eval_mvp_int8(TfLiteContext*, tflite::sl::depthwise_conv2d::OpData*, TfLiteEvalTensor const*, TfLiteEvalTensor const*, TfLiteEvalTensor*)
  .text._ZN6tflite26Register_DEPTHWISE_CONV_2DEv
-                0x0800aef4       0x28 ./aiml_2.1.0/siliconlabs/depthwise_conv.o
-                0x0800aef4                tflite::Register_DEPTHWISE_CONV_2D()
+                0x0800aef0       0x28 ./aiml_2.1.0/siliconlabs/depthwise_conv.o
+                0x0800aef0                tflite::Register_DEPTHWISE_CONV_2D()
  .text._ZN6tflite2sl15fully_connected7PrepareEP13TfLiteContextP10TfLiteNode
-                0x0800af1c      0x220 ./aiml_2.1.0/siliconlabs/fully_connected.o
-                0x0800af1c                tflite::sl::fully_connected::Prepare(TfLiteContext*, TfLiteNode*)
+                0x0800af18      0x220 ./aiml_2.1.0/siliconlabs/fully_connected.o
+                0x0800af18                tflite::sl::fully_connected::Prepare(TfLiteContext*, TfLiteNode*)
  .text._ZN6tflite2sl15fully_connected9EvalFloatEP13TfLiteContextP10TfLiteNode21TfLiteFusedActivationPK16TfLiteEvalTensorS9_S9_PS7_
-                0x0800b13c      0x15c ./aiml_2.1.0/siliconlabs/fully_connected.o
-                0x0800b13c                tflite::sl::fully_connected::EvalFloat(TfLiteContext*, TfLiteNode*, TfLiteFusedActivation, TfLiteEvalTensor const*, TfLiteEvalTensor const*, TfLiteEvalTensor const*, TfLiteEvalTensor*)
+                0x0800b138      0x15c ./aiml_2.1.0/siliconlabs/fully_connected.o
+                0x0800b138                tflite::sl::fully_connected::EvalFloat(TfLiteContext*, TfLiteNode*, TfLiteFusedActivation, TfLiteEvalTensor const*, TfLiteEvalTensor const*, TfLiteEvalTensor const*, TfLiteEvalTensor*)
  .text._ZN6tflite24Register_FULLY_CONNECTEDEv
-                0x0800b298       0x28 ./aiml_2.1.0/siliconlabs/fully_connected.o
-                0x0800b298                tflite::Register_FULLY_CONNECTED()
+                0x0800b294       0x28 ./aiml_2.1.0/siliconlabs/fully_connected.o
+                0x0800b294                tflite::Register_FULLY_CONNECTED()
  .text._ZN6tflite2sl15fully_connected17EvalQuantizedInt8EP13TfLiteContextP10TfLiteNodeRKNS1_6OpDataEPK16TfLiteEvalTensorSB_SB_PS9_
-                0x0800b2c0      0x2a4 ./aiml_2.1.0/siliconlabs/fully_connected.o
-                0x0800b2c0                tflite::sl::fully_connected::EvalQuantizedInt8(TfLiteContext*, TfLiteNode*, tflite::sl::fully_connected::OpData const&, TfLiteEvalTensor const*, TfLiteEvalTensor const*, TfLiteEvalTensor const*, TfLiteEvalTensor*)
+                0x0800b2bc      0x2a4 ./aiml_2.1.0/siliconlabs/fully_connected.o
+                0x0800b2bc                tflite::sl::fully_connected::EvalQuantizedInt8(TfLiteContext*, TfLiteNode*, tflite::sl::fully_connected::OpData const&, TfLiteEvalTensor const*, TfLiteEvalTensor const*, TfLiteEvalTensor const*, TfLiteEvalTensor*)
  .text._ZN6tflite2sl15fully_connected4EvalEP13TfLiteContextP10TfLiteNode
-                0x0800b564       0x98 ./aiml_2.1.0/siliconlabs/fully_connected.o
-                0x0800b564                tflite::sl::fully_connected::Eval(TfLiteContext*, TfLiteNode*)
+                0x0800b560       0x98 ./aiml_2.1.0/siliconlabs/fully_connected.o
+                0x0800b560                tflite::sl::fully_connected::Eval(TfLiteContext*, TfLiteNode*)
  .text._ZL11deselect_piv
-                0x0800b5fc        0xc ./image_classifier.o
+                0x0800b5f8        0xc ./image_classifier.o
  .text._ZL18pi_spidrv_callbackP17SPIDRV_HandleDatami
-                0x0800b608       0x20 ./image_classifier.o
+                0x0800b604       0x20 ./image_classifier.o
  .text._ZN6tflite22MicroMutableOpResolverILj6EE10AddBuiltinENS_15BuiltinOperatorERK16TFLMRegistrationPF12TfLiteStatusPKNS_8OperatorEPNS_13ErrorReporterEPNS_20BuiltinDataAllocatorEPPvE.isra.0
-                0x0800b628       0xa8 ./image_classifier.o
+                0x0800b624       0xa8 ./image_classifier.o
  .text.camera_jlink_test_init
-                0x0800b6d0      0x278 ./image_classifier.o
-                0x0800b6d0                camera_jlink_test_init
+                0x0800b6cc      0x278 ./image_classifier.o
+                0x0800b6cc                camera_jlink_test_init
  .text.camera_jlink_test_loop
-                0x0800b948      0x2b4 ./image_classifier.o
-                0x0800b948                camera_jlink_test_loop
+                0x0800b944      0x2b8 ./image_classifier.o
+                0x0800b944                camera_jlink_test_loop
  .text._ZN6tflite17ConvertTensorTypeENS_10TensorTypeEP10TfLiteTypePNS_13ErrorReporterE
                 0x0800bbfc       0x80 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(flatbuffer_conversions.cc.obj)
                 0x0800bbfc                tflite::ConvertTensorType(tflite::TensorType, TfLiteType*, tflite::ErrorReporter*)
@@ -10318,246 +10318,246 @@ text_application_ram
  .rodata._ZN6tflite22MicroMutableOpResolverILj6EE10AddBuiltinENS_15BuiltinOperatorERK16TFLMRegistrationPF12TfLiteStatusPKNS_8OperatorEPNS_13ErrorReporterEPNS_20BuiltinDataAllocatorEPPvE.isra.0.str1.1
                 0x08064ed8       0xda ./image_classifier.o
  .rodata.camera_jlink_test_init.str1.1
-                0x08064ed8      0x1dd ./image_classifier.o
-                                0x1e2 (size before relaxing)
+                0x08064ed8      0x1e4 ./image_classifier.o
+                                0x1e9 (size before relaxing)
  .rodata.camera_jlink_test_loop.str1.1
-                0x080650b5      0x17a ./image_classifier.o
+                0x080650bc      0x17a ./image_classifier.o
  .rodata.str1.1
-                0x0806522f        0x7 ./image_classifier.o
- *fill*         0x08065236        0x2 
+                0x08065236        0x7 ./image_classifier.o
+ *fill*         0x0806523d        0x3 
  .rodata._ZN12_GLOBAL__N_115category_labelsE
-                0x08065238        0x8 ./image_classifier.o
- .rodata        0x08065240        0xc ./image_classifier.o
+                0x08065240        0x8 ./image_classifier.o
+ .rodata        0x08065248        0xc ./image_classifier.o
  .rodata._ZN6tflite17ConvertTensorTypeENS_10TensorTypeEP10TfLiteTypePNS_13ErrorReporterE.str1.1
-                0x0806524c       0x24 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(flatbuffer_conversions.cc.obj)
+                0x08065254       0x24 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(flatbuffer_conversions.cc.obj)
  .rodata._ZN6tflite19ParseFullyConnectedEPKNS_8OperatorEPNS_13ErrorReporterEPNS_20BuiltinDataAllocatorEPPv.str1.1
-                0x08065270       0x2a C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(flatbuffer_conversions.cc.obj)
+                0x08065278       0x2a C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(flatbuffer_conversions.cc.obj)
  .rodata.TfLiteTypeGetName.str1.1
-                0x0806529a        0xd C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(common.cc.obj)
+                0x080652a2        0xd C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(common.cc.obj)
  .rodata.str1.1
-                0x080652a7       0x71 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(common.cc.obj)
+                0x080652af       0x71 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(common.cc.obj)
                                  0x88 (size before relaxing)
  .rodata.CSWTCH.12
-                0x08065318       0x4c C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(common.cc.obj)
+                0x08065320       0x4c C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(common.cc.obj)
  .rodata._ZN6tflite12_GLOBAL__N_18QuantizeEP13TfLiteContextflfRl.str1.1
-                0x08065364       0x97 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(kernel_util.cc.obj)
+                0x0806536c       0x97 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(kernel_util.cc.obj)
                                  0xae (size before relaxing)
  .rodata._ZN6tflite32GetQuantizedConvolutionMultiplerEP13TfLiteContextPK12TfLiteTensorS4_PS2_Pd.str1.1
-                0x080653fb       0x19 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(kernel_util.cc.obj)
+                0x08065403       0x19 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(kernel_util.cc.obj)
  .rodata._ZN6tflite32GetQuantizedConvolutionMultiplerEP13TfLiteContextPK12TfLiteTensorS4_S4_PS2_Pd.str1.1
-                0x08065414       0x22 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(kernel_util.cc.obj)
+                0x0806541c       0x22 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(kernel_util.cc.obj)
  .rodata._ZN6tflite33CalculateActivationRangeQuantizedEP13TfLiteContext21TfLiteFusedActivationP12TfLiteTensorPlS5_.str1.1
-                0x08065436        0x6 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(kernel_util.cc.obj)
+                0x0806543e        0x6 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(kernel_util.cc.obj)
  .rodata._ZN6tflite37PopulateConvolutionQuantizationParamsEP13TfLiteContextPK12TfLiteTensorS4_S4_PS2_RK21TfLiteFusedActivationPlPiS9_S9_S9_S9_i.str1.1
-                0x0806543c      0x15c C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(kernel_util.cc.obj)
+                0x08065444      0x15c C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(kernel_util.cc.obj)
                                 0x176 (size before relaxing)
  .rodata._ZN6tflite23EnumNameBuiltinOperatorENS_15BuiltinOperatorE.str1.1
-                0x08065598      0x15c C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_interpreter.cc.obj)
+                0x080655a0      0x15c C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_interpreter.cc.obj)
                                   0x1 (size before relaxing)
  .rodata._ZN6tflite16MicroInterpreter5inputEj.str1.1
-                0x08065598       0x2b C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_interpreter.cc.obj)
+                0x080655a0       0x2b C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_interpreter.cc.obj)
  .rodata._ZN6tflite16MicroInterpreter6outputEj.str1.1
-                0x080655c3       0x2c C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_interpreter.cc.obj)
+                0x080655cb       0x2c C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_interpreter.cc.obj)
  .rodata._ZN6tflite16MicroInterpreter44PrepareNodeAndRegistrationDataFromFlatbufferEv.str1.1
-                0x080655ef       0xdb C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_interpreter.cc.obj)
+                0x080655f7       0xdb C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_interpreter.cc.obj)
  .rodata._ZN6tflite16MicroInterpreter15AllocateTensorsEv.str1.1
-                0x080656ca      0x101 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_interpreter.cc.obj)
+                0x080656d2      0x101 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_interpreter.cc.obj)
  .rodata._ZN6tflite16MicroInterpreter6InvokeEv.str1.1
-                0x080657cb       0x2d C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_interpreter.cc.obj)
+                0x080657d3       0x2d C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_interpreter.cc.obj)
  .rodata.str1.1
-                0x080657f8      0x67e C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_interpreter.cc.obj)
+                0x08065800      0x67e C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_interpreter.cc.obj)
                                 0x6f4 (size before relaxing)
- *fill*         0x08065e76        0x2 
+ *fill*         0x08065e7e        0x2 
  .rodata._ZZN6tflite24EnumNamesBuiltinOperatorEvE5names
-                0x08065e78      0x28c C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_interpreter.cc.obj)
-                0x08065e78                tflite::EnumNamesBuiltinOperator()::names
+                0x08065e80      0x28c C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_interpreter.cc.obj)
+                0x08065e80                tflite::EnumNamesBuiltinOperator()::names
  .rodata._Z3LogPKcSt9__va_list.str1.1
-                0x08066104        0x3 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_log.cc.obj)
+                0x0806610c        0x3 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_log.cc.obj)
  .rodata._ZN6tflite25GetRegistrationFromOpCodeEPKNS_12OperatorCodeERKNS_15MicroOpResolverEPPK16TFLMRegistration.str1.1
-                0x08066107       0x80 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_op_resolver.cc.obj)
+                0x0806610f       0x80 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_op_resolver.cc.obj)
                                  0x81 (size before relaxing)
  .rodata.MicroVsnprintf.str1.1
-                0x08066187       0x1a C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_string.cc.obj)
- *fill*         0x080661a1        0x3 
+                0x0806618f       0x1a C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_string.cc.obj)
+ *fill*         0x080661a9        0x3 
  .rodata._ZTVN6tflite18MicroErrorReporterE
-                0x080661a4       0x14 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_error_reporter.cc.obj)
-                0x080661a4                vtable for tflite::MicroErrorReporter
+                0x080661ac       0x14 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_error_reporter.cc.obj)
+                0x080661ac                vtable for tflite::MicroErrorReporter
  .rodata._ZN6tflite10PadPrepareEP13TfLiteContextP10TfLiteNode.str1.1
-                0x080661b8      0x2c8 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(pad.cc.obj)
+                0x080661c0      0x2c8 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(pad.cc.obj)
                                 0x32f (size before relaxing)
  .rodata._ZN6tflite12_GLOBAL__N_14EvalEP13TfLiteContextP10TfLiteNode.str1.1
-                0x08066480       0x28 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(pad.cc.obj)
+                0x08066488       0x28 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(pad.cc.obj)
  .rodata._ZN6tflite18QuantizedMeanOrSumIsEE12TfLiteStatusP13TfLiteContextP10TfLiteNodePiS6_PlPNS_12OpDataReduceEb.isra.0.str1.1
-                0x080664a8       0x80 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(reduce_common.cc.obj)
+                0x080664b0       0x80 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(reduce_common.cc.obj)
                                  0x97 (size before relaxing)
  .rodata._ZN6tflite13PrepareSimpleEP13TfLiteContextP10TfLiteNodePlPi.str1.1
-                0x08066528       0x69 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(reduce_common.cc.obj)
+                0x08066530       0x69 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(reduce_common.cc.obj)
                                  0x87 (size before relaxing)
  .rodata._ZN6tflite14EvalMeanHelperEP13TfLiteContextP10TfLiteNodePNS_12OpDataReduceE.str1.1
-                0x08066591      0x203 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(reduce_common.cc.obj)
+                0x08066599      0x203 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(reduce_common.cc.obj)
  .rodata._ZN6tflite22CalculateSoftmaxParamsEP13TfLiteContextPK12TfLiteTensorPS2_PK19TfLiteSoftmaxParamsPNS_13SoftmaxParamsE.str1.1
-                0x08066794      0x163 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(softmax_common.cc.obj)
+                0x0806679c      0x163 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(softmax_common.cc.obj)
                                 0x21d (size before relaxing)
  .rodata._ZN6tflite14MicroAllocator30AllocatePersistentTfLiteTensorEPKNS_5ModelEPKNS_19SubgraphAllocationsEii.str1.1
-                0x080668f7       0x80 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_allocator.cc.obj)
+                0x080668ff       0x80 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_allocator.cc.obj)
  .rodata._ZN6tflite14MicroAllocator24AllocateTempTfLiteTensorEPKNS_5ModelEPKNS_19SubgraphAllocationsEii.str1.1
-                0x08066977       0x44 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_allocator.cc.obj)
+                0x0806697f       0x44 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_allocator.cc.obj)
  .rodata._ZN6tflite14MicroAllocator17AllocateVariablesEPKNS_8SubGraphEP16TfLiteEvalTensorPKl.str1.1
-                0x080669bb       0x2e C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_allocator.cc.obj)
+                0x080669c3       0x2e C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_allocator.cc.obj)
  .rodata._ZN6tflite14MicroAllocator28AllocateNodeAndRegistrationsEPKNS_5ModelEPNS_19SubgraphAllocationsE.str1.1
-                0x080669e9       0x36 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_allocator.cc.obj)
+                0x080669f1       0x36 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_allocator.cc.obj)
  .rodata._ZN6tflite8internal36InitializeTfLiteTensorFromFlatbufferEPNS_26IPersistentBufferAllocatorEPNS_29INonPersistentBufferAllocatorEbRKNS_6TensorEPKN11flatbuffers6VectorINS8_6OffsetINS_6BufferEEEEEP12TfLiteTensor.str1.1
-                0x08066a1f       0x5c C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_allocator.cc.obj)
+                0x08066a27       0x5c C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_allocator.cc.obj)
  .rodata._ZN6tflite14MicroAllocator25AllocateTfLiteEvalTensorsEPKNS_5ModelEPNS_19SubgraphAllocationsE.str1.1
-                0x08066a7b       0x66 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_allocator.cc.obj)
+                0x08066a83       0x66 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_allocator.cc.obj)
  .rodata._ZN6tflite14MicroAllocator21FinishModelAllocationEPKNS_5ModelEPNS_19SubgraphAllocationsEPPNS_19ScratchBufferHandleE.str1.1
-                0x08066ae1       0x4b C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_allocator.cc.obj)
+                0x08066ae9       0x4b C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_allocator.cc.obj)
  .rodata._ZN6tflite14MicroAllocator20StartModelAllocationEPKNS_5ModelE.str1.1
-                0x08066b2c       0x83 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_allocator.cc.obj)
+                0x08066b34       0x83 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_allocator.cc.obj)
  .rodata._ZN6tflite14MicroAllocator27RequestScratchBufferInArenaEjiPi.str1.1
-                0x08066baf       0x36 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_allocator.cc.obj)
- *fill*         0x08066be5        0x3 
+                0x08066bb7       0x36 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_allocator.cc.obj)
+ *fill*         0x08066bed        0x3 
  .rodata._ZTVN6tflite14MicroAllocatorE
-                0x08066be8       0x4c C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_allocator.cc.obj)
-                0x08066be8                vtable for tflite::MicroAllocator
+                0x08066bf0       0x4c C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_allocator.cc.obj)
+                0x08066bf0                vtable for tflite::MicroAllocator
  .rodata._ZTVN6tflite12_GLOBAL__N_125MicroBuiltinDataAllocatorE
-                0x08066c34       0x18 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_allocator.cc.obj)
+                0x08066c3c       0x18 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_allocator.cc.obj)
  .rodata._ZN6tflite12_GLOBAL__N_1L19kZeroLengthIntArrayE
-                0x08066c4c        0x4 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_allocator.cc.obj)
+                0x08066c54        0x4 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_allocator.cc.obj)
  .rodata._ZTVN6tflite12MicroContextE
-                0x08066c50       0x3c C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_context.cc.obj)
-                0x08066c50                vtable for tflite::MicroContext
+                0x08066c58       0x3c C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_context.cc.obj)
+                0x08066c58                vtable for tflite::MicroContext
  .rodata._ZN6tflite12_GLOBAL__N_122OpNameFromRegistrationEPK16TFLMRegistration.str1.1
-                0x08066c8c        0x1 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_graph.cc.obj)
+                0x08066c94        0x1 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_graph.cc.obj)
  .rodata._ZN6tflite10MicroGraph16PrepareSubgraphsEv.str1.1
-                0x08066c8c       0x36 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_graph.cc.obj)
+                0x08066c94       0x36 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_graph.cc.obj)
  .rodata._ZN6tflite10MicroGraph14InvokeSubgraphEi.str1.1
-                0x08066cc2       0x66 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_graph.cc.obj)
+                0x08066cca       0x66 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_graph.cc.obj)
  .rodata._ZTVN6tflite10MicroGraphE
-                0x08066d28       0x3c C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_graph.cc.obj)
-                0x08066d28                vtable for tflite::MicroGraph
+                0x08066d30       0x3c C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_graph.cc.obj)
+                0x08066d30                vtable for tflite::MicroGraph
  .rodata._ZN6tflite26SingleArenaBufferAllocator12ResizeBufferEPhjj.str1.1
-                0x08066d64       0xb0 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(single_arena_buffer_allocator.cc.obj)
+                0x08066d6c       0xb0 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(single_arena_buffer_allocator.cc.obj)
  .rodata._ZN6tflite26SingleArenaBufferAllocator12AllocateTempEjj.str1.1
-                0x08066e14       0x49 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(single_arena_buffer_allocator.cc.obj)
+                0x08066e1c       0x49 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(single_arena_buffer_allocator.cc.obj)
  .rodata._ZN6tflite26SingleArenaBufferAllocator20IsAllTempDeallocatedEv.str1.1
-                0x08066e5d       0x42 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(single_arena_buffer_allocator.cc.obj)
+                0x08066e65       0x42 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(single_arena_buffer_allocator.cc.obj)
  .rodata._ZN6tflite26SingleArenaBufferAllocator20ResetTempAllocationsEv.str1.1
-                0x08066e9f       0x45 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(single_arena_buffer_allocator.cc.obj)
+                0x08066ea7       0x45 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(single_arena_buffer_allocator.cc.obj)
  .rodata._ZN6tflite26SingleArenaBufferAllocator24AllocatePersistentBufferEjj.str1.1
-                0x08066ee4       0x49 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(single_arena_buffer_allocator.cc.obj)
- *fill*         0x08066f2d        0x3 
+                0x08066eec       0x49 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(single_arena_buffer_allocator.cc.obj)
+ *fill*         0x08066f35        0x3 
  .rodata._ZTVN6tflite26SingleArenaBufferAllocatorE
-                0x08066f30       0x5c C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(single_arena_buffer_allocator.cc.obj)
-                0x08066f30                vtable for tflite::SingleArenaBufferAllocator
+                0x08066f38       0x5c C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(single_arena_buffer_allocator.cc.obj)
+                0x08066f38                vtable for tflite::SingleArenaBufferAllocator
  .rodata._ZN6tflite19GreedyMemoryPlanner9AddBufferEiii.str1.1
-                0x08066f8c       0x1d C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(greedy_memory_planner.cc.obj)
+                0x08066f94       0x1d C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(greedy_memory_planner.cc.obj)
  .rodata._ZN6tflite19GreedyMemoryPlanner15PrintMemoryPlanEv.str1.1
-                0x08066fa9       0x4a C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(greedy_memory_planner.cc.obj)
+                0x08066fb1       0x4a C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(greedy_memory_planner.cc.obj)
                                  0x4d (size before relaxing)
  .rodata._ZN6tflite19GreedyMemoryPlanner18GetOffsetForBufferEiPi.str1.1
-                0x08066ff3       0x29 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(greedy_memory_planner.cc.obj)
+                0x08066ffb       0x29 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(greedy_memory_planner.cc.obj)
  .rodata._ZTVN6tflite19GreedyMemoryPlannerE
-                0x0806701c       0x2c C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(greedy_memory_planner.cc.obj)
-                0x0806701c                vtable for tflite::GreedyMemoryPlanner
+                0x08067024       0x2c C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(greedy_memory_planner.cc.obj)
+                0x08067024                vtable for tflite::GreedyMemoryPlanner
  .rodata._ZN6tflite21AllocationInfoBuilder20CreateAllocationInfoEi.str1.1
-                0x08067048       0x41 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_allocation_info.cc.obj)
+                0x08067050       0x41 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_allocation_info.cc.obj)
  .rodata._ZN6tflite21AllocationInfoBuilder24GetOfflinePlannedOffsetsEPPKl.str1.1
-                0x08067089       0x4b C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_allocation_info.cc.obj)
+                0x08067091       0x4b C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_allocation_info.cc.obj)
  .rodata._ZN6tflite21AllocationInfoBuilder16ValidateSubgraphEPKNS_8SubGraphEP16TfLiteEvalTensor.str1.1
-                0x080670d4       0x3c C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_allocation_info.cc.obj)
+                0x080670dc       0x3c C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_allocation_info.cc.obj)
  .rodata._ZN6tflite12_GLOBAL__N_1L24kOfflineMemAllocMetadataE
-                0x08067110       0x18 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_allocation_info.cc.obj)
+                0x08067118       0x18 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_allocation_info.cc.obj)
  .rodata.binary64
-                0x08067128       0x20 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard\libgcc.a(fp16.o)
+                0x08067130       0x20 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard\libgcc.a(fp16.o)
  .rodata.__assert_func.str1.1
-                0x08067148       0x3c c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard\libc_nano.a(libc_a-assert.o)
+                0x08067150       0x3c c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard\libc_nano.a(libc_a-assert.o)
                                  0x3d (size before relaxing)
  .rodata._ctype_
-                0x08067184      0x101 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard\libc_nano.a(libc_a-ctype_.o)
-                0x08067184                _ctype_
+                0x0806718c      0x101 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard\libc_nano.a(libc_a-ctype_.o)
+                0x0806718c                _ctype_
  .rodata._printf_float.str1.1
-                0x08067285       0x10 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard\libc_nano.a(libc_a-nano-vfprintf_float.o)
+                0x0806728d       0x10 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard\libc_nano.a(libc_a-nano-vfprintf_float.o)
                                  0x12 (size before relaxing)
  .rodata._printf_i.str1.1
-                0x08067295       0x22 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard\libc_nano.a(libc_a-nano-vfprintf_i.o)
+                0x0806729d       0x22 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard\libc_nano.a(libc_a-nano-vfprintf_i.o)
  .rodata._dtoa_r.str1.1
-                0x080672b7       0x8a c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard\libc_nano.a(libc_a-dtoa.o)
+                0x080672bf       0x8a c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard\libc_nano.a(libc_a-dtoa.o)
                                  0x90 (size before relaxing)
  .rodata._Balloc.str1.1
-                0x08067341       0x5a c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard\libc_nano.a(libc_a-mprec.o)
+                0x08067349       0x5a c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard\libc_nano.a(libc_a-mprec.o)
                                  0x71 (size before relaxing)
  .rodata.__multadd.str1.1
-                0x0806739b       0x11 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard\libc_nano.a(libc_a-mprec.o)
- *fill*         0x0806739b        0x1 
- .rodata.p05.0  0x0806739c        0xc c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard\libc_nano.a(libc_a-mprec.o)
+                0x080673a3       0x11 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard\libc_nano.a(libc_a-mprec.o)
+ *fill*         0x080673a3        0x1 
+ .rodata.p05.0  0x080673a4        0xc c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard\libc_nano.a(libc_a-mprec.o)
  .rodata.__mprec_bigtens
-                0x080673a8       0x28 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard\libc_nano.a(libc_a-mprec.o)
-                0x080673a8                __mprec_bigtens
+                0x080673b0       0x28 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard\libc_nano.a(libc_a-mprec.o)
+                0x080673b0                __mprec_bigtens
  .rodata.__mprec_tens
-                0x080673d0       0xc8 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard\libc_nano.a(libc_a-mprec.o)
-                0x080673d0                __mprec_tens
+                0x080673d8       0xc8 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard\libc_nano.a(libc_a-mprec.o)
+                0x080673d8                __mprec_tens
  .rodata._vfprintf_r.str1.1
-                0x08067498       0x11 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard\libc_nano.a(libc_a-nano-vfprintf.o)
+                0x080674a0       0x11 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard\libc_nano.a(libc_a-nano-vfprintf.o)
  .rodata._setlocale_r.str1.1
-                0x080674a9        0x6 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard\libc_nano.a(libc_a-locale.o)
+                0x080674b1        0x6 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard\libc_nano.a(libc_a-locale.o)
                                   0x9 (size before relaxing)
  .rodata.str1.1
-                0x080674af        0x6 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard\libc_nano.a(libc_a-locale.o)
+                0x080674b7        0x6 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard\libc_nano.a(libc_a-locale.o)
                                   0x2 (size before relaxing)
- *fill*         0x080674af        0x1 
- .rodata.ln2LO  0x080674b0        0x8 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard\libm.a(libm_a-ef_exp.o)
- .rodata.ln2HI  0x080674b8        0x8 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard\libm.a(libm_a-ef_exp.o)
- .rodata.halF   0x080674c0        0x8 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard\libm.a(libm_a-ef_exp.o)
+ *fill*         0x080674b7        0x1 
+ .rodata.ln2LO  0x080674b8        0x8 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard\libm.a(libm_a-ef_exp.o)
+ .rodata.ln2HI  0x080674c0        0x8 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard\libm.a(libm_a-ef_exp.o)
+ .rodata.halF   0x080674c8        0x8 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard\libm.a(libm_a-ef_exp.o)
  *(.eh_frame*)
- .eh_frame      0x080674c8        0x0 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard/crtbegin.o
+ .eh_frame      0x080674d0        0x0 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard/crtbegin.o
 
-.glue_7         0x080674c8        0x0
- .glue_7        0x080674c8        0x0 linker stubs
+.glue_7         0x080674d0        0x0
+ .glue_7        0x080674d0        0x0 linker stubs
 
-.glue_7t        0x080674c8        0x0
- .glue_7t       0x080674c8        0x0 linker stubs
+.glue_7t        0x080674d0        0x0
+ .glue_7t       0x080674d0        0x0 linker stubs
 
-.vfp11_veneer   0x080674c8        0x0
- .vfp11_veneer  0x080674c8        0x0 linker stubs
+.vfp11_veneer   0x080674d0        0x0
+ .vfp11_veneer  0x080674d0        0x0 linker stubs
 
-.v4_bx          0x080674c8        0x0
- .v4_bx         0x080674c8        0x0 linker stubs
+.v4_bx          0x080674d0        0x0
+ .v4_bx         0x080674d0        0x0 linker stubs
 
-.iplt           0x080674c8        0x0
- .iplt          0x080674c8        0x0 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard/crtbegin.o
+.iplt           0x080674d0        0x0
+ .iplt          0x080674d0        0x0 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x080674c8                __exidx_start = .
+                0x080674d0                __exidx_start = .
 
-.ARM.exidx      0x080674c8        0x8
+.ARM.exidx      0x080674d0        0x8
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
- .ARM.exidx     0x080674c8        0x8 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard/crt0.o
+ .ARM.exidx     0x080674d0        0x8 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard/crt0.o
                                  0x10 (size before relaxing)
  .ARM.exidx.text.__udivmoddi4
-                0x080674d0        0x0 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard\libgcc.a(_udivmoddi4.o)
+                0x080674d8        0x0 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard\libgcc.a(_udivmoddi4.o)
                                   0x8 (size before relaxing)
-                0x080674d0                __exidx_end = .
+                0x080674d8                __exidx_end = .
 
-.copy.table     0x080674d0        0xc
-                0x080674d0                . = ALIGN (0x4)
-                0x080674d0                __copy_table_start__ = .
-                0x080674d0        0x4 LONG 0x80674dc __etext
-                0x080674d4        0x4 LONG 0x200567a4 __data_start__
-                0x080674d8        0x4 LONG 0x96 ((__data_end__ - __data_start__) / 0x4)
-                0x080674dc                __copy_table_end__ = .
+.copy.table     0x080674d8        0xc
+                0x080674d8                . = ALIGN (0x4)
+                0x080674d8                __copy_table_start__ = .
+                0x080674d8        0x4 LONG 0x80674e4 __etext
+                0x080674dc        0x4 LONG 0x200567a4 __data_start__
+                0x080674e0        0x4 LONG 0x96 ((__data_end__ - __data_start__) / 0x4)
+                0x080674e4                __copy_table_end__ = .
 
-.rel.dyn        0x080674dc        0x0
- .rel.iplt      0x080674dc        0x0 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard/crtbegin.o
+.rel.dyn        0x080674e4        0x0
+ .rel.iplt      0x080674e4        0x0 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard/crtbegin.o
 
-.zero.table     0x080674dc        0x0
-                0x080674dc                . = ALIGN (0x4)
-                0x080674dc                __zero_table_start__ = .
-                0x080674dc                __zero_table_end__ = .
-                0x080674dc                __etext = .
+.zero.table     0x080674e4        0x0
+                0x080674e4                . = ALIGN (0x4)
+                0x080674e4                __zero_table_start__ = .
+                0x080674e4                __zero_table_end__ = .
+                0x080674e4                __etext = .
 
-.data           0x200567a4      0x258 load address 0x080674dc
+.data           0x200567a4      0x258 load address 0x080674e4
                 0x200567a4                . = ALIGN (0x4)
                 0x200567a4                __data_start__ = .
  *(vtable)
@@ -10642,16 +10642,16 @@ text_application_ram
                 0x00029600                heap_size = (heap_limit - __HeapBase)
 
 .tm_clone_table
-                0x200569fc        0x0 load address 0x08067734
+                0x200569fc        0x0 load address 0x0806773c
  .tm_clone_table
                 0x200569fc        0x0 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard/crtbegin.o
  .tm_clone_table
                 0x200569fc        0x0 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard/crtend.o
 
-.igot.plt       0x200569fc        0x0 load address 0x08067734
+.igot.plt       0x200569fc        0x0 load address 0x0806773c
  .igot.plt      0x200569fc        0x0 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard/crtbegin.o
 
-.heap           0x200569fc    0x29604 load address 0x08067734
+.heap           0x200569fc    0x29604 load address 0x0806773c
                 0x20056a00                . = ALIGN (0x8)
  *fill*         0x200569fc        0x4 
                 0x20056a00                __HeapBase = .
@@ -10680,7 +10680,7 @@ text_application_ram
                 0x00000001                ASSERT ((linker_storage_begin >= (__etext + SIZEOF (.data))), FLASH memory overflowed !)
                 0x0831e000                app_flash_end = 0x831e000
                 0x00000001                ASSERT (((linker_nvm_begin + SIZEOF (.nvm)) <= app_flash_end), NVM3 is excessing the flash size !)
-OUTPUT(camera_arducam.axf elf32-littlearm)
+OUTPUT(camera_arducam_2.axf elf32-littlearm)
 LOAD linker stubs
 
 .ARM.attributes
@@ -11255,7 +11255,7 @@ LOAD linker stubs
  .debug_line_str
                 0x000002ce       0xd2 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard\libgcc.a(_arm_unorddf2.o)
 
-.debug_info     0x00000000   0x43e60a
+.debug_info     0x00000000   0x43e653
  .debug_info    0x00000000      0x1a6 ./simplicity_sdk_2025.6.0/platform/service/udelay/src/sl_udelay.o
  .debug_info    0x000001a6       0x26 ./simplicity_sdk_2025.6.0/platform/service/udelay/src/sl_udelay_armv6m_gcc.o
  .debug_info    0x000001cc     0x19f0 ./simplicity_sdk_2025.6.0/platform/service/sleeptimer/src/sl_sleeptimer.o
@@ -11331,39 +11331,39 @@ LOAD linker stubs
  .debug_info    0x000f50d8     0x8ae1 ./aiml_2.1.0/siliconlabs/depthwise_conv.o
  .debug_info    0x000fdbb9     0x8892 ./aiml_2.1.0/siliconlabs/fully_connected.o
  .debug_info    0x0010644b       0x86 ./app.o
- .debug_info    0x001064d1    0x5fa43 ./image_classifier.o
- .debug_info    0x00165f14       0xa3 ./main.o
- .debug_info    0x00165fb7      0x1d1 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(error_reporter.cc.obj)
- .debug_info    0x00166188    0x5fdf3 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(flatbuffer_conversions.cc.obj)
- .debug_info    0x001c5f7b     0x14a1 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(common.cc.obj)
- .debug_info    0x001c741c     0x4fd4 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(kernel_util.cc.obj)
- .debug_info    0x001cc3f0     0x165a C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(common.cc.obj)
- .debug_info    0x001cda4a     0x1fa4 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(quantization_util.cc.obj)
- .debug_info    0x001cf9ee     0x2c1f C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(tensor_ctypes.cc.obj)
- .debug_info    0x001d260d    0x4c0a6 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_interpreter.cc.obj)
- .debug_info    0x0021e6b3      0x50a C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_log.cc.obj)
- .debug_info    0x0021ebbd    0x25c1f C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_op_resolver.cc.obj)
- .debug_info    0x002447dc      0xefb C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_string.cc.obj)
- .debug_info    0x002456d7    0x242ca C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(flatbuffer_conversions_bridge.cc.obj)
- .debug_info    0x002699a1      0x8a6 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_error_reporter.cc.obj)
- .debug_info    0x0026a247    0x1039c C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(schema_utils.cc.obj)
- .debug_info    0x0027a5e3     0x4b92 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(kernel_util.cc.obj)
- .debug_info    0x0027f175     0x6676 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(pad.cc.obj)
- .debug_info    0x002857eb     0x3c55 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(reduce.cc.obj)
- .debug_info    0x00289440     0x9779 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(reduce_common.cc.obj)
- .debug_info    0x00292bb9     0x4b72 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(softmax_common.cc.obj)
- .debug_info    0x0029772b    0x4a499 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(flatbuffer_utils.cc.obj)
- .debug_info    0x002e1bc4    0x214fd C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(memory_helpers.cc.obj)
- .debug_info    0x003030c1    0x4ea57 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_allocator.cc.obj)
- .debug_info    0x00351b18    0x495a5 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_context.cc.obj)
- .debug_info    0x0039b0bd    0x4b443 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_graph.cc.obj)
- .debug_info    0x003e6500     0x3c67 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_resource_variable.cc.obj)
- .debug_info    0x003ea167     0x2bb3 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_utils.cc.obj)
- .debug_info    0x003ecd1a     0x389f C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(single_arena_buffer_allocator.cc.obj)
- .debug_info    0x003f05b9     0x1582 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(greedy_memory_planner.cc.obj)
- .debug_info    0x003f1b3b    0x4cacf C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_allocation_info.cc.obj)
+ .debug_info    0x001064d1    0x5fa8c ./image_classifier.o
+ .debug_info    0x00165f5d       0xa3 ./main.o
+ .debug_info    0x00166000      0x1d1 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(error_reporter.cc.obj)
+ .debug_info    0x001661d1    0x5fdf3 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(flatbuffer_conversions.cc.obj)
+ .debug_info    0x001c5fc4     0x14a1 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(common.cc.obj)
+ .debug_info    0x001c7465     0x4fd4 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(kernel_util.cc.obj)
+ .debug_info    0x001cc439     0x165a C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(common.cc.obj)
+ .debug_info    0x001cda93     0x1fa4 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(quantization_util.cc.obj)
+ .debug_info    0x001cfa37     0x2c1f C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(tensor_ctypes.cc.obj)
+ .debug_info    0x001d2656    0x4c0a6 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_interpreter.cc.obj)
+ .debug_info    0x0021e6fc      0x50a C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_log.cc.obj)
+ .debug_info    0x0021ec06    0x25c1f C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_op_resolver.cc.obj)
+ .debug_info    0x00244825      0xefb C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_string.cc.obj)
+ .debug_info    0x00245720    0x242ca C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(flatbuffer_conversions_bridge.cc.obj)
+ .debug_info    0x002699ea      0x8a6 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_error_reporter.cc.obj)
+ .debug_info    0x0026a290    0x1039c C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(schema_utils.cc.obj)
+ .debug_info    0x0027a62c     0x4b92 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(kernel_util.cc.obj)
+ .debug_info    0x0027f1be     0x6676 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(pad.cc.obj)
+ .debug_info    0x00285834     0x3c55 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(reduce.cc.obj)
+ .debug_info    0x00289489     0x9779 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(reduce_common.cc.obj)
+ .debug_info    0x00292c02     0x4b72 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(softmax_common.cc.obj)
+ .debug_info    0x00297774    0x4a499 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(flatbuffer_utils.cc.obj)
+ .debug_info    0x002e1c0d    0x214fd C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(memory_helpers.cc.obj)
+ .debug_info    0x0030310a    0x4ea57 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_allocator.cc.obj)
+ .debug_info    0x00351b61    0x495a5 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_context.cc.obj)
+ .debug_info    0x0039b106    0x4b443 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_graph.cc.obj)
+ .debug_info    0x003e6549     0x3c67 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_resource_variable.cc.obj)
+ .debug_info    0x003ea1b0     0x2bb3 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_utils.cc.obj)
+ .debug_info    0x003ecd63     0x389f C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(single_arena_buffer_allocator.cc.obj)
+ .debug_info    0x003f0602     0x1582 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(greedy_memory_planner.cc.obj)
+ .debug_info    0x003f1b84    0x4cacf C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_allocation_info.cc.obj)
 
-.debug_abbrev   0x00000000    0x230d1
+.debug_abbrev   0x00000000    0x230fa
  .debug_abbrev  0x00000000      0x11e ./simplicity_sdk_2025.6.0/platform/service/udelay/src/sl_udelay.o
  .debug_abbrev  0x0000011e       0x14 ./simplicity_sdk_2025.6.0/platform/service/udelay/src/sl_udelay_armv6m_gcc.o
  .debug_abbrev  0x00000132      0x443 ./simplicity_sdk_2025.6.0/platform/service/sleeptimer/src/sl_sleeptimer.o
@@ -11439,39 +11439,39 @@ LOAD linker stubs
  .debug_abbrev  0x0000f515      0x9cf ./aiml_2.1.0/siliconlabs/depthwise_conv.o
  .debug_abbrev  0x0000fee4      0xa5e ./aiml_2.1.0/siliconlabs/fully_connected.o
  .debug_abbrev  0x00010942       0x6d ./app.o
- .debug_abbrev  0x000109af     0x1141 ./image_classifier.o
- .debug_abbrev  0x00011af0       0x70 ./main.o
- .debug_abbrev  0x00011b60      0x173 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(error_reporter.cc.obj)
- .debug_abbrev  0x00011cd3     0x11a9 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(flatbuffer_conversions.cc.obj)
- .debug_abbrev  0x00012e7c      0x36b C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(common.cc.obj)
- .debug_abbrev  0x000131e7      0x8cd C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(kernel_util.cc.obj)
- .debug_abbrev  0x00013ab4      0x4a2 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(common.cc.obj)
- .debug_abbrev  0x00013f56      0x673 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(quantization_util.cc.obj)
- .debug_abbrev  0x000145c9      0x7b8 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(tensor_ctypes.cc.obj)
- .debug_abbrev  0x00014d81     0x10c1 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_interpreter.cc.obj)
- .debug_abbrev  0x00015e42      0x16d C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_log.cc.obj)
- .debug_abbrev  0x00015faf      0xd38 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_op_resolver.cc.obj)
- .debug_abbrev  0x00016ce7      0x3b6 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_string.cc.obj)
- .debug_abbrev  0x0001709d      0xbbc C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(flatbuffer_conversions_bridge.cc.obj)
- .debug_abbrev  0x00017c59      0x374 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_error_reporter.cc.obj)
- .debug_abbrev  0x00017fcd      0xbf0 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(schema_utils.cc.obj)
- .debug_abbrev  0x00018bbd      0x8b0 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(kernel_util.cc.obj)
- .debug_abbrev  0x0001946d      0x8db C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(pad.cc.obj)
- .debug_abbrev  0x00019d48      0x63b C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(reduce.cc.obj)
- .debug_abbrev  0x0001a383      0xbb4 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(reduce_common.cc.obj)
- .debug_abbrev  0x0001af37      0x95d C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(softmax_common.cc.obj)
- .debug_abbrev  0x0001b894      0xea6 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(flatbuffer_utils.cc.obj)
- .debug_abbrev  0x0001c73a      0xe07 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(memory_helpers.cc.obj)
- .debug_abbrev  0x0001d541     0x12fb C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_allocator.cc.obj)
- .debug_abbrev  0x0001e83c      0xe0c C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_context.cc.obj)
- .debug_abbrev  0x0001f648      0xfca C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_graph.cc.obj)
- .debug_abbrev  0x00020612      0x717 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_resource_variable.cc.obj)
- .debug_abbrev  0x00020d29      0x66c C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_utils.cc.obj)
- .debug_abbrev  0x00021395      0x7d3 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(single_arena_buffer_allocator.cc.obj)
- .debug_abbrev  0x00021b68      0x5c3 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(greedy_memory_planner.cc.obj)
- .debug_abbrev  0x0002212b      0xfa6 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_allocation_info.cc.obj)
+ .debug_abbrev  0x000109af     0x116a ./image_classifier.o
+ .debug_abbrev  0x00011b19       0x70 ./main.o
+ .debug_abbrev  0x00011b89      0x173 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(error_reporter.cc.obj)
+ .debug_abbrev  0x00011cfc     0x11a9 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(flatbuffer_conversions.cc.obj)
+ .debug_abbrev  0x00012ea5      0x36b C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(common.cc.obj)
+ .debug_abbrev  0x00013210      0x8cd C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(kernel_util.cc.obj)
+ .debug_abbrev  0x00013add      0x4a2 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(common.cc.obj)
+ .debug_abbrev  0x00013f7f      0x673 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(quantization_util.cc.obj)
+ .debug_abbrev  0x000145f2      0x7b8 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(tensor_ctypes.cc.obj)
+ .debug_abbrev  0x00014daa     0x10c1 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_interpreter.cc.obj)
+ .debug_abbrev  0x00015e6b      0x16d C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_log.cc.obj)
+ .debug_abbrev  0x00015fd8      0xd38 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_op_resolver.cc.obj)
+ .debug_abbrev  0x00016d10      0x3b6 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_string.cc.obj)
+ .debug_abbrev  0x000170c6      0xbbc C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(flatbuffer_conversions_bridge.cc.obj)
+ .debug_abbrev  0x00017c82      0x374 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_error_reporter.cc.obj)
+ .debug_abbrev  0x00017ff6      0xbf0 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(schema_utils.cc.obj)
+ .debug_abbrev  0x00018be6      0x8b0 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(kernel_util.cc.obj)
+ .debug_abbrev  0x00019496      0x8db C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(pad.cc.obj)
+ .debug_abbrev  0x00019d71      0x63b C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(reduce.cc.obj)
+ .debug_abbrev  0x0001a3ac      0xbb4 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(reduce_common.cc.obj)
+ .debug_abbrev  0x0001af60      0x95d C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(softmax_common.cc.obj)
+ .debug_abbrev  0x0001b8bd      0xea6 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(flatbuffer_utils.cc.obj)
+ .debug_abbrev  0x0001c763      0xe07 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(memory_helpers.cc.obj)
+ .debug_abbrev  0x0001d56a     0x12fb C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_allocator.cc.obj)
+ .debug_abbrev  0x0001e865      0xe0c C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_context.cc.obj)
+ .debug_abbrev  0x0001f671      0xfca C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_graph.cc.obj)
+ .debug_abbrev  0x0002063b      0x717 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_resource_variable.cc.obj)
+ .debug_abbrev  0x00020d52      0x66c C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_utils.cc.obj)
+ .debug_abbrev  0x000213be      0x7d3 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(single_arena_buffer_allocator.cc.obj)
+ .debug_abbrev  0x00021b91      0x5c3 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(greedy_memory_planner.cc.obj)
+ .debug_abbrev  0x00022154      0xfa6 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_allocation_info.cc.obj)
 
-.debug_loc      0x00000000    0x33e4f
+.debug_loc      0x00000000    0x33e6e
  .debug_loc     0x00000000      0x195 ./simplicity_sdk_2025.6.0/platform/service/udelay/src/sl_udelay.o
  .debug_loc     0x00000195     0x192a ./simplicity_sdk_2025.6.0/platform/service/sleeptimer/src/sl_sleeptimer.o
  .debug_loc     0x00001abf      0x4ed ./simplicity_sdk_2025.6.0/platform/service/sleeptimer/src/sl_sleeptimer_hal_sysrtc.o
@@ -11538,8 +11538,8 @@ LOAD linker stubs
  .debug_loc     0x0002e893       0x84 ./aiml_2.1.0/siliconlabs/debug_log.o
  .debug_loc     0x0002e917     0x26be ./aiml_2.1.0/siliconlabs/depthwise_conv.o
  .debug_loc     0x00030fd5     0x1de9 ./aiml_2.1.0/siliconlabs/fully_connected.o
- .debug_loc     0x00032dbe     0x1071 ./image_classifier.o
- .debug_loc     0x00033e2f       0x20 ./main.o
+ .debug_loc     0x00032dbe     0x1090 ./image_classifier.o
+ .debug_loc     0x00033e4e       0x20 ./main.o
 
 .debug_aranges  0x00000000     0x3160
  .debug_aranges
@@ -11755,7 +11755,7 @@ LOAD linker stubs
  .debug_aranges
                 0x000030c0       0xa0 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_allocation_info.cc.obj)
 
-.debug_ranges   0x00000000     0x5a10
+.debug_ranges   0x00000000     0x59d8
  .debug_ranges  0x00000000       0x28 ./simplicity_sdk_2025.6.0/platform/service/udelay/src/sl_udelay.o
  .debug_ranges  0x00000028      0x1b8 ./simplicity_sdk_2025.6.0/platform/service/sleeptimer/src/sl_sleeptimer.o
  .debug_ranges  0x000001e0       0xc8 ./simplicity_sdk_2025.6.0/platform/service/sleeptimer/src/sl_sleeptimer_hal_sysrtc.o
@@ -11827,329 +11827,329 @@ LOAD linker stubs
  .debug_ranges  0x00004f08      0x448 ./aiml_2.1.0/siliconlabs/depthwise_conv.o
  .debug_ranges  0x00005350      0x398 ./aiml_2.1.0/siliconlabs/fully_connected.o
  .debug_ranges  0x000056e8       0x18 ./app.o
- .debug_ranges  0x00005700      0x300 ./image_classifier.o
- .debug_ranges  0x00005a00       0x10 ./main.o
+ .debug_ranges  0x00005700      0x2c8 ./image_classifier.o
+ .debug_ranges  0x000059c8       0x10 ./main.o
 
-.debug_line     0x00000000    0x4ff2b
+.debug_line     0x00000000    0x4ff38
  .debug_line    0x00000000      0x2dd ./simplicity_sdk_2025.6.0/platform/service/udelay/src/sl_udelay.o
  .debug_line    0x000002dd       0x99 ./simplicity_sdk_2025.6.0/platform/service/udelay/src/sl_udelay_armv6m_gcc.o
  .debug_line    0x00000376     0x108c ./simplicity_sdk_2025.6.0/platform/service/sleeptimer/src/sl_sleeptimer.o
  .debug_line    0x00001402      0x8ea ./simplicity_sdk_2025.6.0/platform/service/sleeptimer/src/sl_sleeptimer_hal_sysrtc.o
- .debug_line    0x00001cec      0x503 ./simplicity_sdk_2025.6.0/platform/service/sl_main/src/sl_main_init.o
- .debug_line    0x000021ef      0x10f ./simplicity_sdk_2025.6.0/platform/service/sl_main/src/sl_main_init_memory.o
- .debug_line    0x000022fe      0x102 ./simplicity_sdk_2025.6.0/platform/service/sl_main/src/sl_main_process_action.o
- .debug_line    0x00002400      0x31d ./simplicity_sdk_2025.6.0/platform/service/memory_manager/src/sl_memory_manager_region.o
- .debug_line    0x0000271d      0x5d7 ./simplicity_sdk_2025.6.0/platform/service/iostream/src/sl_iostream.o
- .debug_line    0x00002cf4      0x9c1 ./simplicity_sdk_2025.6.0/platform/service/iostream/src/sl_iostream_eusart.o
- .debug_line    0x000036b5      0x461 ./simplicity_sdk_2025.6.0/platform/service/iostream/src/sl_iostream_retarget_stdio.o
- .debug_line    0x00003b16     0x136d ./simplicity_sdk_2025.6.0/platform/service/iostream/src/sl_iostream_uart.o
- .debug_line    0x00004e83      0x8e9 ./simplicity_sdk_2025.6.0/platform/service/interrupt_manager/src/sl_interrupt_manager_cortexm.o
- .debug_line    0x0000576c      0x243 ./simplicity_sdk_2025.6.0/platform/service/device_manager/devices/sl_device_peripheral_hal_efr32xg26.o
- .debug_line    0x000059af      0x1ff ./simplicity_sdk_2025.6.0/platform/service/device_manager/clocks/sl_device_clock_efr32xg26.o
- .debug_line    0x00005bae      0x25d ./simplicity_sdk_2025.6.0/platform/service/device_init/src/sl_device_init_dcdc_s2.o
- .debug_line    0x00005e0b      0x2e2 ./simplicity_sdk_2025.6.0/platform/service/device_init/src/sl_device_init_emu_s2.o
- .debug_line    0x000060ed      0x65f ./simplicity_sdk_2025.6.0/platform/service/clock_manager/src/sl_clock_manager.o
- .debug_line    0x0000674c      0xccf ./simplicity_sdk_2025.6.0/platform/service/clock_manager/src/sl_clock_manager_hal_s2.o
- .debug_line    0x0000741b      0x219 ./simplicity_sdk_2025.6.0/platform/service/clock_manager/src/sl_clock_manager_init.o
- .debug_line    0x00007634      0x659 ./simplicity_sdk_2025.6.0/platform/service/clock_manager/src/sl_clock_manager_init_hal_s2.o
- .debug_line    0x00007c8d     0x10a2 ./simplicity_sdk_2025.6.0/platform/peripheral/src/sl_hal_gpio.o
- .debug_line    0x00008d2f      0x815 ./simplicity_sdk_2025.6.0/platform/peripheral/src/sl_hal_sysrtc.o
- .debug_line    0x00009544     0x3410 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_cmu.o
- .debug_line    0x0000c954      0xf43 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_emu.o
- .debug_line    0x0000d897     0x1703 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_eusart.o
- .debug_line    0x0000ef9a      0x6b5 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_gpio.o
- .debug_line    0x0000f64f      0xc31 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_i2c.o
- .debug_line    0x00010280      0x6f0 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_ldma.o
- .debug_line    0x00010970      0xcef ./simplicity_sdk_2025.6.0/platform/emlib/src/em_usart.o
- .debug_line    0x0001165f     0x1ca6 ./simplicity_sdk_2025.6.0/platform/emdrv/spidrv/src/spidrv.o
- .debug_line    0x00013305      0xbd9 ./simplicity_sdk_2025.6.0/platform/emdrv/dmadrv/src/dmadrv.o
- .debug_line    0x00013ede      0x66d ./simplicity_sdk_2025.6.0/platform/driver/i2cspm/src/sl_i2cspm.o
- .debug_line    0x0001454b     0x1255 ./simplicity_sdk_2025.6.0/platform/driver/gpio/src/sl_gpio.o
- .debug_line    0x000157a0      0x76a ./simplicity_sdk_2025.6.0/platform/driver/debug/src/sl_debug_swo.o
- .debug_line    0x00015f0a     0x123b ./simplicity_sdk_2025.6.0/platform/compute/nn/mvp/src/sl_mvp_ml_conv2d.o
- .debug_line    0x00017145      0x3e0 ./simplicity_sdk_2025.6.0/platform/compute/nn/mvp/src/sl_mvp_ml_depthwise_conv2d.o
- .debug_line    0x00017525      0x895 ./simplicity_sdk_2025.6.0/platform/compute/nn/mvp/src/sl_mvp_ml_fully_connected.o
- .debug_line    0x00017dba     0x1a45 ./simplicity_sdk_2025.6.0/platform/compute/nn/mvp/src/sli_mvp_ml_depthwise_conv2d.o
- .debug_line    0x000197ff      0x6ec ./simplicity_sdk_2025.6.0/platform/compute/nn/mvp/src/sli_mvp_ml_depthwise_conv2d_opt.o
- .debug_line    0x00019eeb      0x473 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_clamp.o
- .debug_line    0x0001a35e      0xf42 ./simplicity_sdk_2025.6.0/platform/compute/driver/mvp/src/sl_mvp.o
- .debug_line    0x0001b2a0      0x64c ./simplicity_sdk_2025.6.0/platform/compute/driver/mvp/src/sl_mvp_hal_efr32.o
- .debug_line    0x0001b8ec      0x2a0 ./simplicity_sdk_2025.6.0/platform/compute/driver/mvp/src/sl_mvp_program_area.o
- .debug_line    0x0001bb8c      0x50f ./simplicity_sdk_2025.6.0/platform/compute/driver/mvp/src/sl_mvp_util.o
- .debug_line    0x0001c09b       0xa6 ./simplicity_sdk_2025.6.0/platform/common/src/sl_assert.o
- .debug_line    0x0001c141      0x603 ./simplicity_sdk_2025.6.0/platform/common/src/sl_core_cortexm.o
- .debug_line    0x0001c744      0x3c4 ./simplicity_sdk_2025.6.0/platform/common/src/sl_slist.o
- .debug_line    0x0001cb08      0x36a ./simplicity_sdk_2025.6.0/platform/Device/SiliconLabs/EFR32MG26/Source/startup_efr32mg26.o
- .debug_line    0x0001ce72      0x642 ./simplicity_sdk_2025.6.0/platform/Device/SiliconLabs/EFR32MG26/Source/system_efr32mg26.o
- .debug_line    0x0001d4b4      0x612 ./simplicity_sdk_2025.6.0/hardware/driver/mx25_flash_shutdown/src/sl_mx25_flash_shutdown_eusart/sl_mx25_flash_shutdown.o
- .debug_line    0x0001dac6      0x4d4 ./simplicity_sdk_2025.6.0/hardware/driver/configuration_over_swo/src/sl_cos.o
- .debug_line    0x0001df9a      0x580 ./simplicity_sdk_2025.6.0/hardware/board/src/sl_board_control_gpio.o
- .debug_line    0x0001e51a      0x36d ./simplicity_sdk_2025.6.0/hardware/board/src/sl_board_init.o
- .debug_line    0x0001e887      0xf8a ./jlink_stream/jlink_stream.o
- .debug_line    0x0001f811      0x353 ./jlink_stream/jlink_stream_internal.o
- .debug_line    0x0001fb64       0x55 ./autogen/sl_board_default_init.o
- .debug_line    0x0001fbb9      0x62d ./autogen/sl_event_handler.o
- .debug_line    0x000201e6      0x3be ./autogen/sl_i2cspm_init.o
- .debug_line    0x000205a4      0x40a ./autogen/sl_iostream_handles.o
- .debug_line    0x000209ae      0x60c ./autogen/sl_iostream_init_eusart_instances.o
- .debug_line    0x00020fba      0x4c3 ./autogen/sl_spidrv_init.o
- .debug_line    0x0002147d      0x159 ./autogen/sl_tflite_micro_model.o
- .debug_line    0x000215d6      0xc9f ./arducam/drivers/m2mp/arducam_m_2mp_driver.o
- .debug_line    0x00022275      0x686 ./arducam/drivers/m2mp/ov2640.o
- .debug_line    0x000228fb      0x85d ./arducam/arducam.o
- .debug_line    0x00023158     0x17af ./aiml_2.1.0/third_party/tflite-micro/tensorflow/lite/micro/kernels/cmsis_nn/softmax.o
- .debug_line    0x00024907     0x2823 ./aiml_2.1.0/third_party/tflite-micro/tensorflow/lite/micro/kernels/cmsis_nn/unidirectional_sequence_lstm.o
- .debug_line    0x0002712a     0x1815 ./aiml_2.1.0/src/sl_tflite_micro_init.o
- .debug_line    0x0002893f     0x2708 ./aiml_2.1.0/siliconlabs/add.o
- .debug_line    0x0002b047     0x212d ./aiml_2.1.0/siliconlabs/conv.o
- .debug_line    0x0002d174      0x55a ./aiml_2.1.0/siliconlabs/debug_log.o
- .debug_line    0x0002d6ce     0x23e6 ./aiml_2.1.0/siliconlabs/depthwise_conv.o
- .debug_line    0x0002fab4     0x1f25 ./aiml_2.1.0/siliconlabs/fully_connected.o
- .debug_line    0x000319d9       0x6a ./app.o
- .debug_line    0x00031a43     0x1d29 ./image_classifier.o
- .debug_line    0x0003376c       0xda ./main.o
- .debug_line    0x00033846      0x233 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(error_reporter.cc.obj)
- .debug_line    0x00033a79     0x44c8 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(flatbuffer_conversions.cc.obj)
- .debug_line    0x00037f41      0x4af C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(common.cc.obj)
- .debug_line    0x000383f0      0xee4 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(kernel_util.cc.obj)
- .debug_line    0x000392d4      0x5c8 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(common.cc.obj)
- .debug_line    0x0003989c      0xb50 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(quantization_util.cc.obj)
- .debug_line    0x0003a3ec      0x61a C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(tensor_ctypes.cc.obj)
- .debug_line    0x0003aa06     0x1aa7 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_interpreter.cc.obj)
- .debug_line    0x0003c4ad      0x326 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_log.cc.obj)
- .debug_line    0x0003c7d3      0xb88 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_op_resolver.cc.obj)
- .debug_line    0x0003d35b      0x7b6 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_string.cc.obj)
- .debug_line    0x0003db11      0x9ab C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(flatbuffer_conversions_bridge.cc.obj)
- .debug_line    0x0003e4bc      0x459 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_error_reporter.cc.obj)
- .debug_line    0x0003e915      0x8f4 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(schema_utils.cc.obj)
- .debug_line    0x0003f209     0x1024 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(kernel_util.cc.obj)
- .debug_line    0x0004022d     0x1974 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(pad.cc.obj)
- .debug_line    0x00041ba1      0x950 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(reduce.cc.obj)
- .debug_line    0x000424f1     0x1ef3 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(reduce_common.cc.obj)
- .debug_line    0x000443e4     0x1036 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(softmax_common.cc.obj)
- .debug_line    0x0004541a      0xe79 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(flatbuffer_utils.cc.obj)
- .debug_line    0x00046293      0xe94 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(memory_helpers.cc.obj)
- .debug_line    0x00047127     0x233b C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_allocator.cc.obj)
- .debug_line    0x00049462      0xd23 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_context.cc.obj)
- .debug_line    0x0004a185     0x160d C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_graph.cc.obj)
- .debug_line    0x0004b792      0xa5a C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_resource_variable.cc.obj)
- .debug_line    0x0004c1ec      0x87b C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_utils.cc.obj)
- .debug_line    0x0004ca67      0xbcb C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(single_arena_buffer_allocator.cc.obj)
- .debug_line    0x0004d632      0xb78 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(greedy_memory_planner.cc.obj)
- .debug_line    0x0004e1aa     0x1d81 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_allocation_info.cc.obj)
+ .debug_line    0x00001cec      0x505 ./simplicity_sdk_2025.6.0/platform/service/sl_main/src/sl_main_init.o
+ .debug_line    0x000021f1      0x111 ./simplicity_sdk_2025.6.0/platform/service/sl_main/src/sl_main_init_memory.o
+ .debug_line    0x00002302      0x104 ./simplicity_sdk_2025.6.0/platform/service/sl_main/src/sl_main_process_action.o
+ .debug_line    0x00002406      0x31d ./simplicity_sdk_2025.6.0/platform/service/memory_manager/src/sl_memory_manager_region.o
+ .debug_line    0x00002723      0x5d7 ./simplicity_sdk_2025.6.0/platform/service/iostream/src/sl_iostream.o
+ .debug_line    0x00002cfa      0x9c1 ./simplicity_sdk_2025.6.0/platform/service/iostream/src/sl_iostream_eusart.o
+ .debug_line    0x000036bb      0x461 ./simplicity_sdk_2025.6.0/platform/service/iostream/src/sl_iostream_retarget_stdio.o
+ .debug_line    0x00003b1c     0x136d ./simplicity_sdk_2025.6.0/platform/service/iostream/src/sl_iostream_uart.o
+ .debug_line    0x00004e89      0x8e9 ./simplicity_sdk_2025.6.0/platform/service/interrupt_manager/src/sl_interrupt_manager_cortexm.o
+ .debug_line    0x00005772      0x243 ./simplicity_sdk_2025.6.0/platform/service/device_manager/devices/sl_device_peripheral_hal_efr32xg26.o
+ .debug_line    0x000059b5      0x1ff ./simplicity_sdk_2025.6.0/platform/service/device_manager/clocks/sl_device_clock_efr32xg26.o
+ .debug_line    0x00005bb4      0x25d ./simplicity_sdk_2025.6.0/platform/service/device_init/src/sl_device_init_dcdc_s2.o
+ .debug_line    0x00005e11      0x2e2 ./simplicity_sdk_2025.6.0/platform/service/device_init/src/sl_device_init_emu_s2.o
+ .debug_line    0x000060f3      0x65f ./simplicity_sdk_2025.6.0/platform/service/clock_manager/src/sl_clock_manager.o
+ .debug_line    0x00006752      0xccf ./simplicity_sdk_2025.6.0/platform/service/clock_manager/src/sl_clock_manager_hal_s2.o
+ .debug_line    0x00007421      0x219 ./simplicity_sdk_2025.6.0/platform/service/clock_manager/src/sl_clock_manager_init.o
+ .debug_line    0x0000763a      0x659 ./simplicity_sdk_2025.6.0/platform/service/clock_manager/src/sl_clock_manager_init_hal_s2.o
+ .debug_line    0x00007c93     0x10a2 ./simplicity_sdk_2025.6.0/platform/peripheral/src/sl_hal_gpio.o
+ .debug_line    0x00008d35      0x815 ./simplicity_sdk_2025.6.0/platform/peripheral/src/sl_hal_sysrtc.o
+ .debug_line    0x0000954a     0x3410 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_cmu.o
+ .debug_line    0x0000c95a      0xf43 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_emu.o
+ .debug_line    0x0000d89d     0x1703 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_eusart.o
+ .debug_line    0x0000efa0      0x6b5 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_gpio.o
+ .debug_line    0x0000f655      0xc31 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_i2c.o
+ .debug_line    0x00010286      0x6f0 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_ldma.o
+ .debug_line    0x00010976      0xcef ./simplicity_sdk_2025.6.0/platform/emlib/src/em_usart.o
+ .debug_line    0x00011665     0x1ca6 ./simplicity_sdk_2025.6.0/platform/emdrv/spidrv/src/spidrv.o
+ .debug_line    0x0001330b      0xbd9 ./simplicity_sdk_2025.6.0/platform/emdrv/dmadrv/src/dmadrv.o
+ .debug_line    0x00013ee4      0x66d ./simplicity_sdk_2025.6.0/platform/driver/i2cspm/src/sl_i2cspm.o
+ .debug_line    0x00014551     0x1255 ./simplicity_sdk_2025.6.0/platform/driver/gpio/src/sl_gpio.o
+ .debug_line    0x000157a6      0x76a ./simplicity_sdk_2025.6.0/platform/driver/debug/src/sl_debug_swo.o
+ .debug_line    0x00015f10     0x123b ./simplicity_sdk_2025.6.0/platform/compute/nn/mvp/src/sl_mvp_ml_conv2d.o
+ .debug_line    0x0001714b      0x3e0 ./simplicity_sdk_2025.6.0/platform/compute/nn/mvp/src/sl_mvp_ml_depthwise_conv2d.o
+ .debug_line    0x0001752b      0x895 ./simplicity_sdk_2025.6.0/platform/compute/nn/mvp/src/sl_mvp_ml_fully_connected.o
+ .debug_line    0x00017dc0     0x1a45 ./simplicity_sdk_2025.6.0/platform/compute/nn/mvp/src/sli_mvp_ml_depthwise_conv2d.o
+ .debug_line    0x00019805      0x6ec ./simplicity_sdk_2025.6.0/platform/compute/nn/mvp/src/sli_mvp_ml_depthwise_conv2d_opt.o
+ .debug_line    0x00019ef1      0x473 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_clamp.o
+ .debug_line    0x0001a364      0xf42 ./simplicity_sdk_2025.6.0/platform/compute/driver/mvp/src/sl_mvp.o
+ .debug_line    0x0001b2a6      0x64c ./simplicity_sdk_2025.6.0/platform/compute/driver/mvp/src/sl_mvp_hal_efr32.o
+ .debug_line    0x0001b8f2      0x2a0 ./simplicity_sdk_2025.6.0/platform/compute/driver/mvp/src/sl_mvp_program_area.o
+ .debug_line    0x0001bb92      0x50f ./simplicity_sdk_2025.6.0/platform/compute/driver/mvp/src/sl_mvp_util.o
+ .debug_line    0x0001c0a1       0xa6 ./simplicity_sdk_2025.6.0/platform/common/src/sl_assert.o
+ .debug_line    0x0001c147      0x603 ./simplicity_sdk_2025.6.0/platform/common/src/sl_core_cortexm.o
+ .debug_line    0x0001c74a      0x3c4 ./simplicity_sdk_2025.6.0/platform/common/src/sl_slist.o
+ .debug_line    0x0001cb0e      0x36a ./simplicity_sdk_2025.6.0/platform/Device/SiliconLabs/EFR32MG26/Source/startup_efr32mg26.o
+ .debug_line    0x0001ce78      0x642 ./simplicity_sdk_2025.6.0/platform/Device/SiliconLabs/EFR32MG26/Source/system_efr32mg26.o
+ .debug_line    0x0001d4ba      0x612 ./simplicity_sdk_2025.6.0/hardware/driver/mx25_flash_shutdown/src/sl_mx25_flash_shutdown_eusart/sl_mx25_flash_shutdown.o
+ .debug_line    0x0001dacc      0x4d4 ./simplicity_sdk_2025.6.0/hardware/driver/configuration_over_swo/src/sl_cos.o
+ .debug_line    0x0001dfa0      0x580 ./simplicity_sdk_2025.6.0/hardware/board/src/sl_board_control_gpio.o
+ .debug_line    0x0001e520      0x36d ./simplicity_sdk_2025.6.0/hardware/board/src/sl_board_init.o
+ .debug_line    0x0001e88d      0xf8a ./jlink_stream/jlink_stream.o
+ .debug_line    0x0001f817      0x353 ./jlink_stream/jlink_stream_internal.o
+ .debug_line    0x0001fb6a       0x55 ./autogen/sl_board_default_init.o
+ .debug_line    0x0001fbbf      0x62d ./autogen/sl_event_handler.o
+ .debug_line    0x000201ec      0x3be ./autogen/sl_i2cspm_init.o
+ .debug_line    0x000205aa      0x40a ./autogen/sl_iostream_handles.o
+ .debug_line    0x000209b4      0x60c ./autogen/sl_iostream_init_eusart_instances.o
+ .debug_line    0x00020fc0      0x4c3 ./autogen/sl_spidrv_init.o
+ .debug_line    0x00021483      0x159 ./autogen/sl_tflite_micro_model.o
+ .debug_line    0x000215dc      0xc9a ./arducam/drivers/m2mp/arducam_m_2mp_driver.o
+ .debug_line    0x00022276      0x688 ./arducam/drivers/m2mp/ov2640.o
+ .debug_line    0x000228fe      0x861 ./arducam/arducam.o
+ .debug_line    0x0002315f     0x17af ./aiml_2.1.0/third_party/tflite-micro/tensorflow/lite/micro/kernels/cmsis_nn/softmax.o
+ .debug_line    0x0002490e     0x2823 ./aiml_2.1.0/third_party/tflite-micro/tensorflow/lite/micro/kernels/cmsis_nn/unidirectional_sequence_lstm.o
+ .debug_line    0x00027131     0x1817 ./aiml_2.1.0/src/sl_tflite_micro_init.o
+ .debug_line    0x00028948     0x2708 ./aiml_2.1.0/siliconlabs/add.o
+ .debug_line    0x0002b050     0x212d ./aiml_2.1.0/siliconlabs/conv.o
+ .debug_line    0x0002d17d      0x55a ./aiml_2.1.0/siliconlabs/debug_log.o
+ .debug_line    0x0002d6d7     0x23e6 ./aiml_2.1.0/siliconlabs/depthwise_conv.o
+ .debug_line    0x0002fabd     0x1f25 ./aiml_2.1.0/siliconlabs/fully_connected.o
+ .debug_line    0x000319e2       0x6a ./app.o
+ .debug_line    0x00031a4c     0x1d2d ./image_classifier.o
+ .debug_line    0x00033779       0xda ./main.o
+ .debug_line    0x00033853      0x233 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(error_reporter.cc.obj)
+ .debug_line    0x00033a86     0x44c8 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(flatbuffer_conversions.cc.obj)
+ .debug_line    0x00037f4e      0x4af C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(common.cc.obj)
+ .debug_line    0x000383fd      0xee4 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(kernel_util.cc.obj)
+ .debug_line    0x000392e1      0x5c8 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(common.cc.obj)
+ .debug_line    0x000398a9      0xb50 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(quantization_util.cc.obj)
+ .debug_line    0x0003a3f9      0x61a C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(tensor_ctypes.cc.obj)
+ .debug_line    0x0003aa13     0x1aa7 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_interpreter.cc.obj)
+ .debug_line    0x0003c4ba      0x326 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_log.cc.obj)
+ .debug_line    0x0003c7e0      0xb88 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_op_resolver.cc.obj)
+ .debug_line    0x0003d368      0x7b6 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_string.cc.obj)
+ .debug_line    0x0003db1e      0x9ab C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(flatbuffer_conversions_bridge.cc.obj)
+ .debug_line    0x0003e4c9      0x459 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_error_reporter.cc.obj)
+ .debug_line    0x0003e922      0x8f4 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(schema_utils.cc.obj)
+ .debug_line    0x0003f216     0x1024 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(kernel_util.cc.obj)
+ .debug_line    0x0004023a     0x1974 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(pad.cc.obj)
+ .debug_line    0x00041bae      0x950 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(reduce.cc.obj)
+ .debug_line    0x000424fe     0x1ef3 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(reduce_common.cc.obj)
+ .debug_line    0x000443f1     0x1036 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(softmax_common.cc.obj)
+ .debug_line    0x00045427      0xe79 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(flatbuffer_utils.cc.obj)
+ .debug_line    0x000462a0      0xe94 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(memory_helpers.cc.obj)
+ .debug_line    0x00047134     0x233b C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_allocator.cc.obj)
+ .debug_line    0x0004946f      0xd23 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_context.cc.obj)
+ .debug_line    0x0004a192     0x160d C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_graph.cc.obj)
+ .debug_line    0x0004b79f      0xa5a C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_resource_variable.cc.obj)
+ .debug_line    0x0004c1f9      0x87b C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_utils.cc.obj)
+ .debug_line    0x0004ca74      0xbcb C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(single_arena_buffer_allocator.cc.obj)
+ .debug_line    0x0004d63f      0xb78 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(greedy_memory_planner.cc.obj)
+ .debug_line    0x0004e1b7     0x1d81 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_allocation_info.cc.obj)
 
-.debug_str      0x00000000    0xe8e67
- .debug_str     0x00000000      0x276 ./simplicity_sdk_2025.6.0/platform/service/udelay/src/sl_udelay.o
-                                0x2b8 (size before relaxing)
- .debug_str     0x00000276       0x75 ./simplicity_sdk_2025.6.0/platform/service/udelay/src/sl_udelay_armv6m_gcc.o
-                                 0xc9 (size before relaxing)
- .debug_str     0x000002eb      0x931 ./simplicity_sdk_2025.6.0/platform/service/sleeptimer/src/sl_sleeptimer.o
-                                0xc48 (size before relaxing)
- .debug_str     0x00000c1c     0x1273 ./simplicity_sdk_2025.6.0/platform/service/sleeptimer/src/sl_sleeptimer_hal_sysrtc.o
-                               0x1837 (size before relaxing)
- .debug_str     0x00001e8f      0x193 ./simplicity_sdk_2025.6.0/platform/service/sl_main/src/sl_main_init.o
-                                0x3c8 (size before relaxing)
- .debug_str     0x00002022      0x104 ./simplicity_sdk_2025.6.0/platform/service/sl_main/src/sl_main_init_memory.o
-                                0x2fc (size before relaxing)
- .debug_str     0x00002126       0xf1 ./simplicity_sdk_2025.6.0/platform/service/sl_main/src/sl_main_process_action.o
-                                0x247 (size before relaxing)
- .debug_str     0x00002217       0xfb ./simplicity_sdk_2025.6.0/platform/service/memory_manager/src/sl_memory_manager_region.o
-                                0x316 (size before relaxing)
- .debug_str     0x00002312      0x230 ./simplicity_sdk_2025.6.0/platform/service/iostream/src/sl_iostream.o
-                                0x50a (size before relaxing)
- .debug_str     0x00002542     0x2646 ./simplicity_sdk_2025.6.0/platform/service/iostream/src/sl_iostream_eusart.o
-                               0x32eb (size before relaxing)
- .debug_str     0x00004b88      0x18f ./simplicity_sdk_2025.6.0/platform/service/iostream/src/sl_iostream_retarget_stdio.o
-                                0x4ab (size before relaxing)
- .debug_str     0x00004d17      0xa91 ./simplicity_sdk_2025.6.0/platform/service/iostream/src/sl_iostream_uart.o
-                               0x1b0a (size before relaxing)
- .debug_str     0x000057a8      0x573 ./simplicity_sdk_2025.6.0/platform/service/interrupt_manager/src/sl_interrupt_manager_cortexm.o
-                                0xe2e (size before relaxing)
- .debug_str     0x00005d1b      0xc2a ./simplicity_sdk_2025.6.0/platform/service/device_manager/devices/sl_device_peripheral_hal_efr32xg26.o
-                               0x129b (size before relaxing)
- .debug_str     0x00006945      0x1c8 ./simplicity_sdk_2025.6.0/platform/service/device_manager/clocks/sl_device_clock_efr32xg26.o
-                                0x9a0 (size before relaxing)
- .debug_str     0x00006b0d      0x711 ./simplicity_sdk_2025.6.0/platform/service/device_init/src/sl_device_init_dcdc_s2.o
-                                0x92a (size before relaxing)
- .debug_str     0x0000721e      0x3e5 ./simplicity_sdk_2025.6.0/platform/service/device_init/src/sl_device_init_emu_s2.o
-                                0x98d (size before relaxing)
- .debug_str     0x00007603      0x9e3 ./simplicity_sdk_2025.6.0/platform/service/clock_manager/src/sl_clock_manager.o
-                                0xd26 (size before relaxing)
- .debug_str     0x00007fe6     0x18c0 ./simplicity_sdk_2025.6.0/platform/service/clock_manager/src/sl_clock_manager_hal_s2.o
-                               0x28d4 (size before relaxing)
- .debug_str     0x000098a6       0x8a ./simplicity_sdk_2025.6.0/platform/service/clock_manager/src/sl_clock_manager_init.o
-                                0x29a (size before relaxing)
- .debug_str     0x00009930     0x1068 ./simplicity_sdk_2025.6.0/platform/service/clock_manager/src/sl_clock_manager_init_hal_s2.o
-                               0x1e51 (size before relaxing)
- .debug_str     0x0000a998      0x88f ./simplicity_sdk_2025.6.0/platform/peripheral/src/sl_hal_gpio.o
-                               0x1e8d (size before relaxing)
- .debug_str     0x0000b227      0x18f ./simplicity_sdk_2025.6.0/platform/peripheral/src/sl_hal_sysrtc.o
-                                0xb99 (size before relaxing)
- .debug_str     0x0000b3b6     0x4769 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_cmu.o
-                               0x7cb5 (size before relaxing)
- .debug_str     0x0000fb1f      0x4f4 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_emu.o
-                               0x305c (size before relaxing)
- .debug_str     0x00010013      0xb55 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_eusart.o
-                               0x6827 (size before relaxing)
- .debug_str     0x00010b68      0x10b ./simplicity_sdk_2025.6.0/platform/emlib/src/em_gpio.o
-                               0x18e6 (size before relaxing)
- .debug_str     0x00010c73      0x40b ./simplicity_sdk_2025.6.0/platform/emlib/src/em_i2c.o
-                                0xe34 (size before relaxing)
- .debug_str     0x0001107e      0x1d5 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_ldma.o
-                               0x1644 (size before relaxing)
- .debug_str     0x00011253      0x715 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_usart.o
-                               0x59a9 (size before relaxing)
- .debug_str     0x00011968      0xfb4 ./simplicity_sdk_2025.6.0/platform/emdrv/spidrv/src/spidrv.o
-                               0x3fc0 (size before relaxing)
- .debug_str     0x0001291c      0x211 ./simplicity_sdk_2025.6.0/platform/emdrv/dmadrv/src/dmadrv.o
-                               0x110c (size before relaxing)
- .debug_str     0x00012b2d      0x125 ./simplicity_sdk_2025.6.0/platform/driver/i2cspm/src/sl_i2cspm.o
-                               0x1a16 (size before relaxing)
- .debug_str     0x00012c52      0x428 ./simplicity_sdk_2025.6.0/platform/driver/gpio/src/sl_gpio.o
-                               0x272d (size before relaxing)
- .debug_str     0x0001307a      0x316 ./simplicity_sdk_2025.6.0/platform/driver/debug/src/sl_debug_swo.o
-                               0x1c83 (size before relaxing)
- .debug_str     0x00013390      0xeb5 ./simplicity_sdk_2025.6.0/platform/compute/nn/mvp/src/sl_mvp_ml_conv2d.o
-                               0x12c7 (size before relaxing)
- .debug_str     0x00014245      0x110 ./simplicity_sdk_2025.6.0/platform/compute/nn/mvp/src/sl_mvp_ml_depthwise_conv2d.o
-                                0x4c1 (size before relaxing)
- .debug_str     0x00014355      0x320 ./simplicity_sdk_2025.6.0/platform/compute/nn/mvp/src/sl_mvp_ml_fully_connected.o
-                                0xd80 (size before relaxing)
- .debug_str     0x00014675      0xd97 ./simplicity_sdk_2025.6.0/platform/compute/nn/mvp/src/sli_mvp_ml_depthwise_conv2d.o
-                               0x1be5 (size before relaxing)
- .debug_str     0x0001540c      0x128 ./simplicity_sdk_2025.6.0/platform/compute/nn/mvp/src/sli_mvp_ml_depthwise_conv2d_opt.o
-                                0xcc9 (size before relaxing)
- .debug_str     0x00015534       0xc3 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_clamp.o
-                                0xa56 (size before relaxing)
- .debug_str     0x000155f7      0x75f ./simplicity_sdk_2025.6.0/platform/compute/driver/mvp/src/sl_mvp.o
-                               0x14c0 (size before relaxing)
- .debug_str     0x00015d56      0x127 ./simplicity_sdk_2025.6.0/platform/compute/driver/mvp/src/sl_mvp_hal_efr32.o
-                               0x182e (size before relaxing)
- .debug_str     0x00015e7d       0x6a ./simplicity_sdk_2025.6.0/platform/compute/driver/mvp/src/sl_mvp_program_area.o
-                                0x925 (size before relaxing)
- .debug_str     0x00015ee7       0xb2 ./simplicity_sdk_2025.6.0/platform/compute/driver/mvp/src/sl_mvp_util.o
-                                0xb3e (size before relaxing)
- .debug_str     0x00015f99       0x59 ./simplicity_sdk_2025.6.0/platform/common/src/sl_assert.o
-                                0x1c3 (size before relaxing)
- .debug_str     0x00015ff2      0x19f ./simplicity_sdk_2025.6.0/platform/common/src/sl_core_cortexm.o
-                                0x57f (size before relaxing)
- .debug_str     0x00016191       0xed ./simplicity_sdk_2025.6.0/platform/common/src/sl_slist.o
-                                0x346 (size before relaxing)
- .debug_str     0x0001627e      0x1fb ./simplicity_sdk_2025.6.0/platform/Device/SiliconLabs/EFR32MG26/Source/startup_efr32mg26.o
-                                0x3fb (size before relaxing)
- .debug_str     0x00016479      0x487 ./simplicity_sdk_2025.6.0/platform/Device/SiliconLabs/EFR32MG26/Source/system_efr32mg26.o
-                               0x1958 (size before relaxing)
- .debug_str     0x00016900      0x19b ./simplicity_sdk_2025.6.0/hardware/driver/mx25_flash_shutdown/src/sl_mx25_flash_shutdown_eusart/sl_mx25_flash_shutdown.o
-                               0x2241 (size before relaxing)
- .debug_str     0x00016a9b      0x16b ./simplicity_sdk_2025.6.0/hardware/driver/configuration_over_swo/src/sl_cos.o
-                                0x449 (size before relaxing)
- .debug_str     0x00016c06      0x364 ./simplicity_sdk_2025.6.0/hardware/board/src/sl_board_control_gpio.o
-                                0x88b (size before relaxing)
- .debug_str     0x00016f6a       0x8c ./simplicity_sdk_2025.6.0/hardware/board/src/sl_board_init.o
-                                0x2f7 (size before relaxing)
- .debug_str     0x00016ff6      0x893 ./jlink_stream/jlink_stream.o
-                                0xe73 (size before relaxing)
- .debug_str     0x00017889       0x79 ./jlink_stream/jlink_stream_internal.o
-                                0x9a8 (size before relaxing)
- .debug_str     0x00017902       0x23 ./autogen/sl_board_default_init.o
-                                0x213 (size before relaxing)
- .debug_str     0x00017925       0xee ./autogen/sl_event_handler.o
-                                0x4f7 (size before relaxing)
- .debug_str     0x00017a13       0x39 ./autogen/sl_i2cspm_init.o
-                                0x701 (size before relaxing)
- .debug_str     0x00017a4c      0x1b8 ./autogen/sl_iostream_handles.o
-                                0x4ba (size before relaxing)
- .debug_str     0x00017c04      0x122 ./autogen/sl_iostream_init_eusart_instances.o
-                               0x2034 (size before relaxing)
- .debug_str     0x00017d26       0x79 ./autogen/sl_spidrv_init.o
-                               0x1056 (size before relaxing)
- .debug_str     0x00017d9f       0x4d ./autogen/sl_tflite_micro_model.o
-                                0x24d (size before relaxing)
- .debug_str     0x00017dec      0x579 ./arducam/drivers/m2mp/arducam_m_2mp_driver.o
-                               0x39b4 (size before relaxing)
- .debug_str     0x00018365      0x3c1 ./arducam/drivers/m2mp/ov2640.o
-                                0x957 (size before relaxing)
- .debug_str     0x00018726      0x17c ./arducam/arducam.o
-                                0x9d8 (size before relaxing)
- .debug_str     0x000188a2     0x238c ./aiml_2.1.0/third_party/tflite-micro/tensorflow/lite/micro/kernels/cmsis_nn/softmax.o
-                               0x3526 (size before relaxing)
- .debug_str     0x0001ac2e     0x2dfc ./aiml_2.1.0/third_party/tflite-micro/tensorflow/lite/micro/kernels/cmsis_nn/unidirectional_sequence_lstm.o
-                               0x5ebd (size before relaxing)
- .debug_str     0x0001da2a    0x9ee89 ./aiml_2.1.0/src/sl_tflite_micro_init.o
-                              0xa2c8c (size before relaxing)
- .debug_str     0x000bc8b3     0x1368 ./aiml_2.1.0/siliconlabs/add.o
-                               0x455f (size before relaxing)
- .debug_str     0x000bdc1b      0x9f8 ./aiml_2.1.0/siliconlabs/conv.o
-                               0x40ad (size before relaxing)
- .debug_str     0x000be613       0x76 ./aiml_2.1.0/siliconlabs/debug_log.o
-                                0x557 (size before relaxing)
- .debug_str     0x000be689      0x509 ./aiml_2.1.0/siliconlabs/depthwise_conv.o
-                               0x4136 (size before relaxing)
- .debug_str     0x000beb92      0x882 ./aiml_2.1.0/siliconlabs/fully_connected.o
-                               0x3f97 (size before relaxing)
- .debug_str     0x000bf414       0x37 ./app.o
-                                0x1a9 (size before relaxing)
- .debug_str     0x000bf44b      0x26f ./image_classifier.o
-                              0xa4987 (size before relaxing)
- .debug_str     0x000bf6ba        0xf ./main.o
-                                0x1a5 (size before relaxing)
- .debug_str     0x000bf6c9      0x18b C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(error_reporter.cc.obj)
+.debug_str      0x00000000    0xe8e8a
+ .debug_str     0x00000000      0x278 ./simplicity_sdk_2025.6.0/platform/service/udelay/src/sl_udelay.o
+                                0x2ba (size before relaxing)
+ .debug_str     0x00000278       0x75 ./simplicity_sdk_2025.6.0/platform/service/udelay/src/sl_udelay_armv6m_gcc.o
+                                 0xcb (size before relaxing)
+ .debug_str     0x000002ed      0x931 ./simplicity_sdk_2025.6.0/platform/service/sleeptimer/src/sl_sleeptimer.o
+                                0xc4a (size before relaxing)
+ .debug_str     0x00000c1e     0x1273 ./simplicity_sdk_2025.6.0/platform/service/sleeptimer/src/sl_sleeptimer_hal_sysrtc.o
+                               0x1839 (size before relaxing)
+ .debug_str     0x00001e91      0x193 ./simplicity_sdk_2025.6.0/platform/service/sl_main/src/sl_main_init.o
+                                0x3ca (size before relaxing)
+ .debug_str     0x00002024      0x104 ./simplicity_sdk_2025.6.0/platform/service/sl_main/src/sl_main_init_memory.o
+                                0x2fe (size before relaxing)
+ .debug_str     0x00002128       0xf1 ./simplicity_sdk_2025.6.0/platform/service/sl_main/src/sl_main_process_action.o
+                                0x249 (size before relaxing)
+ .debug_str     0x00002219       0xfb ./simplicity_sdk_2025.6.0/platform/service/memory_manager/src/sl_memory_manager_region.o
+                                0x318 (size before relaxing)
+ .debug_str     0x00002314      0x230 ./simplicity_sdk_2025.6.0/platform/service/iostream/src/sl_iostream.o
+                                0x50c (size before relaxing)
+ .debug_str     0x00002544     0x2646 ./simplicity_sdk_2025.6.0/platform/service/iostream/src/sl_iostream_eusart.o
+                               0x32ed (size before relaxing)
+ .debug_str     0x00004b8a      0x18f ./simplicity_sdk_2025.6.0/platform/service/iostream/src/sl_iostream_retarget_stdio.o
+                                0x4ad (size before relaxing)
+ .debug_str     0x00004d19      0xa91 ./simplicity_sdk_2025.6.0/platform/service/iostream/src/sl_iostream_uart.o
+                               0x1b0c (size before relaxing)
+ .debug_str     0x000057aa      0x573 ./simplicity_sdk_2025.6.0/platform/service/interrupt_manager/src/sl_interrupt_manager_cortexm.o
+                                0xe30 (size before relaxing)
+ .debug_str     0x00005d1d      0xc2a ./simplicity_sdk_2025.6.0/platform/service/device_manager/devices/sl_device_peripheral_hal_efr32xg26.o
+                               0x129d (size before relaxing)
+ .debug_str     0x00006947      0x1c8 ./simplicity_sdk_2025.6.0/platform/service/device_manager/clocks/sl_device_clock_efr32xg26.o
+                                0x9a2 (size before relaxing)
+ .debug_str     0x00006b0f      0x711 ./simplicity_sdk_2025.6.0/platform/service/device_init/src/sl_device_init_dcdc_s2.o
+                                0x92c (size before relaxing)
+ .debug_str     0x00007220      0x3e5 ./simplicity_sdk_2025.6.0/platform/service/device_init/src/sl_device_init_emu_s2.o
+                                0x98f (size before relaxing)
+ .debug_str     0x00007605      0x9e3 ./simplicity_sdk_2025.6.0/platform/service/clock_manager/src/sl_clock_manager.o
+                                0xd28 (size before relaxing)
+ .debug_str     0x00007fe8     0x18c0 ./simplicity_sdk_2025.6.0/platform/service/clock_manager/src/sl_clock_manager_hal_s2.o
+                               0x28d6 (size before relaxing)
+ .debug_str     0x000098a8       0x8a ./simplicity_sdk_2025.6.0/platform/service/clock_manager/src/sl_clock_manager_init.o
+                                0x29c (size before relaxing)
+ .debug_str     0x00009932     0x1068 ./simplicity_sdk_2025.6.0/platform/service/clock_manager/src/sl_clock_manager_init_hal_s2.o
+                               0x1e53 (size before relaxing)
+ .debug_str     0x0000a99a      0x88f ./simplicity_sdk_2025.6.0/platform/peripheral/src/sl_hal_gpio.o
+                               0x1e8f (size before relaxing)
+ .debug_str     0x0000b229      0x18f ./simplicity_sdk_2025.6.0/platform/peripheral/src/sl_hal_sysrtc.o
+                                0xb9b (size before relaxing)
+ .debug_str     0x0000b3b8     0x4769 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_cmu.o
+                               0x7cb7 (size before relaxing)
+ .debug_str     0x0000fb21      0x4f4 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_emu.o
+                               0x305e (size before relaxing)
+ .debug_str     0x00010015      0xb55 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_eusart.o
+                               0x6829 (size before relaxing)
+ .debug_str     0x00010b6a      0x10b ./simplicity_sdk_2025.6.0/platform/emlib/src/em_gpio.o
+                               0x18e8 (size before relaxing)
+ .debug_str     0x00010c75      0x40b ./simplicity_sdk_2025.6.0/platform/emlib/src/em_i2c.o
+                                0xe36 (size before relaxing)
+ .debug_str     0x00011080      0x1d5 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_ldma.o
+                               0x1646 (size before relaxing)
+ .debug_str     0x00011255      0x715 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_usart.o
+                               0x59ab (size before relaxing)
+ .debug_str     0x0001196a      0xfb4 ./simplicity_sdk_2025.6.0/platform/emdrv/spidrv/src/spidrv.o
+                               0x3fc2 (size before relaxing)
+ .debug_str     0x0001291e      0x211 ./simplicity_sdk_2025.6.0/platform/emdrv/dmadrv/src/dmadrv.o
+                               0x110e (size before relaxing)
+ .debug_str     0x00012b2f      0x125 ./simplicity_sdk_2025.6.0/platform/driver/i2cspm/src/sl_i2cspm.o
+                               0x1a18 (size before relaxing)
+ .debug_str     0x00012c54      0x428 ./simplicity_sdk_2025.6.0/platform/driver/gpio/src/sl_gpio.o
+                               0x272f (size before relaxing)
+ .debug_str     0x0001307c      0x316 ./simplicity_sdk_2025.6.0/platform/driver/debug/src/sl_debug_swo.o
+                               0x1c85 (size before relaxing)
+ .debug_str     0x00013392      0xeb5 ./simplicity_sdk_2025.6.0/platform/compute/nn/mvp/src/sl_mvp_ml_conv2d.o
+                               0x12c9 (size before relaxing)
+ .debug_str     0x00014247      0x110 ./simplicity_sdk_2025.6.0/platform/compute/nn/mvp/src/sl_mvp_ml_depthwise_conv2d.o
+                                0x4c3 (size before relaxing)
+ .debug_str     0x00014357      0x320 ./simplicity_sdk_2025.6.0/platform/compute/nn/mvp/src/sl_mvp_ml_fully_connected.o
+                                0xd82 (size before relaxing)
+ .debug_str     0x00014677      0xd97 ./simplicity_sdk_2025.6.0/platform/compute/nn/mvp/src/sli_mvp_ml_depthwise_conv2d.o
+                               0x1be7 (size before relaxing)
+ .debug_str     0x0001540e      0x128 ./simplicity_sdk_2025.6.0/platform/compute/nn/mvp/src/sli_mvp_ml_depthwise_conv2d_opt.o
+                                0xccb (size before relaxing)
+ .debug_str     0x00015536       0xc3 ./simplicity_sdk_2025.6.0/platform/compute/math/mvp/src/sl_math_mvp_vector_clamp.o
+                                0xa58 (size before relaxing)
+ .debug_str     0x000155f9      0x75f ./simplicity_sdk_2025.6.0/platform/compute/driver/mvp/src/sl_mvp.o
+                               0x14c2 (size before relaxing)
+ .debug_str     0x00015d58      0x127 ./simplicity_sdk_2025.6.0/platform/compute/driver/mvp/src/sl_mvp_hal_efr32.o
+                               0x1830 (size before relaxing)
+ .debug_str     0x00015e7f       0x6a ./simplicity_sdk_2025.6.0/platform/compute/driver/mvp/src/sl_mvp_program_area.o
+                                0x927 (size before relaxing)
+ .debug_str     0x00015ee9       0xb2 ./simplicity_sdk_2025.6.0/platform/compute/driver/mvp/src/sl_mvp_util.o
+                                0xb40 (size before relaxing)
+ .debug_str     0x00015f9b       0x59 ./simplicity_sdk_2025.6.0/platform/common/src/sl_assert.o
+                                0x1c5 (size before relaxing)
+ .debug_str     0x00015ff4      0x19f ./simplicity_sdk_2025.6.0/platform/common/src/sl_core_cortexm.o
+                                0x581 (size before relaxing)
+ .debug_str     0x00016193       0xed ./simplicity_sdk_2025.6.0/platform/common/src/sl_slist.o
+                                0x348 (size before relaxing)
+ .debug_str     0x00016280      0x1fb ./simplicity_sdk_2025.6.0/platform/Device/SiliconLabs/EFR32MG26/Source/startup_efr32mg26.o
+                                0x3fd (size before relaxing)
+ .debug_str     0x0001647b      0x487 ./simplicity_sdk_2025.6.0/platform/Device/SiliconLabs/EFR32MG26/Source/system_efr32mg26.o
+                               0x195a (size before relaxing)
+ .debug_str     0x00016902      0x19b ./simplicity_sdk_2025.6.0/hardware/driver/mx25_flash_shutdown/src/sl_mx25_flash_shutdown_eusart/sl_mx25_flash_shutdown.o
+                               0x2243 (size before relaxing)
+ .debug_str     0x00016a9d      0x16b ./simplicity_sdk_2025.6.0/hardware/driver/configuration_over_swo/src/sl_cos.o
+                                0x44b (size before relaxing)
+ .debug_str     0x00016c08      0x364 ./simplicity_sdk_2025.6.0/hardware/board/src/sl_board_control_gpio.o
+                                0x88d (size before relaxing)
+ .debug_str     0x00016f6c       0x8c ./simplicity_sdk_2025.6.0/hardware/board/src/sl_board_init.o
+                                0x2f9 (size before relaxing)
+ .debug_str     0x00016ff8      0x893 ./jlink_stream/jlink_stream.o
+                                0xe75 (size before relaxing)
+ .debug_str     0x0001788b       0x79 ./jlink_stream/jlink_stream_internal.o
+                                0x9aa (size before relaxing)
+ .debug_str     0x00017904       0x23 ./autogen/sl_board_default_init.o
+                                0x215 (size before relaxing)
+ .debug_str     0x00017927       0xee ./autogen/sl_event_handler.o
+                                0x4f9 (size before relaxing)
+ .debug_str     0x00017a15       0x39 ./autogen/sl_i2cspm_init.o
+                                0x703 (size before relaxing)
+ .debug_str     0x00017a4e      0x1b8 ./autogen/sl_iostream_handles.o
+                                0x4bc (size before relaxing)
+ .debug_str     0x00017c06      0x122 ./autogen/sl_iostream_init_eusart_instances.o
+                               0x2036 (size before relaxing)
+ .debug_str     0x00017d28       0x79 ./autogen/sl_spidrv_init.o
+                               0x1058 (size before relaxing)
+ .debug_str     0x00017da1       0x4d ./autogen/sl_tflite_micro_model.o
+                                0x24f (size before relaxing)
+ .debug_str     0x00017dee      0x579 ./arducam/drivers/m2mp/arducam_m_2mp_driver.o
+                               0x39b6 (size before relaxing)
+ .debug_str     0x00018367      0x3c1 ./arducam/drivers/m2mp/ov2640.o
+                                0x959 (size before relaxing)
+ .debug_str     0x00018728      0x17c ./arducam/arducam.o
+                                0x9da (size before relaxing)
+ .debug_str     0x000188a4     0x238c ./aiml_2.1.0/third_party/tflite-micro/tensorflow/lite/micro/kernels/cmsis_nn/softmax.o
+                               0x3528 (size before relaxing)
+ .debug_str     0x0001ac30     0x2dfc ./aiml_2.1.0/third_party/tflite-micro/tensorflow/lite/micro/kernels/cmsis_nn/unidirectional_sequence_lstm.o
+                               0x5ebf (size before relaxing)
+ .debug_str     0x0001da2c    0x9ee89 ./aiml_2.1.0/src/sl_tflite_micro_init.o
+                              0xa2c8e (size before relaxing)
+ .debug_str     0x000bc8b5     0x1368 ./aiml_2.1.0/siliconlabs/add.o
+                               0x4561 (size before relaxing)
+ .debug_str     0x000bdc1d      0x9f8 ./aiml_2.1.0/siliconlabs/conv.o
+                               0x40af (size before relaxing)
+ .debug_str     0x000be615       0x76 ./aiml_2.1.0/siliconlabs/debug_log.o
+                                0x559 (size before relaxing)
+ .debug_str     0x000be68b      0x509 ./aiml_2.1.0/siliconlabs/depthwise_conv.o
+                               0x4138 (size before relaxing)
+ .debug_str     0x000beb94      0x882 ./aiml_2.1.0/siliconlabs/fully_connected.o
+                               0x3f99 (size before relaxing)
+ .debug_str     0x000bf416       0x37 ./app.o
+                                0x1ab (size before relaxing)
+ .debug_str     0x000bf44d      0x290 ./image_classifier.o
+                              0xa49aa (size before relaxing)
+ .debug_str     0x000bf6dd        0xf ./main.o
+                                0x1a7 (size before relaxing)
+ .debug_str     0x000bf6ec      0x18b C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(error_reporter.cc.obj)
                                 0x243 (size before relaxing)
- .debug_str     0x000bf854    0x1db60 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(flatbuffer_conversions.cc.obj)
+ .debug_str     0x000bf877    0x1db60 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(flatbuffer_conversions.cc.obj)
                               0x5ad24 (size before relaxing)
- .debug_str     0x000dd3b4      0x22d C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(common.cc.obj)
+ .debug_str     0x000dd3d7      0x22d C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(common.cc.obj)
                                 0xe2d (size before relaxing)
- .debug_str     0x000dd5e1      0x573 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(kernel_util.cc.obj)
+ .debug_str     0x000dd604      0x573 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(kernel_util.cc.obj)
                                0x29c8 (size before relaxing)
- .debug_str     0x000ddb54       0xf3 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(common.cc.obj)
+ .debug_str     0x000ddb77       0xf3 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(common.cc.obj)
                                0x101f (size before relaxing)
- .debug_str     0x000ddc47      0x72b C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(quantization_util.cc.obj)
+ .debug_str     0x000ddc6a      0x72b C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(quantization_util.cc.obj)
                                0x1471 (size before relaxing)
- .debug_str     0x000de372      0x159 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(tensor_ctypes.cc.obj)
+ .debug_str     0x000de395      0x159 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(tensor_ctypes.cc.obj)
                                0x3040 (size before relaxing)
- .debug_str     0x000de4cb     0x1305 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_interpreter.cc.obj)
+ .debug_str     0x000de4ee     0x1305 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_interpreter.cc.obj)
                               0x90566 (size before relaxing)
- .debug_str     0x000df7d0       0xa8 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_log.cc.obj)
+ .debug_str     0x000df7f3       0xa8 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_log.cc.obj)
                                 0x4e3 (size before relaxing)
- .debug_str     0x000df878       0xaf C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_op_resolver.cc.obj)
+ .debug_str     0x000df89b       0xaf C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_op_resolver.cc.obj)
                               0x3d602 (size before relaxing)
- .debug_str     0x000df927      0x288 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_string.cc.obj)
+ .debug_str     0x000df94a      0x288 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_string.cc.obj)
                                 0x760 (size before relaxing)
- .debug_str     0x000dfbaf      0x105 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(flatbuffer_conversions_bridge.cc.obj)
+ .debug_str     0x000dfbd2      0x105 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(flatbuffer_conversions_bridge.cc.obj)
                               0x3b77a (size before relaxing)
- .debug_str     0x000dfcb4      0x13d C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_error_reporter.cc.obj)
+ .debug_str     0x000dfcd7      0x13d C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_error_reporter.cc.obj)
                                 0x846 (size before relaxing)
- .debug_str     0x000dfdf1       0xf6 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(schema_utils.cc.obj)
+ .debug_str     0x000dfe14       0xf6 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(schema_utils.cc.obj)
                               0x1a3f2 (size before relaxing)
- .debug_str     0x000dfee7      0x666 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(kernel_util.cc.obj)
+ .debug_str     0x000dff0a      0x666 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(kernel_util.cc.obj)
                                0x2e61 (size before relaxing)
- .debug_str     0x000e054d      0x86c C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(pad.cc.obj)
+ .debug_str     0x000e0570      0x86c C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(pad.cc.obj)
                                0x324e (size before relaxing)
- .debug_str     0x000e0db9      0x46d C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(reduce.cc.obj)
+ .debug_str     0x000e0ddc      0x46d C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(reduce.cc.obj)
                                0x25db (size before relaxing)
- .debug_str     0x000e1226     0x14c1 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(reduce_common.cc.obj)
+ .debug_str     0x000e1249     0x14c1 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(reduce_common.cc.obj)
                                0x4229 (size before relaxing)
- .debug_str     0x000e26e7      0x39d C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(softmax_common.cc.obj)
+ .debug_str     0x000e270a      0x39d C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(softmax_common.cc.obj)
                                0x28cc (size before relaxing)
- .debug_str     0x000e2a84     0x162d C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(flatbuffer_utils.cc.obj)
+ .debug_str     0x000e2aa7     0x162d C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(flatbuffer_utils.cc.obj)
                               0x8f9b8 (size before relaxing)
- .debug_str     0x000e40b1      0x2ec C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(memory_helpers.cc.obj)
+ .debug_str     0x000e40d4      0x2ec C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(memory_helpers.cc.obj)
                               0x37511 (size before relaxing)
- .debug_str     0x000e439d     0x2a21 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_allocator.cc.obj)
+ .debug_str     0x000e43c0     0x2a21 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_allocator.cc.obj)
                               0x91b56 (size before relaxing)
- .debug_str     0x000e6dbe      0x51a C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_context.cc.obj)
+ .debug_str     0x000e6de1      0x51a C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_context.cc.obj)
                               0x8ea79 (size before relaxing)
- .debug_str     0x000e72d8      0x4a5 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_graph.cc.obj)
+ .debug_str     0x000e72fb      0x4a5 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_graph.cc.obj)
                               0x8f88f (size before relaxing)
- .debug_str     0x000e777d      0x152 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_resource_variable.cc.obj)
+ .debug_str     0x000e77a0      0x152 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_resource_variable.cc.obj)
                                0x2526 (size before relaxing)
- .debug_str     0x000e78cf      0x1df C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_utils.cc.obj)
+ .debug_str     0x000e78f2      0x1df C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_utils.cc.obj)
                                0x1c14 (size before relaxing)
- .debug_str     0x000e7aae      0x87b C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(single_arena_buffer_allocator.cc.obj)
+ .debug_str     0x000e7ad1      0x87b C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(single_arena_buffer_allocator.cc.obj)
                                0x2804 (size before relaxing)
- .debug_str     0x000e8329      0x85d C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(greedy_memory_planner.cc.obj)
+ .debug_str     0x000e834c      0x85d C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(greedy_memory_planner.cc.obj)
                                 0xf44 (size before relaxing)
- .debug_str     0x000e8b86      0x2e1 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_allocation_info.cc.obj)
+ .debug_str     0x000e8ba9      0x2e1 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_allocation_info.cc.obj)
                               0x8fd2c (size before relaxing)
 
 .debug_frame    0x00000000     0xa15c

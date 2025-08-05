@@ -125,7 +125,7 @@ aiml_2.1.0/siliconlabs/fully_connected.o: \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\efr32mg26\include\efr32mg26_prs_signals.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\efr32mg26\include\efr32mg26_dma_descriptor.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\efr32mg26\include\efr32mg26_ldmaxbar_defines.h \
- C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam\autogen/sl_component_catalog.h
+ C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\autogen/sl_component_catalog.h
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\extension\aiml-extension\third_party\tflite-micro\tensorflow\lite\kernels\internal\reference\fully_connected.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\extension\aiml-extension\ruy\ruy\profiler\instrumentation.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\extension\aiml-extension\third_party\tflite-micro\tensorflow\lite\kernels\internal\common.h:
@@ -251,4 +251,4 @@ c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\efr32mg26\include\efr32mg26_prs_signals.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\efr32mg26\include\efr32mg26_dma_descriptor.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\efr32mg26\include\efr32mg26_ldmaxbar_defines.h:
-C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam\autogen/sl_component_catalog.h:
+C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\autogen/sl_component_catalog.h:

@@ -68,8 +68,8 @@ simplicity_sdk_2025.6.0/hardware/driver/mx25_flash_shutdown/src/sl_mx25_flash_sh
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\efr32mg26\include\efr32mg26_prs_signals.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\efr32mg26\include\efr32mg26_dma_descriptor.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\efr32mg26\include\efr32mg26_ldmaxbar_defines.h \
- C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam\autogen/sl_component_catalog.h \
- C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam\config/sl_mx25_flash_shutdown_eusart_config.h \
+ C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\autogen/sl_component_catalog.h \
+ C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\config/sl_mx25_flash_shutdown_eusart_config.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emlib\inc\em_eusart.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emlib\inc\em_eusart_compat.h
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\clock_manager\inc\sl_clock_manager.h:
@@ -140,7 +140,7 @@ c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\efr32mg26\include\efr32mg26_prs_signals.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\efr32mg26\include\efr32mg26_dma_descriptor.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\efr32mg26\include\efr32mg26_ldmaxbar_defines.h:
-C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam\autogen/sl_component_catalog.h:
-C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam\config/sl_mx25_flash_shutdown_eusart_config.h:
+C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\autogen/sl_component_catalog.h:
+C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\config/sl_mx25_flash_shutdown_eusart_config.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emlib\inc\em_eusart.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emlib\inc\em_eusart_compat.h:

@@ -1,6 +1,6 @@
 autogen/sl_iostream_handles.o: ../autogen/sl_iostream_handles.c \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\iostream\inc\sl_iostream.h \
- C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam\autogen/sl_component_catalog.h \
+ C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\autogen/sl_component_catalog.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_enum.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_slist.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_status.h \
@@ -72,9 +72,9 @@ autogen/sl_iostream_handles.o: ../autogen/sl_iostream_handles.c \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emdrv\common\inc\ecode.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emdrv\dmadrv\inc\s2_signals\dmadrv_signals.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emlib\inc\em_ldma.h \
- C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam\config/dmadrv_config.h
+ C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\config/dmadrv_config.h
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\iostream\inc\sl_iostream.h:
-C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam\autogen/sl_component_catalog.h:
+C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\autogen/sl_component_catalog.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_enum.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_slist.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_status.h:
@@ -146,4 +146,4 @@ c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emdrv\dmadrv\inc\dm
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emdrv\common\inc\ecode.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emdrv\dmadrv\inc\s2_signals\dmadrv_signals.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emlib\inc\em_ldma.h:
-C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam\config/dmadrv_config.h:
+C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\config/dmadrv_config.h:

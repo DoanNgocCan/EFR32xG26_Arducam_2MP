@@ -1,8 +1,8 @@
 aiml_2.1.0/src/sl_tflite_micro_init.o: \
  C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk/extension/aiml-extension/src/sl_tflite_micro_init.cc \
- C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam\autogen/sl_tflite_micro_model.h \
- C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam\autogen/sl_tflite_micro_opcode_resolver.h \
- C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam\autogen/sl_tflite_micro_model_parameters.h \
+ C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\autogen/sl_tflite_micro_model.h \
+ C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\autogen/sl_tflite_micro_opcode_resolver.h \
+ C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\autogen/sl_tflite_micro_model_parameters.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\extension\aiml-extension\inc\sl_tflite_micro_init.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\extension\aiml-extension\third_party\tflite-micro\tensorflow\lite\micro\micro_mutable_op_resolver.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\extension\aiml-extension\third_party\tflite-micro\tensorflow\lite\c\common.h \
@@ -77,7 +77,7 @@ aiml_2.1.0/src/sl_tflite_micro_init.o: \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\extension\aiml-extension\third_party\tflite-micro\tensorflow\lite\micro\micro_profiler_interface.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\extension\aiml-extension\third_party\tflite-micro\tensorflow\lite\portable_type_to_tflitetype.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_status.h \
- C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam\config/sl_tflite_micro_config.h \
+ C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\config/sl_tflite_micro_config.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\extension\aiml-extension\inc\sl_tflite_micro_debug_log.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emlib\inc\em_common.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\efr32mg26\include\em_device.h \
@@ -140,16 +140,16 @@ aiml_2.1.0/src/sl_tflite_micro_init.o: \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\efr32mg26\include\efr32mg26_prs_signals.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\efr32mg26\include\efr32mg26_dma_descriptor.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\efr32mg26\include\efr32mg26_ldmaxbar_defines.h \
- C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam\autogen/sl_component_catalog.h \
+ C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\autogen/sl_component_catalog.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_common.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_assert.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emlib\inc\em_assert.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_assert.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\memory_manager\inc\sl_memory_manager.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\memory_manager\inc\sl_memory_manager_region.h
-C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam\autogen/sl_tflite_micro_model.h:
-C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam\autogen/sl_tflite_micro_opcode_resolver.h:
-C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam\autogen/sl_tflite_micro_model_parameters.h:
+C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\autogen/sl_tflite_micro_model.h:
+C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\autogen/sl_tflite_micro_opcode_resolver.h:
+C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\autogen/sl_tflite_micro_model_parameters.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\extension\aiml-extension\inc\sl_tflite_micro_init.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\extension\aiml-extension\third_party\tflite-micro\tensorflow\lite\micro\micro_mutable_op_resolver.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\extension\aiml-extension\third_party\tflite-micro\tensorflow\lite\c\common.h:
@@ -224,7 +224,7 @@ c:\users\admin\simplicitystudio\sdks\simplicity_sdk\extension\aiml-extension\thi
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\extension\aiml-extension\third_party\tflite-micro\tensorflow\lite\micro\micro_profiler_interface.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\extension\aiml-extension\third_party\tflite-micro\tensorflow\lite\portable_type_to_tflitetype.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_status.h:
-C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam\config/sl_tflite_micro_config.h:
+C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\config/sl_tflite_micro_config.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\extension\aiml-extension\inc\sl_tflite_micro_debug_log.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emlib\inc\em_common.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\efr32mg26\include\em_device.h:
@@ -287,7 +287,7 @@ c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\efr32mg26\include\efr32mg26_prs_signals.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\efr32mg26\include\efr32mg26_dma_descriptor.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\efr32mg26\include\efr32mg26_ldmaxbar_defines.h:
-C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam\autogen/sl_component_catalog.h:
+C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\autogen/sl_component_catalog.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_common.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_assert.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emlib\inc\em_assert.h:

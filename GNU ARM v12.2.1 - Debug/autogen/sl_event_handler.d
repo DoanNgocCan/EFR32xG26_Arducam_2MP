@@ -69,7 +69,7 @@ autogen/sl_event_handler.o: ../autogen/sl_event_handler.c \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\efr32mg26\include\efr32mg26_prs_signals.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\efr32mg26\include\efr32mg26_dma_descriptor.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\efr32mg26\include\efr32mg26_ldmaxbar_defines.h \
- C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam\autogen/sl_component_catalog.h \
+ C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\autogen/sl_component_catalog.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\compute\math\inc\sl_math_types.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\compute\driver\mvp\inc\sl_mvp_types.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\driver\gpio\inc\sl_gpio.h \
@@ -86,13 +86,13 @@ autogen/sl_event_handler.o: ../autogen/sl_event_handler.c \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emdrv\common\inc\ecode.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emdrv\dmadrv\inc\s2_signals\dmadrv_signals.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emlib\inc\em_ldma.h \
- C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam\config/dmadrv_config.h \
+ C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\config/dmadrv_config.h \
  ../autogen/sl_spidrv_instances.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emdrv\spidrv\inc\spidrv.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_peripheral.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_peripheral_types.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_clock.h \
- C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam\config/spidrv_config.h \
+ C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\config/spidrv_config.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\sleeptimer\inc\sl_sleeptimer.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_common.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_assert.h \
@@ -169,7 +169,7 @@ c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\efr32mg26\include\efr32mg26_prs_signals.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\efr32mg26\include\efr32mg26_dma_descriptor.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\efr32mg26\include\efr32mg26_ldmaxbar_defines.h:
-C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam\autogen/sl_component_catalog.h:
+C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\autogen/sl_component_catalog.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\compute\math\inc\sl_math_types.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\compute\driver\mvp\inc\sl_mvp_types.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\driver\gpio\inc\sl_gpio.h:
@@ -186,13 +186,13 @@ c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emdrv\dmadrv\inc\dm
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emdrv\common\inc\ecode.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emdrv\dmadrv\inc\s2_signals\dmadrv_signals.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emlib\inc\em_ldma.h:
-C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam\config/dmadrv_config.h:
+C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\config/dmadrv_config.h:
 ../autogen/sl_spidrv_instances.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emdrv\spidrv\inc\spidrv.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_peripheral.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_peripheral_types.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_clock.h:
-C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam\config/spidrv_config.h:
+C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\config/spidrv_config.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\sleeptimer\inc\sl_sleeptimer.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_common.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_assert.h:

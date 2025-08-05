@@ -1,8 +1,8 @@
 simplicity_sdk_2025.6.0/platform/service/clock_manager/src/sl_clock_manager_init_hal_s2.o: \
  C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk/platform/service/clock_manager/src/sl_clock_manager_init_hal_s2.c \
- C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam\config/sl_clock_manager_oscillator_config.h \
- C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam\autogen/sl_component_catalog.h \
- C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam\config/sl_clock_manager_tree_config.h \
+ C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\config/sl_clock_manager_oscillator_config.h \
+ C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\autogen/sl_component_catalog.h \
+ C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\config/sl_clock_manager_tree_config.h \
  C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk/platform/service/clock_manager/src/sli_clock_manager_init_hal.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_status.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\efr32mg26\include\em_device.h \
@@ -78,9 +78,9 @@ simplicity_sdk_2025.6.0/platform/service/clock_manager/src/sl_clock_manager_init
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_gpio.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emlib\inc\sli_em_cmu.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\driver\gpio\inc\sl_gpio.h
-C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam\config/sl_clock_manager_oscillator_config.h:
-C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam\autogen/sl_component_catalog.h:
-C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam\config/sl_clock_manager_tree_config.h:
+C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\config/sl_clock_manager_oscillator_config.h:
+C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\autogen/sl_component_catalog.h:
+C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\config/sl_clock_manager_tree_config.h:
 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk/platform/service/clock_manager/src/sli_clock_manager_init_hal.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_status.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\efr32mg26\include\em_device.h:

@@ -4,9 +4,10 @@
  *  Created on: Jul 3, 2025
  *      Author: Can Doan (modified by AI for ML integration)
  *
- *  VERSION CUỐI CÙNG v5.1 - SỬA LỖI BUILD
- *  - Thêm lại các file header "spidrv.h" và "sl_spidrv_instances.h" bị thiếu.
- *  - Giữ nguyên logic chờ bus SPI rảnh để giải quyết lỗi runtime SPIDRV_BUSY.
+ *  VERSION CUỐI CÙNG v4 - Dùng SPIDRV một cách an toàn
+ *  - Dựa trên datasheet của LDMA, xác nhận SPIDRV là cách tiếp cận đúng để tránh xung đột.
+ *  - Sửa lại logic khởi tạo để tránh bị treo: Giả định arducam đã khởi tạo SPIDRV,
+ *    code của chúng ta chỉ "mượn" handle đã có để sử dụng.
  */
 
 #include <cstdio>
@@ -14,22 +15,25 @@
 #include <cstdlib>
 #include <cmath>
 
+// --- CÁC FILE INCLUDE CẦN THIẾT ---
 #include "sl_status.h"
 #include "sl_sleeptimer.h"
 #include "em_gpio.h"
 #include "pin_config.h"
 
+// <<< QUAN TRỌNG >>>: Chỉ dùng SPIDRV, không dùng DMADRV trực tiếp
 #include "spidrv.h"
-#include "sl_spidrv_instances.h"
+#include "sl_spidrv_instances.h" // Chứa định nghĩa sl_spidrv_usart_camera_handle
 
 #include "arducam/arducam.h"
 #include "image_classifier.h"
 
-// ... các file include TFLM ...
+// --- TÍCH HỢP TENSORFLOW LITE MICRO ---
 #include "tensorflow/lite/micro/micro_log.h"
 #include "tensorflow/lite/micro/micro_mutable_op_resolver.h"
 #include "tensorflow/lite/micro/micro_interpreter.h"
 #include "tensorflow/lite/schema/schema_generated.h"
+
 #include "sl_tflite_micro_model.h"
 #include "sl_tflite_micro_model_parameters.h"
 #include "sl_tflite_micro_opcode_resolver.h"
@@ -42,9 +46,11 @@
 #define REQUIRED_CLASS_INDEX    0
 #define CONFIDENCE_THRESHOLD    60.0f
 
+// <<< SỬA ĐỔI >>>: Các biến cho SPIDRV
 static volatile bool pi_spi_transfer_complete;
-#define PI_SPI_HANDLE sl_spidrv_usart_camera_handle
+#define PI_SPI_HANDLE sl_spidrv_usart_camera_handle // Sử dụng handle đã được autogen
 
+// Buffers
 static uint8_t *camera_pingpong_buffer = nullptr;
 static uint8_t *grayscale_buffer = nullptr;
 
@@ -55,23 +61,26 @@ namespace {
     tflite::MicroInterpreter *interpreter = nullptr;
     TfLiteTensor *input_tensor = nullptr;
     TfLiteTensor *output_tensor = nullptr;
+
     constexpr int kTensorArenaSize = SL_TFLITE_MODEL_RUNTIME_MEMORY_SIZE + 16 * 1024;
     uint8_t tensor_arena[kTensorArenaSize];
+
     const char *category_labels[] = SL_TFLITE_MODEL_CLASSES;
     constexpr int category_count = sizeof(category_labels) / sizeof(category_labels[0]);
 }
 
-// --- Khai báo hàm ---
+
+// --- Khai báo các hàm nội bộ ---
 static bool initialize_system();
 static bool initialize_model();
 static void select_pi();
 static void deselect_pi();
-static sl_status_t wait_for_spi_bus_idle(void);
 static void convert_rgb565_to_grayscale(const uint8_t *rgb_src, uint8_t *gray_dst, uint32_t width, uint32_t height);
 static void process_image(const uint8_t *rgb565_image, uint32_t rgb_image_size);
 static void stream_image_to_pi_spidrv(const uint8_t *rgb565_image, uint32_t image_size);
 static void pi_spidrv_callback(SPIDRV_HandleData_t *handle, Ecode_t transferStatus, int itemsTransferred);
 static void apply_softmax(float *data, int size);
+
 
 // --- Giao diện C ---
 extern "C" {
@@ -80,30 +89,48 @@ extern "C" {
             printf("ERROR: System initialization failed.\n");
             while(1);
         }
-        printf("\n=== System Initialized Successfully (SPIDRV v5.3 - Final) ===\n");
+        printf("\n=== System Initialized Successfully (SPIDRV v4) ===\n");
         printf("Mode: Face Classifier -> Stream to Pi via SPI/DMA\n");
         printf("Will stream image if class '%s' has confidence > %.1f%%\n",
                category_labels[REQUIRED_CLASS_INDEX], CONFIDENCE_THRESHOLD);
     }
 
     void camera_jlink_test_loop(void) {
-        uint8_t *rgb565_image = nullptr;
-        uint32_t rgb_image_size = 0;
-        for (;;) {
-            sl_status_t status = arducam_get_next_image(&rgb565_image, &rgb_image_size);
-            if (status == SL_STATUS_IN_PROGRESS) {
-                sl_sleeptimer_delay_millisecond(10);
-                continue;
-            } else if (status != SL_STATUS_OK) {
-                MicroPrintf("ERROR: Failed to get image, status: 0x%lx\n", status);
-                return;
+            uint8_t *rgb565_image = nullptr;
+            uint32_t rgb_image_size = 0;
+
+            // 1. Lấy ảnh từ camera
+            for (;;) {
+                sl_status_t status = arducam_get_next_image(&rgb565_image, &rgb_image_size);
+                if (status == SL_STATUS_IN_PROGRESS) {
+                    sl_sleeptimer_delay_millisecond(10);
+                    continue;
+                } else if (status != SL_STATUS_OK) {
+                    MicroPrintf("ERROR: Failed to get image, status: 0x%lx\n", status);
+                    return;
+                }
+                break;
             }
-            break;
+
+            // <<< SỬA LỖI QUAN TRỌNG: Thay đổi thứ tự gọi hàm >>>
+
+            // 2. Xử lý ảnh và ra quyết định
+            // Chúng ta cần sao chép con trỏ ảnh lại vì arducam_release_image() có thể thay đổi nó
+            const uint8_t* image_to_process = rgb565_image;
+            const uint32_t size_to_process = rgb_image_size;
+
+            // 3. GIẢI PHÓNG bus SPI NGAY LẬP TỨC
+            // Hàm này sẽ "dọn dẹp" giao dịch của camera và đưa SPIDRV về trạng thái IDLE.
+            arducam_release_image();
+
+            // 4. BÂY GIỜ MỚI xử lý và gửi đi
+            // Dữ liệu trong buffer vẫn an toàn vì chúng ta đã có con trỏ `image_to_process`.
+            // Hàm `release` chỉ giải phóng quyền sử dụng buffer cho lần chụp tiếp theo,
+            // chứ không xóa dữ liệu ngay lập tức.
+            process_image(image_to_process, size_to_process);
         }
-        process_image(rgb565_image, rgb_image_size);
-        arducam_release_image();
-    }
 }
+
 
 // --- Các hàm thực thi nội bộ ---
 
@@ -140,9 +167,14 @@ static sl_status_t wait_for_spi_bus_idle(void) {
     } while (true);
 }
 
+// <<< SỬA ĐỔI QUAN TRỌNG >>>: Đơn giản hóa hàm khởi tạo
 static bool initialize_system() {
-    printf("Initializing System...\n");
+    printf("Initializing System (SPIDRV version)...\n");
+
+    // 1. Khởi tạo chân CS cho Pi. Đây là một GPIO độc lập và luôn an toàn.
     GPIO_PinModeSet(CS_2_PORT, CS_2_PIN, gpioModePushPull, 1);
+
+    // 2. Khởi tạo Camera. HÀM NÀY SẼ KHỞI TẠO USART0 VÀ SPIDRV.
     arducam_config_t cam_config = ARDUCAM_DEFAULT_CONFIG;
     cam_config.image_resolution.width = IMG_WIDTH;
     cam_config.image_resolution.height = IMG_HEIGHT;
@@ -153,20 +185,30 @@ static bool initialize_system() {
     if (!camera_pingpong_buffer) { printf("Failed to allocate camera buffer\n"); return false; }
     grayscale_buffer = (uint8_t *)malloc(IMG_WIDTH * IMG_HEIGHT);
     if (!grayscale_buffer) { printf("Failed to allocate grayscale buffer\n"); free(camera_pingpong_buffer); return false; }
+
     sl_status_t status = arducam_init(&cam_config, camera_pingpong_buffer, rgb_length_per_image * 2);
     if (status != SL_STATUS_OK) {
         printf("Failed to initialize camera (0x%lx)\n", status);
-        free(camera_pingpong_buffer); free(grayscale_buffer); return false;
+        free(camera_pingpong_buffer);
+        free(grayscale_buffer);
+        return false;
     }
+
+    // 3. KHÔNG khởi tạo DMADRV hay SPIDRV ở đây nữa. Cứ để arducam_init() làm việc đó.
+
+    // 4. Khởi tạo Model
     if (!initialize_model()) {
         printf("ERROR: Failed to initialize ML model\n");
         return false;
     }
+
+    // 5. Bắt đầu chụp ảnh
     status = arducam_start_capture();
     if (status != SL_STATUS_OK) {
         printf("Failed to start camera capture (0x%lx)\n", status);
         return false;
     }
+
     return true;
 }
 
@@ -174,14 +216,16 @@ static bool initialize_model() {
     error_reporter = nullptr;
     model = tflite::GetModel(sl_tflite_model_array);
     if (model->version() != TFLITE_SCHEMA_VERSION) {
-        MicroPrintf("Model schema version mismatch."); return false;
+        MicroPrintf("Model schema version mismatch.");
+        return false;
     }
     SL_TFLITE_MICRO_OPCODE_RESOLVER(op_resolver);
     static tflite::MicroInterpreter static_interpreter(model, op_resolver,
                                                        tensor_arena, kTensorArenaSize);
     interpreter = &static_interpreter;
     if (interpreter->AllocateTensors() != kTfLiteOk) {
-        MicroPrintf("AllocateTensors() failed."); return false;
+        MicroPrintf("AllocateTensors() failed.");
+        return false;
     }
     input_tensor = interpreter->input(0);
     output_tensor = interpreter->output(0);
@@ -247,17 +291,25 @@ static void apply_softmax(float *data, int size) {
     for (int i = 0; i < size; ++i) { data[i] /= sum; }
 }
 
-static void pi_spidrv_callback(SPIDRV_HandleData_t *handle, Ecode_t transferStatus, int itemsTransferred) {
-    (void)handle; (void)itemsTransferred;
-    deselect_pi();
+// <<< HÀM MỚI CHO SPIDRV >>>
+static void pi_spidrv_callback(SPIDRV_HandleData_t *handle,
+                               Ecode_t transferStatus,
+                               int itemsTransferred)
+{
+    (void)handle;
+    (void)itemsTransferred;
+
+    deselect_pi(); // Kéo CS lên cao để kết thúc
+
     if (transferStatus == ECODE_EMDRV_SPIDRV_OK) {
         pi_spi_transfer_complete = true;
     } else {
         printf("ERROR: SPIDRV transfer to Pi failed with status: 0x%lx\n", transferStatus);
-        pi_spi_transfer_complete = true;
+        pi_spi_transfer_complete = true; // Vẫn đặt cờ để thoát
     }
 }
 
+// <<< HÀM MỚI CHO SPIDRV >>>
 static void stream_image_to_pi_spidrv(const uint8_t *rgb565_image, uint32_t image_size) {
     if (wait_for_spi_bus_idle() != SL_STATUS_OK) { return; }
 

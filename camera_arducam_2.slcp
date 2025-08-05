@@ -1,6 +1,6 @@
 # Silicon Labs Project Configuration Tools: slcp, v0, Component selection file.
-project_name: camera_arducam
-label: camera_arducam
+project_name: camera_arducam_2
+label: camera_arducam_2
 description: |
   This example project shows an empty configuration that can be used as a starting point to add components and functionality.
 category: Example|Platform
@@ -25,24 +25,14 @@ include:
 sdk: {id: simplicity_sdk, version: 2025.6.0}
 toolchain_settings: []
 component:
-- {from: aiml, id: tensorflow_debug_log_iostream}
-- {from: aiml, id: tensorflow_lite_micro_accelerated_kernels}
 - {id: EFR32MG26B510F3200IM68}
 - {id: brd2608a}
 - {id: clock_manager}
 - {id: device_init}
-- instance: [camera]
-  id: i2cspm
-- {id: iostream}
-- {id: iostream_retarget_stdio}
 - {id: sl_main}
-- instance: [camera]
-  id: spidrv_usart
 define:
 - {name: DEBUG_EFM}
 ui_hints:
   highlight:
   - {path: readme.md, focus: true}
-sdk_extension:
-- {id: aiml, version: 2.1.0}
 

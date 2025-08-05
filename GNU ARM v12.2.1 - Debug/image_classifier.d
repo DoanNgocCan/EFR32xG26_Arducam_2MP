@@ -65,12 +65,12 @@ image_classifier.o: ../image_classifier.cc \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\efr32mg26\include\efr32mg26_prs_signals.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\efr32mg26\include\efr32mg26_dma_descriptor.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\efr32mg26\include\efr32mg26_ldmaxbar_defines.h \
- C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam\autogen/sl_component_catalog.h \
+ C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\autogen/sl_component_catalog.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_assert.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emlib\inc\em_bus.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_enum.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_gpio.h \
- C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam\config/pin_config.h \
+ C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\config/pin_config.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emdrv\spidrv\inc\spidrv.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_peripheral.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_peripheral_types.h \
@@ -79,13 +79,13 @@ image_classifier.o: ../image_classifier.cc \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emdrv\common\inc\ecode.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emdrv\dmadrv\inc\s2_signals\dmadrv_signals.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emlib\inc\em_ldma.h \
- C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam\config/dmadrv_config.h \
+ C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\config/dmadrv_config.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\driver\gpio\inc\sl_gpio.h \
- C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam\config/spidrv_config.h \
+ C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\config/spidrv_config.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_slist.h \
- C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam\autogen/sl_spidrv_instances.h \
+ C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\autogen/sl_spidrv_instances.h \
  ../arducam/arducam.h \
- C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam/arducam/arducam_types.h \
+ C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2/arducam/arducam_types.h \
  ../image_classifier.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\extension\aiml-extension\third_party\tflite-micro\tensorflow\lite\micro\micro_log.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\extension\aiml-extension\third_party\tflite-micro\tensorflow\lite\micro\micro_mutable_op_resolver.h \
@@ -158,9 +158,9 @@ image_classifier.o: ../image_classifier.cc \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\extension\aiml-extension\third_party\tflite-micro\tensorflow\lite\micro\micro_interpreter.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\extension\aiml-extension\third_party\tflite-micro\tensorflow\lite\micro\micro_profiler_interface.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\extension\aiml-extension\third_party\tflite-micro\tensorflow\lite\portable_type_to_tflitetype.h \
- C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam\autogen/sl_tflite_micro_model.h \
- C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam\autogen/sl_tflite_micro_model_parameters.h \
- C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam\autogen/sl_tflite_micro_opcode_resolver.h
+ C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\autogen/sl_tflite_micro_model.h \
+ C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\autogen/sl_tflite_micro_model_parameters.h \
+ C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\autogen/sl_tflite_micro_opcode_resolver.h
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_status.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\sleeptimer\inc\sl_sleeptimer.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_common.h:
@@ -227,12 +227,12 @@ c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\efr32mg26\include\efr32mg26_prs_signals.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\efr32mg26\include\efr32mg26_dma_descriptor.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\efr32mg26\include\efr32mg26_ldmaxbar_defines.h:
-C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam\autogen/sl_component_catalog.h:
+C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\autogen/sl_component_catalog.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_assert.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emlib\inc\em_bus.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_enum.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_gpio.h:
-C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam\config/pin_config.h:
+C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\config/pin_config.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emdrv\spidrv\inc\spidrv.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_peripheral.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_peripheral_types.h:
@@ -241,13 +241,13 @@ c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emdrv\dmadrv\inc\dm
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emdrv\common\inc\ecode.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emdrv\dmadrv\inc\s2_signals\dmadrv_signals.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emlib\inc\em_ldma.h:
-C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam\config/dmadrv_config.h:
+C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\config/dmadrv_config.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\driver\gpio\inc\sl_gpio.h:
-C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam\config/spidrv_config.h:
+C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\config/spidrv_config.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_slist.h:
-C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam\autogen/sl_spidrv_instances.h:
+C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\autogen/sl_spidrv_instances.h:
 ../arducam/arducam.h:
-C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam/arducam/arducam_types.h:
+C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2/arducam/arducam_types.h:
 ../image_classifier.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\extension\aiml-extension\third_party\tflite-micro\tensorflow\lite\micro\micro_log.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\extension\aiml-extension\third_party\tflite-micro\tensorflow\lite\micro\micro_mutable_op_resolver.h:
@@ -320,6 +320,6 @@ c:\users\admin\simplicitystudio\sdks\simplicity_sdk\extension\aiml-extension\thi
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\extension\aiml-extension\third_party\tflite-micro\tensorflow\lite\micro\micro_interpreter.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\extension\aiml-extension\third_party\tflite-micro\tensorflow\lite\micro\micro_profiler_interface.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\extension\aiml-extension\third_party\tflite-micro\tensorflow\lite\portable_type_to_tflitetype.h:
-C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam\autogen/sl_tflite_micro_model.h:
-C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam\autogen/sl_tflite_micro_model_parameters.h:
-C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam\autogen/sl_tflite_micro_opcode_resolver.h:
+C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\autogen/sl_tflite_micro_model.h:
+C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\autogen/sl_tflite_micro_model_parameters.h:
+C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\autogen/sl_tflite_micro_opcode_resolver.h:

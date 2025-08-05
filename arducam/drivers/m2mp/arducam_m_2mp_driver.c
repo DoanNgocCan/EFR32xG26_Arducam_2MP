@@ -55,7 +55,7 @@ sl_status_t arducam_driver_init(const arducam_config_t* config)
     usart_config.master       = true;            // master mode
     usart_config.baudrate     = 1000000;         // CLK freq is 1MHz 
                                                  // NOTE: This can technically go up to 8M but can be unreliable depending on the hardware setup
-    usart_config.autoCsEnable = true;            // CS pin controlled by hardware, not firmware
+    usart_config.autoCsEnable = false;            // CS pin controlled by hardware, not firmware
     usart_config.clockMode    = usartClockMode0; // clock idle low, sample on rising/first edge
     usart_config.msbf         = true;            // send MSB first
     usart_config.enable       = usartDisable;    // making sure USART isn't enabled until we set it up
