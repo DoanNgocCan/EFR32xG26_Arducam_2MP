@@ -14,4 +14,5 @@ sl_mx25_flash_shutdown_eusart_config.h=761089743
 sl_sleeptimer_config.h=1360009810
 sl_spidrv_camera_config.h=-86973569
 sl_spidrv_usart_camera_config.h=552598340
+sl_spidrv_usart_rasp_pi_config.h=532840927
 spidrv_config.h=112055036

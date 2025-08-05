@@ -156,6 +156,22 @@
 // [USART0]$
 
 // $[USART1]
+// USART1 CLK on PB00
+#ifndef USART1_CLK_PORT                         
+#define USART1_CLK_PORT                          SL_GPIO_PORT_B
+#endif
+#ifndef USART1_CLK_PIN                          
+#define USART1_CLK_PIN                           0
+#endif
+
+// USART1 RX on PB02
+#ifndef USART1_RX_PORT                          
+#define USART1_RX_PORT                           SL_GPIO_PORT_B
+#endif
+#ifndef USART1_RX_PIN                           
+#define USART1_RX_PIN                            2
+#endif
+
 // [USART1]$
 
 // $[USART2]
@@ -263,6 +279,13 @@
 #endif
 #ifndef _PIN                                    
 #define _PIN                                     0
+#endif
+
+#ifndef CS_2_PORT                               
+#define CS_2_PORT                                SL_GPIO_PORT_B
+#endif
+#ifndef CS_2_PIN                                
+#define CS_2_PIN                                 7
 #endif
 
 // [CUSTOM_PIN_NAME]$
