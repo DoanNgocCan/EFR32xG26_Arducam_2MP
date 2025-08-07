@@ -5,7 +5,7 @@
   "name" : "Silicon-Laboratories",
   "documentNamespace" : "https://silabs.com",
   "creationInfo" : {
-    "created" : "2025-08-07T22:05:48.682444900Z",
+    "created" : "2025-08-07T22:52:49.239869800Z",
     "creators" : [ "Tool: Silicon Labs Configuration Tooling" ]
   },
   "comment" : "TERMS OF USE - SILICON LABORATORIES INC.\n(With respect to Silicon Labs software components, this Software Bill of Materials (SBOM) is based upon Silicon Labs'\nreview and analysis of the code version when released.  It is provided \"AS IS\" and does not modify, change or alter\nthe terms or conditions of your use of Silicon Labs' software and/or SDKs based upon license terms and/or agreements\nassociated with this software or SDKs when distributed to you, received by you, or installed by you.  Further, no\nwarranties or obligations are created by this SBOM.  It is your obligation to comply with the terms of licenses\nreferenced in this SBOM.)",
@@ -584,14 +584,6 @@
     } ],
     "comment" : "CMSIS NN Library as packaged and released by ARM-software, version 4.1.0, tag 23.08, commit hash 3f773cbf8f5"
   }, {
-    "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-iostream_recommended_debug",
-    "name" : "IO Stream - Recommended Stream for debug output",
-    "versionInfo" : "2025.6.0",
-    "primaryPackagePurpose" : "LIBRARY",
-    "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
-    "licenseConcluded" : "Zlib"
-  }, {
     "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-iostream",
     "name" : "IO Stream",
     "versionInfo" : "2025.6.0",
@@ -602,14 +594,6 @@
   }, {
     "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-debug_swo",
     "name" : "SWO Debug",
-    "versionInfo" : "2025.6.0",
-    "primaryPackagePurpose" : "LIBRARY",
-    "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
-    "licenseConcluded" : "Zlib"
-  }, {
-    "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-iostream_debug",
-    "name" : "IO Stream debug",
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
@@ -746,6 +730,54 @@
   }, {
     "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-hal_ldma",
     "name" : "LDMA",
+    "versionInfo" : "2025.6.0",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-configuration_over_swo",
+    "name" : "Configuration Over SWO",
+    "versionInfo" : "2025.6.0",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-sl_string",
+    "name" : "String Functions",
+    "versionInfo" : "2025.6.0",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-iostream_eusart",
+    "name" : "IO Stream: EUSART",
+    "versionInfo" : "2025.6.0",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-iostream_eusart_core",
+    "name" : "IO Stream: EUSART Core",
+    "versionInfo" : "2025.6.0",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-iostream_uart_common",
+    "name" : "IO Stream: Common code for UART-type streams",
+    "versionInfo" : "2025.6.0",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-iostream_retarget_stdio",
+    "name" : "IO Stream: Retarget STDIO",
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
@@ -1153,19 +1185,11 @@
     "relationshipType" : "ANCESTOR_OF"
   }, {
     "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
-    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-iostream_recommended_debug",
-    "relationshipType" : "CONTAINS"
-  }, {
-    "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
     "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-iostream",
     "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
     "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-debug_swo",
-    "relationshipType" : "CONTAINS"
-  }, {
-    "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
-    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-iostream_debug",
     "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
@@ -1234,6 +1258,30 @@
   }, {
     "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
     "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-hal_ldma",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-configuration_over_swo",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-sl_string",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-iostream_eusart",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-iostream_eusart_core",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-iostream_uart_common",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-iostream_retarget_stdio",
     "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-aiml-2.1.0",

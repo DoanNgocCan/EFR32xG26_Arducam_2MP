@@ -3,7 +3,7 @@
   "specVersion" : "1.6",
   "version" : 1,
   "metadata" : {
-    "timestamp" : "2025-08-07T22:05:48.682444900Z",
+    "timestamp" : "2025-08-07T22:52:49.239869800Z",
     "authors" : [ {
       "name" : "Silicon Laboratories, Inc."
     } ],
@@ -868,18 +868,6 @@
     }, {
       "scope" : "required",
       "type" : "library",
-      "bom-ref" : "simplicity_sdk:2025.6.0:iostream_recommended_debug",
-      "name" : "IO Stream - Recommended Stream for debug output",
-      "version" : "2025.6.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
-      "licenses" : [ {
-        "expression" : "Zlib"
-      } ]
-    }, {
-      "scope" : "required",
-      "type" : "library",
       "bom-ref" : "simplicity_sdk:2025.6.0:iostream",
       "name" : "IO Stream",
       "version" : "2025.6.0",
@@ -894,18 +882,6 @@
       "type" : "library",
       "bom-ref" : "simplicity_sdk:2025.6.0:debug_swo",
       "name" : "SWO Debug",
-      "version" : "2025.6.0",
-      "supplier" : {
-        "name" : "Silicon Laboratories, Inc."
-      },
-      "licenses" : [ {
-        "expression" : "Zlib"
-      } ]
-    }, {
-      "scope" : "required",
-      "type" : "library",
-      "bom-ref" : "simplicity_sdk:2025.6.0:iostream_debug",
-      "name" : "IO Stream debug",
       "version" : "2025.6.0",
       "supplier" : {
         "name" : "Silicon Laboratories, Inc."
@@ -1110,6 +1086,78 @@
       "type" : "library",
       "bom-ref" : "simplicity_sdk:2025.6.0:hal_ldma",
       "name" : "LDMA",
+      "version" : "2025.6.0",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2025.6.0:configuration_over_swo",
+      "name" : "Configuration Over SWO",
+      "version" : "2025.6.0",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2025.6.0:sl_string",
+      "name" : "String Functions",
+      "version" : "2025.6.0",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2025.6.0:iostream_eusart",
+      "name" : "IO Stream: EUSART",
+      "version" : "2025.6.0",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2025.6.0:iostream_eusart_core",
+      "name" : "IO Stream: EUSART Core",
+      "version" : "2025.6.0",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2025.6.0:iostream_uart_common",
+      "name" : "IO Stream: Common code for UART-type streams",
+      "version" : "2025.6.0",
+      "supplier" : {
+        "name" : "Silicon Laboratories, Inc."
+      },
+      "licenses" : [ {
+        "expression" : "Zlib"
+      } ]
+    }, {
+      "scope" : "required",
+      "type" : "library",
+      "bom-ref" : "simplicity_sdk:2025.6.0:iostream_retarget_stdio",
+      "name" : "IO Stream: Retarget STDIO",
       "version" : "2025.6.0",
       "supplier" : {
         "name" : "Silicon Laboratories, Inc."

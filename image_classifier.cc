@@ -22,10 +22,13 @@
 #include "em_gpio.h"
 #include "pin_config.h"
 
+// <<< THÊM VÀO >>>: Include các thư viện IOStream để dùng printf
+#include "sl_iostream.h"
+#include "sl_iostream_init_instances.h"
+#include "sl_iostream_handles.h"
+
 #include "arducam/arducam.h"
 #include "image_classifier.h"
-
-// << TÍCH HỢP MODULE UART STREAMER MỚI >>
 #include "uart_dma_streamer.h"
 
 // --- TÍCH HỢP TENSORFLOW LITE MICRO ---
@@ -67,6 +70,7 @@ namespace {
 
 
 // --- Khai báo các hàm nội bộ ---
+static void initialize_printf(void); // <<< THÊM VÀO >>>
 static bool initialize_system();
 static bool initialize_model();
 static void convert_rgb565_to_grayscale(const uint8_t *rgb_src, uint8_t *gray_dst, uint32_t width, uint32_t height);
@@ -120,7 +124,25 @@ extern "C" {
 
 // --- Các hàm thực thi nội bộ ---
 
+static void initialize_printf(void)
+{
+  // Component iostream_usart hoặc iostream_eusart phải được cài đặt trong project
+  // và một instance phải được đặt tên là "vcom".
+
+  // Tắt bộ đệm để printf hoạt động ngay lập tức, rất quan trọng cho debug.
+#if !defined(__CROSSWORKS_ARM) && defined(__GNUC__)
+  setvbuf(stdout, NULL, _IONBF, 0);
+  setvbuf(stdin, NULL, _IONBF, 0);
+#endif
+
+  // Đặt VCOM làm luồng output mặc định cho printf
+  sl_iostream_set_default(sl_iostream_vcom_handle);
+
+  printf("IOStream for printf initialized.\r\n");
+}
+
 static bool initialize_system() {
+    initialize_printf();
     printf("Initializing System...\n");
 
     // 1. Khởi tạo Camera. Hàm này sẽ khởi tạo SPI (USART0) để giao tiếp với camera.

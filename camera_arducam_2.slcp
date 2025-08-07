@@ -32,13 +32,14 @@ component:
 - {id: brd2608a}
 - {id: clock_manager}
 - {id: cmsis_nn}
+- {id: configuration_over_swo}
 - {id: device_init}
 - {id: dmadrv}
 - {id: hal_eusart}
 - {id: hal_ldma}
 - instance: [camera]
   id: i2cspm
-- {id: iostream_recommended_debug}
+- {id: iostream_retarget_stdio}
 - {id: sl_main}
 - {id: sleeptimer}
 - instance: [camera]

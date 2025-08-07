@@ -43,6 +43,7 @@ cpputils \
 jlink_stream \
 logging \
 simplicity_sdk_2025.6.0/hardware/board/src \
+simplicity_sdk_2025.6.0/hardware/driver/configuration_over_swo/src \
 simplicity_sdk_2025.6.0/hardware/driver/mx25_flash_shutdown/src/sl_mx25_flash_shutdown_eusart \
 simplicity_sdk_2025.6.0/platform/Device/SiliconLabs/EFR32MG26/Source \
 simplicity_sdk_2025.6.0/platform/common/src \

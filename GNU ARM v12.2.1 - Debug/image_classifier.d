@@ -71,6 +71,18 @@ image_classifier.o: ../image_classifier.cc \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_enum.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_gpio.h \
  C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\config/pin_config.h \
+ c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\iostream\inc\sl_iostream.h \
+ c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_slist.h \
+ C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\autogen/sl_iostream_init_instances.h \
+ C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\autogen/sl_iostream_handles.h \
+ C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\autogen/sl_iostream_init_eusart_instances.h \
+ c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\iostream\inc\sl_iostream_uart.h \
+ c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\iostream\inc\sl_iostream.h \
+ c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emdrv\dmadrv\inc\dmadrv.h \
+ c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emdrv\common\inc\ecode.h \
+ c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emdrv\dmadrv\inc\s2_signals\dmadrv_signals.h \
+ c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emlib\inc\em_ldma.h \
+ C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\config/dmadrv_config.h \
  ../arducam/arducam.h \
  C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2/arducam/arducam_types.h \
  ../image_classifier.h ../uart_dma_streamer.h \
@@ -220,6 +232,18 @@ c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emlib\inc\em_bus.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_enum.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_gpio.h:
 C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\config/pin_config.h:
+c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\iostream\inc\sl_iostream.h:
+c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_slist.h:
+C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\autogen/sl_iostream_init_instances.h:
+C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\autogen/sl_iostream_handles.h:
+C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\autogen/sl_iostream_init_eusart_instances.h:
+c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\iostream\inc\sl_iostream_uart.h:
+c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\iostream\inc\sl_iostream.h:
+c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emdrv\dmadrv\inc\dmadrv.h:
+c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emdrv\common\inc\ecode.h:
+c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emdrv\dmadrv\inc\s2_signals\dmadrv_signals.h:
+c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emlib\inc\em_ldma.h:
+C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\config/dmadrv_config.h:
 ../arducam/arducam.h:
 C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2/arducam/arducam_types.h:
 ../image_classifier.h:
