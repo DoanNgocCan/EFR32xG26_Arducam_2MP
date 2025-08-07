@@ -1,11 +1,7 @@
-simplicity_sdk_2025.6.0/platform/service/iostream/src/sl_iostream_eusart.o: \
- C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk/platform/service/iostream/src/sl_iostream_eusart.c \
- C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\autogen/sl_component_catalog.h \
+uart_dma_streamer.o: ../uart_dma_streamer.c ../uart_dma_streamer.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_status.h \
- c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_slist.h \
- c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\iostream\inc\sl_iostream.h \
- c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_enum.h \
- c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\iostream\inc\sl_iostream_uart.h \
+ C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\config/pin_config.h \
+ c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\peripheral\inc\sl_hal_eusart.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\efr32mg26\include\em_device.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\efr32mg26\include\efr32mg26b510f3200im68.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\cmsis\core\include\core_cm33.h \
@@ -66,35 +62,25 @@ simplicity_sdk_2025.6.0/platform/service/iostream/src/sl_iostream_eusart.o: \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\efr32mg26\include\efr32mg26_prs_signals.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\efr32mg26\include\efr32mg26_dma_descriptor.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\efr32mg26\include\efr32mg26_ldmaxbar_defines.h \
- c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\iostream\inc\sl_iostream.h \
+ C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\autogen/sl_component_catalog.h \
+ c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_assert.h \
+ c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_enum.h \
+ c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\driver\gpio\inc\sl_gpio.h \
+ c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_gpio.h \
+ c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\clock_manager\inc\sl_clock_manager.h \
+ c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_clock.h \
+ c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_peripheral.h \
+ c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_peripheral_types.h \
+ c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_clock.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emdrv\dmadrv\inc\dmadrv.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emdrv\common\inc\ecode.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emdrv\dmadrv\inc\s2_signals\dmadrv_signals.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emlib\inc\em_ldma.h \
- C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\config/dmadrv_config.h \
- c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\iostream\inc\sli_iostream_uart.h \
- c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\iostream\inc\sl_iostream_uart.h \
- c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\iostream\inc\sl_iostream_eusart.h \
- c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_peripheral.h \
- c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_peripheral_types.h \
- c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_clock.h \
- c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_clock.h \
- c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_atomic.h \
- c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\clock_manager\inc\sl_clock_manager.h \
- c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_common.h \
- c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_assert.h \
- c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emlib\inc\em_eusart.h \
- c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emlib\inc\em_eusart_compat.h \
- c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emlib\inc\em_gpio.h \
- c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_assert.h \
- c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emlib\inc\em_bus.h \
- c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_gpio.h
-C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\autogen/sl_component_catalog.h:
+ C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\config/dmadrv_config.h
+../uart_dma_streamer.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_status.h:
-c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_slist.h:
-c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\iostream\inc\sl_iostream.h:
-c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_enum.h:
-c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\iostream\inc\sl_iostream_uart.h:
+C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\config/pin_config.h:
+c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\peripheral\inc\sl_hal_eusart.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\efr32mg26\include\em_device.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\efr32mg26\include\efr32mg26b510f3200im68.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\cmsis\core\include\core_cm33.h:
@@ -155,26 +141,18 @@ c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\efr32mg26\include\efr32mg26_prs_signals.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\efr32mg26\include\efr32mg26_dma_descriptor.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\device\siliconlabs\efr32mg26\include\efr32mg26_ldmaxbar_defines.h:
-c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\iostream\inc\sl_iostream.h:
+C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\autogen/sl_component_catalog.h:
+c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_assert.h:
+c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_enum.h:
+c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\driver\gpio\inc\sl_gpio.h:
+c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_gpio.h:
+c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\clock_manager\inc\sl_clock_manager.h:
+c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_clock.h:
+c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_peripheral.h:
+c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_peripheral_types.h:
+c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_clock.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emdrv\dmadrv\inc\dmadrv.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emdrv\common\inc\ecode.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emdrv\dmadrv\inc\s2_signals\dmadrv_signals.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emlib\inc\em_ldma.h:
 C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\config/dmadrv_config.h:
-c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\iostream\inc\sli_iostream_uart.h:
-c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\iostream\inc\sl_iostream_uart.h:
-c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\iostream\inc\sl_iostream_eusart.h:
-c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_peripheral.h:
-c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_peripheral_types.h:
-c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_clock.h:
-c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_clock.h:
-c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_atomic.h:
-c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\clock_manager\inc\sl_clock_manager.h:
-c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_common.h:
-c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_assert.h:
-c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emlib\inc\em_eusart.h:
-c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emlib\inc\em_eusart_compat.h:
-c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emlib\inc\em_gpio.h:
-c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_assert.h:
-c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emlib\inc\em_bus.h:
-c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_gpio.h:

@@ -71,22 +71,9 @@ image_classifier.o: ../image_classifier.cc \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_enum.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_gpio.h \
  C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\config/pin_config.h \
- c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emdrv\spidrv\inc\spidrv.h \
- c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_peripheral.h \
- c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_peripheral_types.h \
- c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_clock.h \
- c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emdrv\dmadrv\inc\dmadrv.h \
- c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emdrv\common\inc\ecode.h \
- c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emdrv\dmadrv\inc\s2_signals\dmadrv_signals.h \
- c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emlib\inc\em_ldma.h \
- C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\config/dmadrv_config.h \
- c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\driver\gpio\inc\sl_gpio.h \
- C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\config/spidrv_config.h \
- c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_slist.h \
- C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\autogen/sl_spidrv_instances.h \
  ../arducam/arducam.h \
  C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2/arducam/arducam_types.h \
- ../image_classifier.h \
+ ../image_classifier.h ../uart_dma_streamer.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\extension\aiml-extension\third_party\tflite-micro\tensorflow\lite\micro\micro_log.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\extension\aiml-extension\third_party\tflite-micro\tensorflow\lite\micro\micro_mutable_op_resolver.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\extension\aiml-extension\third_party\tflite-micro\tensorflow\lite\c\common.h \
@@ -233,22 +220,10 @@ c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emlib\inc\em_bus.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_enum.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_gpio.h:
 C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\config/pin_config.h:
-c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emdrv\spidrv\inc\spidrv.h:
-c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_peripheral.h:
-c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_peripheral_types.h:
-c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_clock.h:
-c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emdrv\dmadrv\inc\dmadrv.h:
-c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emdrv\common\inc\ecode.h:
-c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emdrv\dmadrv\inc\s2_signals\dmadrv_signals.h:
-c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emlib\inc\em_ldma.h:
-C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\config/dmadrv_config.h:
-c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\driver\gpio\inc\sl_gpio.h:
-C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\config/spidrv_config.h:
-c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_slist.h:
-C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\autogen/sl_spidrv_instances.h:
 ../arducam/arducam.h:
 C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2/arducam/arducam_types.h:
 ../image_classifier.h:
+../uart_dma_streamer.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\extension\aiml-extension\third_party\tflite-micro\tensorflow\lite\micro\micro_log.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\extension\aiml-extension\third_party\tflite-micro\tensorflow\lite\micro\micro_mutable_op_resolver.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\extension\aiml-extension\third_party\tflite-micro\tensorflow\lite\c\common.h:

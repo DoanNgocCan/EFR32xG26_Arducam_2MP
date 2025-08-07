@@ -77,27 +77,26 @@ autogen/sl_event_handler.o: ../autogen/sl_event_handler.c \
  ../autogen/sl_i2cspm_instances.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\driver\i2cspm\inc\sl_i2cspm.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emlib\inc\em_i2c.h \
- ../autogen/sl_iostream_init_eusart_instances.h \
+ c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\iostream\inc\sl_iostream_debug.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\iostream\inc\sl_iostream.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_slist.h \
- c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\iostream\inc\sl_iostream_uart.h \
- c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\iostream\inc\sl_iostream.h \
- c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emdrv\dmadrv\inc\dmadrv.h \
- c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emdrv\common\inc\ecode.h \
- c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emdrv\dmadrv\inc\s2_signals\dmadrv_signals.h \
- c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emlib\inc\em_ldma.h \
- C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\config/dmadrv_config.h \
+ c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\iostream\inc\sl_iostream_swo_itm_8.h \
  ../autogen/sl_spidrv_instances.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emdrv\spidrv\inc\spidrv.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_peripheral.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_peripheral_types.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_clock.h \
+ c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emdrv\dmadrv\inc\dmadrv.h \
+ c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emdrv\common\inc\ecode.h \
+ c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emdrv\dmadrv\inc\s2_signals\dmadrv_signals.h \
+ c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emlib\inc\em_ldma.h \
+ C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\config/dmadrv_config.h \
  C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\config/spidrv_config.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\sleeptimer\inc\sl_sleeptimer.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_common.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_assert.h \
  ../autogen/sl_iostream_init_instances.h \
- c:\users\admin\simplicitystudio\sdks\simplicity_sdk\hardware\driver\configuration_over_swo\inc\sl_cos.h \
+ c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\iostream\inc\sl_iostream.h \
  ../autogen/sl_iostream_handles.h
 ../autogen/sl_event_handler.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\hardware\board\inc\sl_board_init.h:
@@ -177,25 +176,24 @@ c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_mana
 ../autogen/sl_i2cspm_instances.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\driver\i2cspm\inc\sl_i2cspm.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emlib\inc\em_i2c.h:
-../autogen/sl_iostream_init_eusart_instances.h:
+c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\iostream\inc\sl_iostream_debug.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\iostream\inc\sl_iostream.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_slist.h:
-c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\iostream\inc\sl_iostream_uart.h:
-c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\iostream\inc\sl_iostream.h:
-c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emdrv\dmadrv\inc\dmadrv.h:
-c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emdrv\common\inc\ecode.h:
-c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emdrv\dmadrv\inc\s2_signals\dmadrv_signals.h:
-c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emlib\inc\em_ldma.h:
-C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\config/dmadrv_config.h:
+c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\iostream\inc\sl_iostream_swo_itm_8.h:
 ../autogen/sl_spidrv_instances.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emdrv\spidrv\inc\spidrv.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_peripheral.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_peripheral_types.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\device_manager\inc\sl_device_clock.h:
+c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emdrv\dmadrv\inc\dmadrv.h:
+c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emdrv\common\inc\ecode.h:
+c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emdrv\dmadrv\inc\s2_signals\dmadrv_signals.h:
+c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\emlib\inc\em_ldma.h:
+C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\config/dmadrv_config.h:
 C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\config/spidrv_config.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\sleeptimer\inc\sl_sleeptimer.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_common.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\common\inc\sl_assert.h:
 ../autogen/sl_iostream_init_instances.h:
-c:\users\admin\simplicitystudio\sdks\simplicity_sdk\hardware\driver\configuration_over_swo\inc\sl_cos.h:
+c:\users\admin\simplicitystudio\sdks\simplicity_sdk\platform\service\iostream\inc\sl_iostream.h:
 ../autogen/sl_iostream_handles.h:

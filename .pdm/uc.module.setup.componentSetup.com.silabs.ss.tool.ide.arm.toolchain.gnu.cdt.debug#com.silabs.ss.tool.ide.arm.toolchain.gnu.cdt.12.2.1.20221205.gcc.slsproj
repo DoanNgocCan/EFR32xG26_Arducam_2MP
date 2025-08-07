@@ -355,14 +355,12 @@
           <file name="sl_common.h" uri="studio:/sdk/platform/common/inc/sl_common.h"/>
           <file name="sl_compiler.h" uri="studio:/sdk/platform/common/inc/sl_compiler.h"/>
           <file name="sl_core.h" uri="studio:/sdk/platform/common/inc/sl_core.h"/>
-          <file name="sl_string.h" uri="studio:/sdk/platform/common/inc/sl_string.h"/>
           <file name="sl_slist.h" uri="studio:/sdk/platform/common/inc/sl_slist.h"/>
           <file name="sl_status.h" uri="studio:/sdk/platform/common/inc/sl_status.h"/>
         </folder>
         <folder name="src">
           <file name="sl_assert.c" uri="studio:/sdk/platform/common/src/sl_assert.c"/>
           <file name="sl_core_cortexm.c" uri="studio:/sdk/platform/common/src/sl_core_cortexm.c"/>
-          <file name="sl_string.c" uri="studio:/sdk/platform/common/src/sl_string.c"/>
           <file name="sl_syscalls.c" uri="studio:/sdk/platform/common/src/sl_syscalls.c"/>
           <file name="sl_slist.c" uri="studio:/sdk/platform/common/src/sl_slist.c"/>
         </folder>
@@ -428,16 +426,15 @@
         <folder name="iostream">
           <folder name="src">
             <file name="sl_iostream.c" uri="studio:/sdk/platform/service/iostream/src/sl_iostream.c"/>
-            <file name="sl_iostream_eusart.c" uri="studio:/sdk/platform/service/iostream/src/sl_iostream_eusart.c"/>
-            <file name="sl_iostream_retarget_stdio.c" uri="studio:/sdk/platform/service/iostream/src/sl_iostream_retarget_stdio.c"/>
-            <file name="sl_iostream_uart.c" uri="studio:/sdk/platform/service/iostream/src/sl_iostream_uart.c"/>
+            <file name="sl_iostream_debug.c" uri="studio:/sdk/platform/service/iostream/src/sl_iostream_debug.c"/>
+            <file name="sl_iostream_swo_itm_8.c" uri="studio:/sdk/platform/service/iostream/src/sl_iostream_swo_itm_8.c"/>
           </folder>
           <folder name="inc">
             <file name="sl_iostream.h" uri="studio:/sdk/platform/service/iostream/inc/sl_iostream.h"/>
             <file name="sli_iostream.h" uri="studio:/sdk/platform/service/iostream/inc/sli_iostream.h"/>
-            <file name="sl_iostream_eusart.h" uri="studio:/sdk/platform/service/iostream/inc/sl_iostream_eusart.h"/>
-            <file name="sl_iostream_uart.h" uri="studio:/sdk/platform/service/iostream/inc/sl_iostream_uart.h"/>
-            <file name="sli_iostream_uart.h" uri="studio:/sdk/platform/service/iostream/inc/sli_iostream_uart.h"/>
+            <file name="sl_iostream_debug.h" uri="studio:/sdk/platform/service/iostream/inc/sl_iostream_debug.h"/>
+            <file name="sli_iostream_swo_itm_8.h" uri="studio:/sdk/platform/service/iostream/inc/sli_iostream_swo_itm_8.h"/>
+            <file name="sl_iostream_swo_itm_8.h" uri="studio:/sdk/platform/service/iostream/inc/sl_iostream_swo_itm_8.h"/>
           </folder>
         </folder>
         <folder name="memory_manager">
@@ -719,6 +716,7 @@
           <file name="sl_hal_bus.h" uri="studio:/sdk/platform/peripheral/inc/sl_hal_bus.h"/>
           <file name="sl_hal_eusart.h" uri="studio:/sdk/platform/peripheral/inc/sl_hal_eusart.h"/>
           <file name="sl_hal_gpio.h" uri="studio:/sdk/platform/peripheral/inc/sl_hal_gpio.h"/>
+          <file name="sl_hal_ldma.h" uri="studio:/sdk/platform/peripheral/inc/sl_hal_ldma.h"/>
           <file name="sl_hal_prs.h" uri="studio:/sdk/platform/peripheral/inc/sl_hal_prs.h"/>
           <file name="sl_hal_prs_enums.h" uri="studio:/sdk/platform/peripheral/inc/sl_hal_prs_enums.h"/>
           <file name="sl_hal_sysrtc.h" uri="studio:/sdk/platform/peripheral/inc/sl_hal_sysrtc.h"/>
@@ -729,6 +727,7 @@
         <folder name="src">
           <file name="sl_hal_eusart.c" uri="studio:/sdk/platform/peripheral/src/sl_hal_eusart.c"/>
           <file name="sl_hal_gpio.c" uri="studio:/sdk/platform/peripheral/src/sl_hal_gpio.c"/>
+          <file name="sl_hal_ldma.c" uri="studio:/sdk/platform/peripheral/src/sl_hal_ldma.c"/>
           <file name="sl_hal_prs.c" uri="studio:/sdk/platform/peripheral/src/sl_hal_prs.c"/>
           <file name="sl_hal_sysrtc.c" uri="studio:/sdk/platform/peripheral/src/sl_hal_sysrtc.c"/>
         </folder>
@@ -746,14 +745,6 @@
         </folder>
       </folder>
       <folder name="driver">
-        <folder name="configuration_over_swo">
-          <folder name="src">
-            <file name="sl_cos.c" uri="studio:/sdk/hardware/driver/configuration_over_swo/src/sl_cos.c"/>
-          </folder>
-          <folder name="inc">
-            <file name="sl_cos.h" uri="studio:/sdk/hardware/driver/configuration_over_swo/inc/sl_cos.h"/>
-          </folder>
-        </folder>
         <folder name="mx25_flash_shutdown">
           <folder name="src">
             <folder name="sl_mx25_flash_shutdown_eusart">
@@ -815,7 +806,6 @@
   <includePath uri="studio:/sdk/util/third_party/cmsis/nn"/>
   <includePath uri="studio:/sdk/util/third_party/cmsis/nn/Include"/>
   <includePath uri="studio:/sdk/platform/compute/util/inc"/>
-  <includePath uri="studio:/sdk/hardware/driver/configuration_over_swo/inc"/>
   <includePath uri="studio:/sdk/platform/driver/debug/inc"/>
   <includePath uri="studio:/sdk/platform/service/device_manager/inc"/>
   <includePath uri="studio:/sdk/platform/service/device_init/inc"/>
@@ -861,6 +851,7 @@
   <macroDefinition name="SL_CODE_COMPONENT_GPIO" value="gpio"/>
   <macroDefinition name="SL_CODE_COMPONENT_HAL_COMMON" value="hal_common"/>
   <macroDefinition name="SL_CODE_COMPONENT_HAL_GPIO" value="hal_gpio"/>
+  <macroDefinition name="SL_CODE_COMPONENT_HAL_LDMA" value="hal_ldma"/>
   <macroDefinition name="SL_CODE_COMPONENT_HAL_SYSRTC" value="hal_sysrtc"/>
   <macroDefinition name="SL_CODE_COMPONENT_INTERRUPT_MANAGER" value="interrupt_manager"/>
   <macroDefinition name="CMSIS_NVIC_VIRTUAL"/>
