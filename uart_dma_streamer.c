@@ -15,7 +15,7 @@
 
 // --- Cấu hình ---
 #define UART_INSTANCE           EUSART1
-#define UART_BAUDRATE           921600
+#define UART_BAUDRATE           115200
 
 // --- Biến nội bộ ---
 static unsigned int dma_channel;
