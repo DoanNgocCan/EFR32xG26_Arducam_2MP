@@ -85,7 +85,7 @@ image_classifier.o: ../image_classifier.cc \
  C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\config/dmadrv_config.h \
  ../arducam/arducam.h \
  C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2/arducam/arducam_types.h \
- ../image_classifier.h ../uart_dma_streamer.h \
+ ../image_classifier.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\extension\aiml-extension\third_party\tflite-micro\tensorflow\lite\micro\micro_log.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\extension\aiml-extension\third_party\tflite-micro\tensorflow\lite\micro\micro_mutable_op_resolver.h \
  c:\users\admin\simplicitystudio\sdks\simplicity_sdk\extension\aiml-extension\third_party\tflite-micro\tensorflow\lite\c\common.h \
@@ -247,7 +247,6 @@ C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2\config/dmadrv_conf
 ../arducam/arducam.h:
 C:\Users\ADMIN\SimplicityStudio\v5_workspace\camera_arducam_2/arducam/arducam_types.h:
 ../image_classifier.h:
-../uart_dma_streamer.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\extension\aiml-extension\third_party\tflite-micro\tensorflow\lite\micro\micro_log.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\extension\aiml-extension\third_party\tflite-micro\tensorflow\lite\micro\micro_mutable_op_resolver.h:
 c:\users\admin\simplicitystudio\sdks\simplicity_sdk\extension\aiml-extension\third_party\tflite-micro\tensorflow\lite\c\common.h:

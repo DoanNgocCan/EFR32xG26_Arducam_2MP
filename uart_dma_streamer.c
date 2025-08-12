@@ -1,5 +1,3 @@
-// File: uart_dma_streamer.c (Phiên bản cuối cùng, đã xác thực với dmadrv.c)
-
 #include "uart_dma_streamer.h"
 #include "pin_config.h"
 

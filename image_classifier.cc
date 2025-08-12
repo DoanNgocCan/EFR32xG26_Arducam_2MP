@@ -1,16 +1,3 @@
-/*
- * image_classifier.cc
- *
- *  Created on: Jul 3, 2025
- *      Author: Can Doan
- *
- *  VERSION 5 - UART DMA Streamer
- *  - Loại bỏ hoàn toàn logic truyền ảnh qua SPI cho Raspberry Pi.
- *  - Chỉ tập trung vào nhiệm vụ: Chụp ảnh, phân loại khuôn mặt, và gửi ảnh
- *    gốc qua UART bằng DMA nếu phát hiện có mặt.
- *  - Tích hợp module uart_dma_streamer.
- */
-
 #include <cstdio>
 #include <cstring>
 #include <cstdlib>
@@ -29,7 +16,6 @@
 
 #include "arducam/arducam.h"
 #include "image_classifier.h"
-#include "uart_dma_streamer.h"
 
 // --- TÍCH HỢP TENSORFLOW LITE MICRO ---
 #include "tensorflow/lite/micro/micro_log.h"
@@ -46,8 +32,9 @@
 #define IMG_WIDTH 112
 #define IMG_HEIGHT 112
 #define IMG_DATA_FORMAT_CAMERA ARDUCAM_DATA_FORMAT_RGB565
-#define REQUIRED_CLASS_INDEX    0       // Giả sử 'face' là class ở vị trí 0
+#define REQUIRED_CLASS_INDEX    0
 #define CONFIDENCE_THRESHOLD    60.0f   // Ngưỡng tin cậy 60%
+#define IMAGE_SIZE              (IMG_WIDTH * IMG_HEIGHT * 2)
 
 // Buffers
 static uint8_t *camera_pingpong_buffer = nullptr;
@@ -70,7 +57,7 @@ namespace {
 
 
 // --- Khai báo các hàm nội bộ ---
-static void initialize_printf(void); // <<< THÊM VÀO >>>
+static void initialize_iostream(void);
 static bool initialize_system();
 static bool initialize_model();
 static void convert_rgb565_to_grayscale(const uint8_t *rgb_src, uint8_t *gray_dst, uint32_t width, uint32_t height);
@@ -85,10 +72,9 @@ extern "C" {
             printf("ERROR: System initialization failed.\n");
             while(1);
         }
-        printf("\n=== System Initialized Successfully (UART DMA Streamer v5) ===\n");
-        printf("Mode: Face Classifier -> Stream to ESP32 via UART/DMA\n");
-        printf("Will stream image if class '%s' has confidence > %.1f%%\n",
-               category_labels[REQUIRED_CLASS_INDEX], CONFIDENCE_THRESHOLD);
+        printf("\n=== System Initialized (VCOM Image Streamer v7) ===\n");
+        printf("Mode: Face Classifier -> Stream to PC via USB VCOM\n");
+        printf("Will stream %d bytes if class '%s' has confidence > %.1f%%\n", IMAGE_SIZE, category_labels[REQUIRED_CLASS_INDEX], CONFIDENCE_THRESHOLD);
     }
 
     void camera_jlink_test_loop(void) {
@@ -124,25 +110,20 @@ extern "C" {
 
 // --- Các hàm thực thi nội bộ ---
 
-static void initialize_printf(void)
+static void initialize_iostream(void)
 {
-  // Component iostream_usart hoặc iostream_eusart phải được cài đặt trong project
-  // và một instance phải được đặt tên là "vcom".
-
-  // Tắt bộ đệm để printf hoạt động ngay lập tức, rất quan trọng cho debug.
-#if !defined(__CROSSWORKS_ARM) && defined(__GNUC__)
-  setvbuf(stdout, NULL, _IONBF, 0);
-  setvbuf(stdin, NULL, _IONBF, 0);
-#endif
-
-  // Đặt VCOM làm luồng output mặc định cho printf
+  #if !defined(__CROSSWORKS_ARM) && defined(__GNUC__)
+    setvbuf(stdout, NULL, _IONBF, 0);
+    setvbuf(stdin, NULL, _IONBF, 0);
+  #endif
+  // Hàm sl_iostream_init_instances() được gọi tự động bởi sl_main_init()
+  // nên chúng ta không cần gọi lại. Việc này chỉ đảm bảo stdout được đặt đúng.
   sl_iostream_set_default(sl_iostream_vcom_handle);
-
-  printf("IOStream for printf initialized.\r\n");
 }
 
 static bool initialize_system() {
-    initialize_printf();
+    initialize_iostream();
+    printf("IOStream for printf initialized.\n");
     printf("Initializing System...\n");
 
     // 1. Khởi tạo Camera. Hàm này sẽ khởi tạo SPI (USART0) để giao tiếp với camera.
@@ -173,12 +154,7 @@ static bool initialize_system() {
         return false;
     }
 
-    // << BƯỚC MỚI >>
-    // 3. Khởi tạo UART DMA Streamer (EUSART1)
-    uart_dma_streamer_init();
-    printf("UART DMA Streamer Initialized.\n");
-
-    // 4. Bắt đầu chụp ảnh
+    // 3. Bắt đầu chụp ảnh
     status = arducam_start_capture();
     if (status != SL_STATUS_OK) {
         printf("Failed to start camera capture (0x%lx)\n", status);
@@ -270,21 +246,26 @@ static void process_image(const uint8_t *rgb565_image, uint32_t rgb_image_size) 
 
     // 5. Ra quyết định: Gửi ảnh nếu là 'face' và đủ tự tin
     if (highest_score_index == REQUIRED_CLASS_INDEX && confidence > CONFIDENCE_THRESHOLD) {
-        printf("DETECTED! ");
-        // Kiểm tra xem UART có đang bận gửi ảnh trước đó không
-        if (!uart_dma_streamer_is_busy()) {
-            printf("Streaming image to ESP32 via UART...\n");
+            printf("DETECTED! Streaming image to PC via VCOM...\n");
+
+            // Gửi một chuỗi định danh để PC biết chuẩn bị nhận ảnh
+            // \n giúp máy tính đồng bộ và xóa buffer cũ
+            printf("\nIMAGE_START\n");
+            fflush(stdout); // Đảm bảo chuỗi này được gửi đi ngay lập tức
+
+            // Dùng fwrite để gửi dữ liệu nhị phân (ảnh) ra stdout
+            // stdout bây giờ chính là VCOM
+            fwrite(rgb565_image, 1, rgb_image_size, stdout);
+            fflush(stdout); // Đảm bảo toàn bộ buffer ảnh được đẩy đi
+
+            // Gửi chuỗi kết thúc
+            printf("\nIMAGE_END\n");
             fflush(stdout);
-            // Gửi ảnh RGB565 GỐC đi
-            uart_dma_streamer_send(rgb565_image, rgb_image_size);
+
         } else {
-            printf("UART is busy, skipping this frame.\n");
+            printf("NOT detected or low confidence. Skipping.\n");
             fflush(stdout);
         }
-    } else {
-        printf("NOT detected or low confidence. Skipping.\n");
-        fflush(stdout);
-    }
 }
 
 static void apply_softmax(float *data, int size) {
