@@ -36,6 +36,13 @@
 #define CONFIDENCE_THRESHOLD    60.0f   // Ngưỡng tin cậy 60%
 #define IMAGE_SIZE              (IMG_WIDTH * IMG_HEIGHT * 2)
 
+#define SOP_BYTE_1 0xDE
+#define SOP_BYTE_2 0xAD
+#define SOP_BYTE_3 0xBE
+#define SOP_BYTE_4 0xEF
+#define VCOM_CHUNK_SIZE 1024 // Gửi 1KB mỗi lần
+#define ACK_BYTE 0x06
+
 // Buffers
 static uint8_t *camera_pingpong_buffer = nullptr;
 static uint8_t *grayscale_buffer = nullptr;
@@ -246,24 +253,62 @@ static void process_image(const uint8_t *rgb565_image, uint32_t rgb_image_size) 
 
     // 5. Ra quyết định: Gửi ảnh nếu là 'face' và đủ tự tin
     if (highest_score_index == REQUIRED_CLASS_INDEX && confidence > CONFIDENCE_THRESHOLD) {
-            printf("DETECTED! Streaming image to PC via VCOM...\n");
+            printf("Result: %s, Confidence: %.1f%% -> DETECTED! Starting ACK transfer...\n",
+                   category_labels[highest_score_index], confidence);
+            fflush(stdout);
+            sl_sleeptimer_delay_millisecond(50);
 
-            // Gửi một chuỗi định danh để PC biết chuẩn bị nhận ảnh
-            // \n giúp máy tính đồng bộ và xóa buffer cũ
-            printf("\nIMAGE_START\n");
-            fflush(stdout); // Đảm bảo chuỗi này được gửi đi ngay lập tức
+            // <<< BẮT ĐẦU VÙNG TRUYỀN DỮ LIỆU CÓ ĐỒNG BỘ >>>
 
-            // Dùng fwrite để gửi dữ liệu nhị phân (ảnh) ra stdout
-            // stdout bây giờ chính là VCOM
-            fwrite(rgb565_image, 1, rgb_image_size, stdout);
-            fflush(stdout); // Đảm bảo toàn bộ buffer ảnh được đẩy đi
+            // 1. Gửi Header (SOP + Total Size)
+            uint8_t header[8];
+            header[0] = SOP_BYTE_1;
+            header[1] = SOP_BYTE_2;
+            header[2] = SOP_BYTE_3;
+            header[3] = SOP_BYTE_4;
+            memcpy(&header[4], &rgb_image_size, 4);
+            sl_iostream_write(sl_iostream_vcom_handle, header, sizeof(header));
 
-            // Gửi chuỗi kết thúc
-            printf("\nIMAGE_END\n");
+            // 2. Chờ ACK đầu tiên từ Python
+            char ack_char = 0;
+            size_t bytes_read = 0;
+            sl_status_t status = sl_iostream_read(sl_iostream_vcom_handle, &ack_char, 1, &bytes_read);
+            if (status != SL_STATUS_OK || ack_char != ACK_BYTE) {
+                printf("Error: Did not receive initial ACK. Aborting.\n");
+                fflush(stdout);
+                return;
+            }
+
+            // 3. Gửi Payload theo từng Chặng và chờ ACK
+            uint32_t bytes_sent = 0;
+            const uint8_t *ptr = rgb565_image;
+            while (bytes_sent < rgb_image_size) {
+                uint32_t bytes_to_send = rgb_image_size - bytes_sent;
+                if (bytes_to_send > VCOM_CHUNK_SIZE) {
+                    bytes_to_send = VCOM_CHUNK_SIZE;
+                }
+
+                sl_iostream_write(sl_iostream_vcom_handle, ptr, bytes_to_send);
+
+                ack_char = 0;
+                bytes_read = 0;
+                status = sl_iostream_read(sl_iostream_vcom_handle, &ack_char, 1, &bytes_read);
+                if (status != SL_STATUS_OK || ack_char != ACK_BYTE) {
+                     printf("Error: Did not receive chunk ACK. Aborting at %lu bytes.\n", bytes_sent);
+                     fflush(stdout);
+                     return;
+                }
+
+                ptr += bytes_to_send;
+                bytes_sent += bytes_to_send;
+            }
+
+            printf("Transfer complete. Total: %lu bytes.\n", bytes_sent);
             fflush(stdout);
 
         } else {
-            printf("NOT detected or low confidence. Skipping.\n");
+            printf("Result: %s, Confidence: %.1f%% -> NOT detected. Skipping.\n",
+                   category_labels[highest_score_index], confidence);
             fflush(stdout);
         }
 }
