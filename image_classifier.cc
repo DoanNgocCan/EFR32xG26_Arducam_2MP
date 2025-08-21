@@ -40,7 +40,7 @@
 #define SOP_BYTE_2 0xAD
 #define SOP_BYTE_3 0xBE
 #define SOP_BYTE_4 0xEF
-#define VCOM_CHUNK_SIZE 1024 // Gửi 1KB mỗi lần
+#define VCOM_CHUNK_SIZE 25088
 #define ACK_BYTE 0x06
 
 // Buffers

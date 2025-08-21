@@ -6833,34 +6833,6 @@ Discarded input sections
  .bss           0x00000000        0x0 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard\libgcc.a(_dvmd_tls.o)
  .data          0x00000000        0x0 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard\libgcc.a(_arm_fixunsdfsi.o)
  .bss           0x00000000        0x0 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard\libgcc.a(_arm_fixunsdfsi.o)
- .text          0x00000000        0x0 ./uart_dma_streamer.o
- .data          0x00000000        0x0 ./uart_dma_streamer.o
- .bss           0x00000000        0x0 ./uart_dma_streamer.o
- .text.dma_transfer_complete_callback
-                0x00000000        0xc ./uart_dma_streamer.o
- .text.uart_dma_streamer_init
-                0x00000000       0xc0 ./uart_dma_streamer.o
- .text.uart_dma_streamer_send
-                0x00000000       0x58 ./uart_dma_streamer.o
- .text.uart_dma_streamer_is_busy
-                0x00000000        0xc ./uart_dma_streamer.o
- .bss.dma_transfer_in_progress
-                0x00000000        0x1 ./uart_dma_streamer.o
- .bss.dma_channel
-                0x00000000        0x4 ./uart_dma_streamer.o
- .rodata        0x00000000       0x14 ./uart_dma_streamer.o
- .debug_info    0x00000000     0x2a00 ./uart_dma_streamer.o
- .debug_abbrev  0x00000000      0x342 ./uart_dma_streamer.o
- .debug_loc     0x00000000      0x198 ./uart_dma_streamer.o
- .debug_aranges
-                0x00000000       0x38 ./uart_dma_streamer.o
- .debug_ranges  0x00000000       0x40 ./uart_dma_streamer.o
- .debug_line    0x00000000      0x712 ./uart_dma_streamer.o
- .debug_str     0x00000000     0x2934 ./uart_dma_streamer.o
- .comment       0x00000000       0x46 ./uart_dma_streamer.o
- .debug_frame   0x00000000       0x78 ./uart_dma_streamer.o
- .ARM.attributes
-                0x00000000       0x3c ./uart_dma_streamer.o
  .text          0x00000000        0x0 ./simplicity_sdk_2025.6.0/platform/peripheral/src/sl_hal_ldma.o
  .data          0x00000000        0x0 ./simplicity_sdk_2025.6.0/platform/peripheral/src/sl_hal_ldma.o
  .bss           0x00000000        0x0 ./simplicity_sdk_2025.6.0/platform/peripheral/src/sl_hal_ldma.o
@@ -7634,7 +7606,6 @@ LOAD C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//util/third_party/cmsis
 LOAD c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard\libstdc++_nano.a
 LOAD c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard\libgcc.a
 LOAD c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard\libnosys.a
-LOAD ./uart_dma_streamer.o
 LOAD ./simplicity_sdk_2025.6.0/platform/peripheral/src/sl_hal_ldma.o
 END GROUP
 START GROUP
@@ -7682,7 +7653,7 @@ LOAD c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2
                 0x20001000                __StackTop = .
                 0x20001000                PROVIDE (__stack = __StackTop)
 
-.bss            0x20001000    0x55b84
+.bss            0x20001000    0x557a4
                 0x20001000                . = ALIGN (0x4)
                 0x20001000                __bss_start__ = .
  *(SORT_BY_ALIGNMENT(.bss*))
@@ -7823,37 +7794,37 @@ LOAD c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2
  .bss.mvp_is_initialized
                 0x20032a35        0x1 ./simplicity_sdk_2025.6.0/platform/compute/driver/mvp/src/sl_mvp_hal_efr32.o
  .bss.rx_buffer_vcom
-                0x20032a36      0x400 ./autogen/sl_iostream_init_eusart_instances.o
+                0x20032a36       0x20 ./autogen/sl_iostream_init_eusart_instances.o
  .bss.dummy_tx_buffer.0
-                0x20032e36        0x1 ./arducam/drivers/m2mp/arducam_m_2mp_driver.o
+                0x20032a56        0x1 ./arducam/drivers/m2mp/arducam_m_2mp_driver.o
  .bss._ZN12_GLOBAL__N_112tensor_arenaE
-                0x20032e37    0x23d44 ./image_classifier.o
+                0x20032a57    0x23d44 ./image_classifier.o
  .bss._ZN12_GLOBAL__N_127micro_error_reporter_bufferE
-                0x20056b7b        0x4 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_error_reporter.cc.obj)
+                0x2005679b        0x4 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_error_reporter.cc.obj)
  .bss.__lock___malloc_recursive_mutex
-                0x20056b7f        0x1 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard\libc_nano.a(libc_a-lock.o)
-                0x20056b7f                __lock___malloc_recursive_mutex
+                0x2005679f        0x1 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard\libc_nano.a(libc_a-lock.o)
+                0x2005679f                __lock___malloc_recursive_mutex
  .bss.__lock___sfp_recursive_mutex
-                0x20056b80        0x1 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard\libc_nano.a(libc_a-lock.o)
-                0x20056b80                __lock___sfp_recursive_mutex
+                0x200567a0        0x1 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard\libc_nano.a(libc_a-lock.o)
+                0x200567a0                __lock___sfp_recursive_mutex
  *(COMMON)
-                0x20056b84                . = ALIGN (0x4)
- *fill*         0x20056b81        0x3 
-                0x20056b84                __bss_end__ = .
+                0x200567a4                . = ALIGN (0x4)
+ *fill*         0x200567a1        0x3 
+                0x200567a4                __bss_end__ = .
 
-.noinit         0x20056b84        0x0
+.noinit         0x200567a4        0x0
  *(.noinit*)
-                0x20056b84                . = ALIGN (0x4)
+                0x200567a4                . = ALIGN (0x4)
 
 text_application_ram
-                0x20056b84        0x0 load address 0x080001b4
-                0x20056b84                . = ALIGN (0x4)
-                0x20056b84                __vma_ramfuncs_start__ = .
-                0x20056b84                __text_application_ram_start__ = .
+                0x200567a4        0x0 load address 0x080001b4
+                0x200567a4                . = ALIGN (0x4)
+                0x200567a4                __vma_ramfuncs_start__ = .
+                0x200567a4                __text_application_ram_start__ = .
  *(text_application_ram)
-                0x20056b84                . = ALIGN (0x4)
-                0x20056b84                __vma_ramfuncs_end__ = .
-                0x20056b84                __text_application_ram_end__ = .
+                0x200567a4                . = ALIGN (0x4)
+                0x200567a4                __vma_ramfuncs_end__ = .
+                0x200567a4                __text_application_ram_end__ = .
 
 .rodata         0x080001b4        0x0
                 0x080001b4                __lma_ramfuncs_end__ = .
@@ -10579,7 +10550,7 @@ text_application_ram
                 0x08067358                . = ALIGN (0x4)
                 0x08067358                __copy_table_start__ = .
                 0x08067358        0x4 LONG 0x8067364 __etext
-                0x0806735c        0x4 LONG 0x20056b84 __data_start__
+                0x0806735c        0x4 LONG 0x200567a4 __data_start__
                 0x08067360        0x4 LONG 0x97 ((__data_end__ - __data_start__) / 0x4)
                 0x08067364                __copy_table_end__ = .
 
@@ -10592,113 +10563,113 @@ text_application_ram
                 0x08067364                __zero_table_end__ = .
                 0x08067364                __etext = .
 
-.data           0x20056b84      0x25c load address 0x08067364
-                0x20056b84                . = ALIGN (0x4)
-                0x20056b84                __data_start__ = .
+.data           0x200567a4      0x25c load address 0x08067364
+                0x200567a4                . = ALIGN (0x4)
+                0x200567a4                __data_start__ = .
  *(vtable)
  *(SORT_BY_ALIGNMENT(.data*))
  .data.__dso_handle
-                0x20056b84        0x4 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard/crtbegin.o
-                0x20056b84                __dso_handle
+                0x200567a4        0x4 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard/crtbegin.o
+                0x200567a4                __dso_handle
  .data.heap_end.0
-                0x20056b88        0x4 ./simplicity_sdk_2025.6.0/platform/service/memory_manager/src/sl_memory_manager_region.o
+                0x200567a8        0x4 ./simplicity_sdk_2025.6.0/platform/service/memory_manager/src/sl_memory_manager_region.o
  .data.mvp_reg_cfg
-                0x20056b8c        0x4 ./simplicity_sdk_2025.6.0/platform/compute/driver/mvp/src/sl_mvp.o
+                0x200567ac        0x4 ./simplicity_sdk_2025.6.0/platform/compute/driver/mvp/src/sl_mvp.o
  .data.SystemCoreClock
-                0x20056b90        0x4 ./simplicity_sdk_2025.6.0/platform/Device/SiliconLabs/EFR32MG26/Source/system_efr32mg26.o
-                0x20056b90                SystemCoreClock
+                0x200567b0        0x4 ./simplicity_sdk_2025.6.0/platform/Device/SiliconLabs/EFR32MG26/Source/system_efr32mg26.o
+                0x200567b0                SystemCoreClock
  .data.SystemHFRCODPLLClock
-                0x20056b94        0x4 ./simplicity_sdk_2025.6.0/platform/Device/SiliconLabs/EFR32MG26/Source/system_efr32mg26.o
+                0x200567b4        0x4 ./simplicity_sdk_2025.6.0/platform/Device/SiliconLabs/EFR32MG26/Source/system_efr32mg26.o
  .data.SystemLFXOClock
-                0x20056b98        0x4 ./simplicity_sdk_2025.6.0/platform/Device/SiliconLabs/EFR32MG26/Source/system_efr32mg26.o
+                0x200567b8        0x4 ./simplicity_sdk_2025.6.0/platform/Device/SiliconLabs/EFR32MG26/Source/system_efr32mg26.o
  .data.SystemHFXOClock
-                0x20056b9c        0x4 ./simplicity_sdk_2025.6.0/platform/Device/SiliconLabs/EFR32MG26/Source/system_efr32mg26.o
+                0x200567bc        0x4 ./simplicity_sdk_2025.6.0/platform/Device/SiliconLabs/EFR32MG26/Source/system_efr32mg26.o
  .data.init_camera
-                0x20056ba0       0x14 ./autogen/sl_i2cspm_init.o
-                0x20056ba0                init_camera
+                0x200567c0       0x14 ./autogen/sl_i2cspm_init.o
+                0x200567c0                init_camera
  .data.sl_iostream_instances_info
-                0x20056bb4        0x4 ./autogen/sl_iostream_handles.o
-                0x20056bb4                sl_iostream_instances_info
+                0x200567d4        0x4 ./autogen/sl_iostream_handles.o
+                0x200567d4                sl_iostream_instances_info
  .data.sl_iostream_instance_vcom_info
-                0x20056bb8       0x10 ./autogen/sl_iostream_init_eusart_instances.o
-                0x20056bb8                sl_iostream_instance_vcom_info
+                0x200567d8       0x10 ./autogen/sl_iostream_init_eusart_instances.o
+                0x200567d8                sl_iostream_instance_vcom_info
  .data.uart_periph_vcom
-                0x20056bc8       0x14 ./autogen/sl_iostream_init_eusart_instances.o
+                0x200567e8       0x14 ./autogen/sl_iostream_init_eusart_instances.o
  .data.sl_iostream_vcom_handle
-                0x20056bdc        0x4 ./autogen/sl_iostream_init_eusart_instances.o
-                0x20056bdc                sl_iostream_vcom_handle
+                0x200567fc        0x4 ./autogen/sl_iostream_init_eusart_instances.o
+                0x200567fc                sl_iostream_vcom_handle
  .data.sl_spidrv_usart_init_camera
-                0x20056be0       0x20 ./autogen/sl_spidrv_init.o
-                0x20056be0                sl_spidrv_usart_init_camera
+                0x20056800       0x20 ./autogen/sl_spidrv_init.o
+                0x20056800                sl_spidrv_usart_init_camera
  .data.sl_spidrv_usart_camera_handle
-                0x20056c00        0x4 ./autogen/sl_spidrv_init.o
-                0x20056c00                sl_spidrv_usart_camera_handle
+                0x20056820        0x4 ./autogen/sl_spidrv_init.o
+                0x20056820                sl_spidrv_usart_camera_handle
  .data._ZZL4initvE20micro_error_reporter
-                0x20056c04        0x4 ./aiml_2.1.0/src/sl_tflite_micro_init.o
- .data.__sglue  0x20056c08        0xc c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard\libc_nano.a(libc_a-findfp.o)
-                0x20056c08                __sglue
+                0x20056824        0x4 ./aiml_2.1.0/src/sl_tflite_micro_init.o
+ .data.__sglue  0x20056828        0xc c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard\libc_nano.a(libc_a-findfp.o)
+                0x20056828                __sglue
  .data._impure_ptr
-                0x20056c14        0x4 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard\libc_nano.a(libc_a-impure.o)
-                0x20056c14                _impure_ptr
+                0x20056834        0x4 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard\libc_nano.a(libc_a-impure.o)
+                0x20056834                _impure_ptr
  .data._impure_data
-                0x20056c18       0x4c c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard\libc_nano.a(libc_a-impure.o)
-                0x20056c18                _impure_data
+                0x20056838       0x4c c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard\libc_nano.a(libc_a-impure.o)
+                0x20056838                _impure_data
  .data.__global_locale
-                0x20056c64      0x16c c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard\libc_nano.a(libc_a-locale.o)
-                0x20056c64                __global_locale
+                0x20056884      0x16c c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard\libc_nano.a(libc_a-locale.o)
+                0x20056884                __global_locale
  .data.hfxo_precision
-                0x20056dd0        0x2 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_cmu.o
+                0x200569f0        0x2 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_cmu.o
  .data.lfxo_precision
-                0x20056dd2        0x2 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_cmu.o
+                0x200569f2        0x2 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_cmu.o
  .data.cc_disabled
-                0x20056dd4        0x1 ./simplicity_sdk_2025.6.0/platform/service/sleeptimer/src/sl_sleeptimer_hal_sysrtc.o
+                0x200569f4        0x1 ./simplicity_sdk_2025.6.0/platform/service/sleeptimer/src/sl_sleeptimer_hal_sysrtc.o
  .data.ctuneDelta
-                0x20056dd5        0x1 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_cmu.o
+                0x200569f5        0x1 ./simplicity_sdk_2025.6.0/platform/emlib/src/em_cmu.o
  .data._ZL17debug_log_enabled
-                0x20056dd6        0x1 ./aiml_2.1.0/siliconlabs/debug_log.o
-                0x20056dd8                . = ALIGN (0x4)
- *fill*         0x20056dd7        0x1 
-                0x20056dd8                . = ALIGN (0x4)
-                0x20056dd8                PROVIDE (__preinit_array_start = .)
+                0x200569f6        0x1 ./aiml_2.1.0/siliconlabs/debug_log.o
+                0x200569f8                . = ALIGN (0x4)
+ *fill*         0x200569f7        0x1 
+                0x200569f8                . = ALIGN (0x4)
+                0x200569f8                PROVIDE (__preinit_array_start = .)
  *(.preinit_array)
-                0x20056dd8                PROVIDE (__preinit_array_end = .)
-                0x20056dd8                . = ALIGN (0x4)
-                0x20056dd8                PROVIDE (__init_array_start = .)
+                0x200569f8                PROVIDE (__preinit_array_end = .)
+                0x200569f8                . = ALIGN (0x4)
+                0x200569f8                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array)
- .init_array    0x20056dd8        0x4 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard/crtbegin.o
-                0x20056ddc                PROVIDE (__init_array_end = .)
-                0x20056ddc                . = ALIGN (0x4)
+ .init_array    0x200569f8        0x4 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard/crtbegin.o
+                0x200569fc                PROVIDE (__init_array_end = .)
+                0x200569fc                . = ALIGN (0x4)
                 [!provide]                PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array)
- .fini_array    0x20056ddc        0x4 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard/crtbegin.o
+ .fini_array    0x200569fc        0x4 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard/crtbegin.o
                 [!provide]                PROVIDE (__fini_array_end = .)
-                0x20056de0                . = ALIGN (0x4)
-                0x20056de0                __data_end__ = .
+                0x20056a00                . = ALIGN (0x4)
+                0x20056a00                __data_end__ = .
                 0x20080000                heap_limit = (ORIGIN (RAM) + LENGTH (RAM))
-                0x00029220                heap_size = (heap_limit - __HeapBase)
+                0x00029600                heap_size = (heap_limit - __HeapBase)
 
 .tm_clone_table
-                0x20056de0        0x0 load address 0x080675c0
+                0x20056a00        0x0 load address 0x080675c0
  .tm_clone_table
-                0x20056de0        0x0 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard/crtbegin.o
+                0x20056a00        0x0 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard/crtbegin.o
  .tm_clone_table
-                0x20056de0        0x0 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard/crtend.o
+                0x20056a00        0x0 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard/crtend.o
 
-.igot.plt       0x20056de0        0x0 load address 0x080675c0
- .igot.plt      0x20056de0        0x0 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard/crtbegin.o
+.igot.plt       0x20056a00        0x0 load address 0x080675c0
+ .igot.plt      0x20056a00        0x0 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard/crtbegin.o
 
-.heap           0x20056de0    0x29220 load address 0x080675c0
-                0x20056de0                . = ALIGN (0x8)
-                0x20056de0                __HeapBase = .
+.heap           0x20056a00    0x29600 load address 0x080675c0
+                0x20056a00                . = ALIGN (0x8)
+                0x20056a00                __HeapBase = .
                 0x20080000                . = (. + heap_size)
- *fill*         0x20056de0    0x29220 
+ *fill*         0x20056a00    0x29600 
                 0x20080000                __end__ = .
                 0x20080000                _end = __end__
  *(.heap*)
                 0x20080000                __HeapLimit = (ORIGIN (RAM) + LENGTH (RAM))
-                0x00029220                __heap_size = (__HeapLimit - __HeapBase)
+                0x00029600                __heap_size = (__HeapLimit - __HeapBase)
                 0x20080000                __ram_end__ = 0x20080000
                 0x0831e000                __main_flash_end__ = 0x831e000
 
@@ -10707,8 +10678,8 @@ text_application_ram
 
 .nvm
  *(.simee*)
-                0x20056b84                __ramfuncs_start__ = __vma_ramfuncs_start__
-                0x20056b84                __ramfuncs_end__ = __vma_ramfuncs_end__
+                0x200567a4                __ramfuncs_start__ = __vma_ramfuncs_start__
+                0x200567a4                __ramfuncs_end__ = __vma_ramfuncs_end__
                 0x0831e000                linker_nvm_end = __main_flash_end__
                 0x0831e000                linker_nvm_begin = (linker_nvm_end - SIZEOF (.nvm))
                 0x0831e000                linker_storage_end = linker_nvm_begin
@@ -11294,7 +11265,7 @@ LOAD linker stubs
  .debug_line_str
                 0x000002ce       0xd2 c:/siliconlabs/simplicitystudio/v5/developer/toolchains/gnu_arm/12.2.rel1_2023.7/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v8-m.main+fp/hard\libgcc.a(_arm_unorddf2.o)
 
-.debug_info     0x00000000   0x43baca
+.debug_info     0x00000000   0x43bac9
  .debug_info    0x00000000      0x1a6 ./simplicity_sdk_2025.6.0/platform/service/udelay/src/sl_udelay.o
  .debug_info    0x000001a6       0x26 ./simplicity_sdk_2025.6.0/platform/service/udelay/src/sl_udelay_armv6m_gcc.o
  .debug_info    0x000001cc     0x19f0 ./simplicity_sdk_2025.6.0/platform/service/sleeptimer/src/sl_sleeptimer.o
@@ -11355,52 +11326,52 @@ LOAD linker stubs
  .debug_info    0x00065ee0      0x336 ./autogen/sl_event_handler.o
  .debug_info    0x00066216      0x73f ./autogen/sl_i2cspm_init.o
  .debug_info    0x00066955      0x3e4 ./autogen/sl_iostream_handles.o
- .debug_info    0x00066d39     0x1e3c ./autogen/sl_iostream_init_eusart_instances.o
- .debug_info    0x00068b75     0x150e ./autogen/sl_spidrv_init.o
- .debug_info    0x0006a083      0x103 ./autogen/sl_tflite_micro_model.o
- .debug_info    0x0006a186     0x4cdf ./arducam/drivers/m2mp/arducam_m_2mp_driver.o
- .debug_info    0x0006ee65      0xeb4 ./arducam/drivers/m2mp/ov2640.o
- .debug_info    0x0006fd19      0xd08 ./arducam/arducam.o
- .debug_info    0x00070a21     0x74ff ./aiml_2.1.0/third_party/tflite-micro/tensorflow/lite/micro/kernels/cmsis_nn/softmax.o
- .debug_info    0x00077f20     0xd347 ./aiml_2.1.0/third_party/tflite-micro/tensorflow/lite/micro/kernels/cmsis_nn/unidirectional_sequence_lstm.o
- .debug_info    0x00085267    0x5c6cc ./aiml_2.1.0/src/sl_tflite_micro_init.o
- .debug_info    0x000e1933     0x9f9a ./aiml_2.1.0/siliconlabs/add.o
- .debug_info    0x000eb8cd     0x8cdc ./aiml_2.1.0/siliconlabs/conv.o
- .debug_info    0x000f45a9      0xb30 ./aiml_2.1.0/siliconlabs/debug_log.o
- .debug_info    0x000f50d9     0x8ae1 ./aiml_2.1.0/siliconlabs/depthwise_conv.o
- .debug_info    0x000fdbba     0x8892 ./aiml_2.1.0/siliconlabs/fully_connected.o
- .debug_info    0x0010644c       0x86 ./app.o
- .debug_info    0x001064d2    0x5cf02 ./image_classifier.o
- .debug_info    0x001633d4       0xa3 ./main.o
- .debug_info    0x00163477      0x1d1 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(error_reporter.cc.obj)
- .debug_info    0x00163648    0x5fdf3 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(flatbuffer_conversions.cc.obj)
- .debug_info    0x001c343b     0x14a1 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(common.cc.obj)
- .debug_info    0x001c48dc     0x4fd4 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(kernel_util.cc.obj)
- .debug_info    0x001c98b0     0x165a C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(common.cc.obj)
- .debug_info    0x001caf0a     0x1fa4 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(quantization_util.cc.obj)
- .debug_info    0x001cceae     0x2c1f C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(tensor_ctypes.cc.obj)
- .debug_info    0x001cfacd    0x4c0a6 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_interpreter.cc.obj)
- .debug_info    0x0021bb73      0x50a C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_log.cc.obj)
- .debug_info    0x0021c07d    0x25c1f C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_op_resolver.cc.obj)
- .debug_info    0x00241c9c      0xefb C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_string.cc.obj)
- .debug_info    0x00242b97    0x242ca C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(flatbuffer_conversions_bridge.cc.obj)
- .debug_info    0x00266e61      0x8a6 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_error_reporter.cc.obj)
- .debug_info    0x00267707    0x1039c C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(schema_utils.cc.obj)
- .debug_info    0x00277aa3     0x4b92 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(kernel_util.cc.obj)
- .debug_info    0x0027c635     0x6676 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(pad.cc.obj)
- .debug_info    0x00282cab     0x3c55 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(reduce.cc.obj)
- .debug_info    0x00286900     0x9779 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(reduce_common.cc.obj)
- .debug_info    0x00290079     0x4b72 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(softmax_common.cc.obj)
- .debug_info    0x00294beb    0x4a499 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(flatbuffer_utils.cc.obj)
- .debug_info    0x002df084    0x214fd C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(memory_helpers.cc.obj)
- .debug_info    0x00300581    0x4ea57 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_allocator.cc.obj)
- .debug_info    0x0034efd8    0x495a5 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_context.cc.obj)
- .debug_info    0x0039857d    0x4b443 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_graph.cc.obj)
- .debug_info    0x003e39c0     0x3c67 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_resource_variable.cc.obj)
- .debug_info    0x003e7627     0x2bb3 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_utils.cc.obj)
- .debug_info    0x003ea1da     0x389f C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(single_arena_buffer_allocator.cc.obj)
- .debug_info    0x003eda79     0x1582 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(greedy_memory_planner.cc.obj)
- .debug_info    0x003eeffb    0x4cacf C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_allocation_info.cc.obj)
+ .debug_info    0x00066d39     0x1e3b ./autogen/sl_iostream_init_eusart_instances.o
+ .debug_info    0x00068b74     0x150e ./autogen/sl_spidrv_init.o
+ .debug_info    0x0006a082      0x103 ./autogen/sl_tflite_micro_model.o
+ .debug_info    0x0006a185     0x4cdf ./arducam/drivers/m2mp/arducam_m_2mp_driver.o
+ .debug_info    0x0006ee64      0xeb4 ./arducam/drivers/m2mp/ov2640.o
+ .debug_info    0x0006fd18      0xd08 ./arducam/arducam.o
+ .debug_info    0x00070a20     0x74ff ./aiml_2.1.0/third_party/tflite-micro/tensorflow/lite/micro/kernels/cmsis_nn/softmax.o
+ .debug_info    0x00077f1f     0xd347 ./aiml_2.1.0/third_party/tflite-micro/tensorflow/lite/micro/kernels/cmsis_nn/unidirectional_sequence_lstm.o
+ .debug_info    0x00085266    0x5c6cc ./aiml_2.1.0/src/sl_tflite_micro_init.o
+ .debug_info    0x000e1932     0x9f9a ./aiml_2.1.0/siliconlabs/add.o
+ .debug_info    0x000eb8cc     0x8cdc ./aiml_2.1.0/siliconlabs/conv.o
+ .debug_info    0x000f45a8      0xb30 ./aiml_2.1.0/siliconlabs/debug_log.o
+ .debug_info    0x000f50d8     0x8ae1 ./aiml_2.1.0/siliconlabs/depthwise_conv.o
+ .debug_info    0x000fdbb9     0x8892 ./aiml_2.1.0/siliconlabs/fully_connected.o
+ .debug_info    0x0010644b       0x86 ./app.o
+ .debug_info    0x001064d1    0x5cf02 ./image_classifier.o
+ .debug_info    0x001633d3       0xa3 ./main.o
+ .debug_info    0x00163476      0x1d1 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(error_reporter.cc.obj)
+ .debug_info    0x00163647    0x5fdf3 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(flatbuffer_conversions.cc.obj)
+ .debug_info    0x001c343a     0x14a1 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(common.cc.obj)
+ .debug_info    0x001c48db     0x4fd4 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(kernel_util.cc.obj)
+ .debug_info    0x001c98af     0x165a C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(common.cc.obj)
+ .debug_info    0x001caf09     0x1fa4 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(quantization_util.cc.obj)
+ .debug_info    0x001ccead     0x2c1f C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(tensor_ctypes.cc.obj)
+ .debug_info    0x001cfacc    0x4c0a6 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_interpreter.cc.obj)
+ .debug_info    0x0021bb72      0x50a C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_log.cc.obj)
+ .debug_info    0x0021c07c    0x25c1f C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_op_resolver.cc.obj)
+ .debug_info    0x00241c9b      0xefb C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_string.cc.obj)
+ .debug_info    0x00242b96    0x242ca C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(flatbuffer_conversions_bridge.cc.obj)
+ .debug_info    0x00266e60      0x8a6 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_error_reporter.cc.obj)
+ .debug_info    0x00267706    0x1039c C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(schema_utils.cc.obj)
+ .debug_info    0x00277aa2     0x4b92 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(kernel_util.cc.obj)
+ .debug_info    0x0027c634     0x6676 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(pad.cc.obj)
+ .debug_info    0x00282caa     0x3c55 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(reduce.cc.obj)
+ .debug_info    0x002868ff     0x9779 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(reduce_common.cc.obj)
+ .debug_info    0x00290078     0x4b72 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(softmax_common.cc.obj)
+ .debug_info    0x00294bea    0x4a499 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(flatbuffer_utils.cc.obj)
+ .debug_info    0x002df083    0x214fd C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(memory_helpers.cc.obj)
+ .debug_info    0x00300580    0x4ea57 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_allocator.cc.obj)
+ .debug_info    0x0034efd7    0x495a5 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_context.cc.obj)
+ .debug_info    0x0039857c    0x4b443 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_graph.cc.obj)
+ .debug_info    0x003e39bf     0x3c67 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_resource_variable.cc.obj)
+ .debug_info    0x003e7626     0x2bb3 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_utils.cc.obj)
+ .debug_info    0x003ea1d9     0x389f C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(single_arena_buffer_allocator.cc.obj)
+ .debug_info    0x003eda78     0x1582 C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(greedy_memory_planner.cc.obj)
+ .debug_info    0x003eeffa    0x4cacf C:/Users/ADMIN/SimplicityStudio/SDKs/simplicity_sdk//extension/aiml-extension/lib/gcc/cortex-m33/libtflm.a(micro_allocation_info.cc.obj)
 
 .debug_abbrev   0x00000000    0x2306a
  .debug_abbrev  0x00000000      0x11e ./simplicity_sdk_2025.6.0/platform/service/udelay/src/sl_udelay.o

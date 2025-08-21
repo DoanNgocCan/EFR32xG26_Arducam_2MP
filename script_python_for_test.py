@@ -6,11 +6,11 @@ from PIL import Image
 
 # --- CẤU HÌNH ---
 SERIAL_PORT = 'COM13'
-BAUD_RATE = 115200      # Tốc độ an toàn
+BAUD_RATE = 921600      # Tốc độ an toàn
 IMAGE_WIDTH = 112
 IMAGE_HEIGHT = 112
 EXPECTED_IMAGE_SIZE = IMAGE_WIDTH * IMAGE_HEIGHT * 2
-CHUNK_SIZE = 1024       # Phải khớp với EFR32
+CHUNK_SIZE = 25088      # Phải khớp với EFR32
 
 # Thư mục lưu trữ
 RGB565_FOLDER = "data_rgb565"
