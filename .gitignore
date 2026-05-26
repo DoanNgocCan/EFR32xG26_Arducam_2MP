@@ -9,42 +9,48 @@ build/
 *.a
 *.so
 *.dll
+*.obj
+*.hex
 
 # ===== IDE and Editor Files =====
 .vscode/
 .settings/
 .project
 .cproject
-.uceditor/
 .classpath
+.uceditor/
+.pdm/
+.projectlinkstore
 *.swp
 *.swo
 *~
-.DS_Store
-
-# ===== Simplicity Studio Files =====
-.projectlinkstore
-.pdm/
-*.slps
-*.jdebug
 *.launch
+*.jdebug
+
+# ===== Simplicity Studio Generated =====
+autogen/
+*.slps
 
 # ===== Data Files and Outputs =====
 captured_images/
+converted_png/
 data_rgb565/
 image_rgb888/
 
-# ===== Large SDK and Library Files (should not commit) =====
+# ===== Large SDK and Library Files =====
 simplicity_sdk_*/
 aiml_*/
+
+# ===== Archive Files =====
 *.zip
 *.tar.gz
+*.rar
+*.7z
 
 # ===== Python =====
 __pycache__/
 *.py[cod]
 *$py.class
-*.so
 .Python
 env/
 venv/
@@ -64,18 +70,18 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+MANIFEST
 
-# ===== Python Test Scripts (helper scripts, not part of main project) =====
+# ===== Helper/Test Scripts (not part of core project) =====
 rgb565_to_rgb888.py
 
-# ===== Temporary and Generated Files =====
+# ===== Temporary and Generated =====
 *.tmp
 *.log
-*.swp
 *.bak
 .git/COMMIT_EDITMSG
 
-# ===== Node modules (if any web components added) =====
+# ===== Node modules (if any web components) =====
 node_modules/
 npm-debug.log
 
@@ -84,3 +90,5 @@ npm-debug.log
 Thumbs.db
 *.ini
 *.cfg
+thumbs.db
+desktop.ini
