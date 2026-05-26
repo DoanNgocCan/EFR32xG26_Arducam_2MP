@@ -37,6 +37,7 @@ image_rgb888/
 # ===== Large SDK and Library Files (should not commit) =====
 simplicity_sdk_*/
 aiml_*/
+*.zip
 *.tar.gz
 
 # ===== Python =====

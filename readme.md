@@ -221,18 +221,172 @@ The Python script (`script_python_for_test.py`) running on PC:
 
 The face classification model was trained using **Silicon Labs MLTK** (Machine Learning Toolkit) on Google Colab.
 
-### Dataset Structure
+### Dataset Structure & Collection
+
+⚠️ **NOTE**: The dataset is NOT included in this repository (file size exceeds GitHub's 100MB limit). You must collect your own dataset following these guidelines.
 
 ```
 face_classification_model/dataset/
-├── face/                  # Positive class: face images
+├── face/                  # Positive class: face images (~500+ images)
 │   ├── image_001.jpg
 │   ├── image_002.jpg
-│   └── ... (hundreds of face images)
-└── noface/               # Negative class: non-face images
+│   └── ... (hundreds of 112×112 grayscale face images)
+└── noface/               # Negative class: non-face/background images (~500+ images)
     ├── background_001.jpg
     ├── background_002.jpg
-    └── ... (hundreds of non-face/background images)
+    └── ... (hundreds of 112×112 grayscale background/scene images)
+```
+
+### Dataset Collection from Arducam
+
+To collect training images directly from your Arducam camera:
+
+#### Option 1: Capture from Live Device (Recommended)
+
+1. **Run Device in Image Capture Mode**
+   ```bash
+   # Flash firmware and run script_python_for_test.py
+   python script_python_for_test.py
+   # Device will save images to: image_rgb888/image_<timestamp>.png
+   ```
+
+2. **Organize Captured Images**
+   ```bash
+   # Create dataset structure
+   mkdir -p face_classification_model/dataset/face
+   mkdir -p face_classification_model/dataset/noface
+   
+   # Copy face images to face/ folder
+   # Copy non-face/background images to noface/ folder
+   ```
+
+3. **Convert to Grayscale (112×112×1)**
+   ```bash
+   # Use provided converter script
+   python rgb565_to_rgb888.py [input_png_file]
+   # Then convert resulting RGB888 to grayscale using PIL:
+   
+   from PIL import Image
+   import os
+   
+   # Convert all images to grayscale 112x112
+   for class_dir in ['face', 'noface']:
+       path = f'face_classification_model/dataset/{class_dir}'
+       for filename in os.listdir(path):
+           if filename.endswith('.png'):
+               img = Image.open(f'{path}/{filename}')
+               # Convert to grayscale and resize
+               img_gray = img.convert('L').resize((112, 112), Image.LANCZOS)
+               img_gray.save(f'{path}/{filename}')
+   ```
+
+#### Option 2: Use External Images (Alternative)
+
+1. **Prepare Your Images**
+   - Download face images from public datasets:
+     - [LFW (Labeled Faces in the Wild)](http://vis-www.cs.umass.edu/lfw/)
+     - [CelebA](https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html)
+     - [WIDER Face](http://shuoyang1213.me/WIDERFACE/)
+   
+   - Collect background/non-face images:
+     - Scenes, objects, animals, etc.
+     - Public datasets: [ImageNet](https://www.image-net.org/), [COCO](https://cocodataset.org/)
+
+2. **Process Images**
+   ```python
+   from PIL import Image
+   import os
+   import glob
+   
+   # Convert and resize all images to 112x112 grayscale
+   for class_name in ['face', 'noface']:
+       input_dir = f'raw_images/{class_name}'  # Your raw images
+       output_dir = f'face_classification_model/dataset/{class_name}'
+       os.makedirs(output_dir, exist_ok=True)
+       
+       for filepath in glob.glob(f'{input_dir}/*'):
+           img = Image.open(filepath)
+           # Convert to grayscale and resize to 112×112
+           img_processed = img.convert('L').resize((112, 112), Image.LANCZOS)
+           # Save with sequential naming
+           filename = os.path.basename(filepath)
+           img_processed.save(f'{output_dir}/processed_{filename}')
+   ```
+
+### Dataset Requirements
+
+| Requirement | Specification |
+|-------------|---------------|
+| **Image Size** | 112×112 pixels (fixed for model input) |
+| **Color Space** | Grayscale (1 channel, INT8) |
+| **Data Type** | JPEG or PNG format |
+| **Min Images/Class** | 200-500 images per class recommended |
+| **Total Images** | 400-1000+ images minimum |
+| **Face Class** | High-quality face photos, various angles/lighting |
+| **No-Face Class** | Backgrounds, objects, scenes, animals |
+| **Class Balance** | Roughly equal count for both classes |
+| **Data Augmentation** | Applied during training (rotation ±15°, shift ±10%, zoom ±10%) |
+
+### Image Capture Tips
+
+1. **Capture from Device**
+   - Run device continuously while pointing at various subjects
+   - Capture both face and non-face images in variety of lighting conditions
+   - Let script save to `image_rgb888/` folder
+
+2. **Manual Selection**
+   - Review captured images
+   - Move face images to `face_classification_model/dataset/face/`
+   - Move non-face images to `face_classification_model/dataset/noface/`
+
+3. **Image Preprocessing**
+   ```python
+   # Python script to batch process images
+   from PIL import Image, ImageOps
+   import os
+   
+   def process_image(input_path, output_path):
+       """Convert any image to 112×112 grayscale"""
+       img = Image.open(input_path)
+       
+       # Convert to grayscale
+       img_gray = ImageOps.grayscale(img)
+       
+       # Resize to 112×112 (maintains aspect ratio with padding if needed)
+       img_gray.thumbnail((112, 112), Image.LANCZOS)
+       
+       # Create white background and paste image
+       background = Image.new('L', (112, 112), 255)
+       offset = ((112 - img_gray.width) // 2, (112 - img_gray.height) // 2)
+       background.paste(img_gray, offset)
+       
+       background.save(output_path)
+   
+   # Apply to all images
+   for root, dirs, files in os.walk('face_classification_model/dataset'):
+       for file in files:
+           if file.endswith(('.jpg', '.jpeg', '.png')):
+               input_file = os.path.join(root, file)
+               process_image(input_file, input_file)
+   ```
+
+### Validation & Quality Check
+
+After collecting dataset:
+
+```bash
+# Verify dataset structure
+python -c "
+import os
+for class_name in ['face', 'noface']:
+    path = f'face_classification_model/dataset/{class_name}'
+    count = len([f for f in os.listdir(path) if f.endswith(('.jpg', '.png'))])
+    print(f'{class_name}: {count} images')
+"
+
+# Expected output:
+# face: 300-500 images
+# noface: 300-500 images
 ```
 
 ### Training Process
@@ -339,35 +493,62 @@ Throughput:            145.6 M Ops/s
 MAC/s:                 67.3 M MACs/s
 ```
 
-### Using Custom Dataset
+### Retraining with Your Dataset
 
-To retrain with your own face dataset:
+After collecting and preparing your dataset (see **Dataset Collection** section above):
 
-1. **Prepare Dataset**
-   ```
-   dataset/
-   ├── face/          (your face images)
-   └── noface/        (background/non-face images)
-   ```
-
-2. **Upload to Google Colab**
+1. **Verify Dataset Structure**
    ```bash
-   # In Colab, mount Google Drive and extract dataset
+   # Make sure you have:
+   # face_classification_model/dataset/face/ (300-500 images)
+   # face_classification_model/dataset/noface/ (300-500 images)
    ```
 
-3. **Modify train_model.py**
+2. **Open Training Notebook in Google Colab**
+   ```bash
+   # Upload to Google Colab:
+   # face_classification_model/train_model.ipynb
+   # 
+   # The notebook will automatically:
+   # - Load images from dataset/ folder
+   # - Resize to 112×112 if needed
+   # - Apply data augmentation
+   # - Train MobileNet v1 (α=0.25)
+   ```
+
+3. **Training Configuration** (Modify in notebook if needed)
    ```python
-   my_model.dataset = './dataset/YOUR_DATASET_PATH'
-   my_model.epochs = 50  # Adjust as needed
-   # Retrain and generate new .tflite model
+   my_model.dataset = './dataset/'  # Path to your dataset
+   my_model.epochs = 50             # Increase for better accuracy
+   my_model.batch_size = 64
+   my_model.learning_rate = 0.001
+   # Run: my_model.train()
    ```
 
-4. **Export and Deploy**
+4. **Export Trained Model**
    ```bash
-   # Download trained model: train_model.tflite
-   # Replace in aiml_2.1.0/src/ directory
-   # Rebuild firmware for EFR32
+   # After training completes:
+   # Download: train_model.tflite (INT8 quantized model)
+   # Download: train_model.h5 (Keras checkpoint for future retraining)
    ```
+
+5. **Deploy to Device**
+   ```bash
+   # Copy the new model to firmware
+   cp train_model.tflite aiml_2.1.0/src/
+   
+   # Rebuild and flash
+   # In Simplicity Studio: Build → Build Project
+   # Run → Flash
+   ```
+
+### Expected Training Results
+
+With ~500 images per class:
+- **Training time**: 5-10 minutes (on Google Colab GPU)
+- **Final accuracy**: 90-95% (depends on image quality)
+- **Model size**: 301.6 KB (INT8 quantized)
+- **Inference time**: ~140ms on EFR32MG26
 
 ## Building and Running
 
