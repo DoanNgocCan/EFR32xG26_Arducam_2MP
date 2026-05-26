@@ -1,7 +1,85 @@
+# ===== Build Artifacts =====
+GNU ARM v12.2.1 - Debug/
+GNU ARM v12.2.1 - Release/
+build/
+*.out
+*.elf
+*.axf
+*.o
+*.a
+*.so
+*.dll
+
+# ===== IDE and Editor Files =====
+.vscode/
+.settings/
+.project
+.cproject
+.uceditor/
+.classpath
+*.swp
+*.swo
+*~
+.DS_Store
+
+# ===== Simplicity Studio Files =====
+.projectlinkstore
+.pdm/
+*.slps
+*.jdebug
+*.launch
+
+# ===== Data Files and Outputs =====
 captured_images/
-captured_images_grayscale/
-camera_viewer_grayscale.py
 data_rgb565/
 image_rgb888/
-converted_png/
+
+# ===== Large SDK and Library Files (should not commit) =====
+simplicity_sdk_*/
+aiml_*/
+*.tar.gz
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ===== Python Test Scripts (helper scripts, not part of main project) =====
 rgb565_to_rgb888.py
+
+# ===== Temporary and Generated Files =====
+*.tmp
+*.log
+*.swp
+*.bak
+.git/COMMIT_EDITMSG
+
+# ===== Node modules (if any web components added) =====
+node_modules/
+npm-debug.log
+
+# ===== OS-specific =====
+.DS_Store
+Thumbs.db
+*.ini
+*.cfg

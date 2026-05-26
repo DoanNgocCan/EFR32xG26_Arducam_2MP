@@ -1,0 +1,111 @@
++-------+-------------------+------------------+-----------------+--------------------------------------------------------+
+| Index | OpCode            | Input(s)         | Output(s)       | Config                                                 |
++-------+-------------------+------------------+-----------------+--------------------------------------------------------+
+| 0     | conv_2d           | 112x112x1 (int8) | 56x56x8 (int8)  | Padding:Same stride:2x2 activation:Relu6               |
+|       |                   | 3x3x1 (int8)     |                 |                                                        |
+|       |                   | 8 (int32)        |                 |                                                        |
+| 1     | depthwise_conv_2d | 56x56x8 (int8)   | 56x56x8 (int8)  | Multiplier:1 padding:Same stride:1x1 activation:Relu6  |
+|       |                   | 3x3x8 (int8)     |                 |                                                        |
+|       |                   | 8 (int32)        |                 |                                                        |
+| 2     | conv_2d           | 56x56x8 (int8)   | 56x56x16 (int8) | Padding:Same stride:1x1 activation:Relu6               |
+|       |                   | 1x1x8 (int8)     |                 |                                                        |
+|       |                   | 16 (int32)       |                 |                                                        |
+| 3     | pad               | 56x56x16 (int8)  | 57x57x16 (int8) | Type=padoptions                                        |
+|       |                   | 2 (int32)        |                 |                                                        |
+| 4     | depthwise_conv_2d | 57x57x16 (int8)  | 28x28x16 (int8) | Multiplier:1 padding:Valid stride:2x2 activation:Relu6 |
+|       |                   | 3x3x16 (int8)    |                 |                                                        |
+|       |                   | 16 (int32)       |                 |                                                        |
+| 5     | conv_2d           | 28x28x16 (int8)  | 28x28x32 (int8) | Padding:Same stride:1x1 activation:Relu6               |
+|       |                   | 1x1x16 (int8)    |                 |                                                        |
+|       |                   | 32 (int32)       |                 |                                                        |
+| 6     | depthwise_conv_2d | 28x28x32 (int8)  | 28x28x32 (int8) | Multiplier:1 padding:Same stride:1x1 activation:Relu6  |
+|       |                   | 3x3x32 (int8)    |                 |                                                        |
+|       |                   | 32 (int32)       |                 |                                                        |
+| 7     | conv_2d           | 28x28x32 (int8)  | 28x28x32 (int8) | Padding:Same stride:1x1 activation:Relu6               |
+|       |                   | 1x1x32 (int8)    |                 |                                                        |
+|       |                   | 32 (int32)       |                 |                                                        |
+| 8     | pad               | 28x28x32 (int8)  | 29x29x32 (int8) | Type=padoptions                                        |
+|       |                   | 2 (int32)        |                 |                                                        |
+| 9     | depthwise_conv_2d | 29x29x32 (int8)  | 14x14x32 (int8) | Multiplier:1 padding:Valid stride:2x2 activation:Relu6 |
+|       |                   | 3x3x32 (int8)    |                 |                                                        |
+|       |                   | 32 (int32)       |                 |                                                        |
+| 10    | conv_2d           | 14x14x32 (int8)  | 14x14x64 (int8) | Padding:Same stride:1x1 activation:Relu6               |
+|       |                   | 1x1x32 (int8)    |                 |                                                        |
+|       |                   | 64 (int32)       |                 |                                                        |
+| 11    | depthwise_conv_2d | 14x14x64 (int8)  | 14x14x64 (int8) | Multiplier:1 padding:Same stride:1x1 activation:Relu6  |
+|       |                   | 3x3x64 (int8)    |                 |                                                        |
+|       |                   | 64 (int32)       |                 |                                                        |
+| 12    | conv_2d           | 14x14x64 (int8)  | 14x14x64 (int8) | Padding:Same stride:1x1 activation:Relu6               |
+|       |                   | 1x1x64 (int8)    |                 |                                                        |
+|       |                   | 64 (int32)       |                 |                                                        |
+| 13    | pad               | 14x14x64 (int8)  | 15x15x64 (int8) | Type=padoptions                                        |
+|       |                   | 2 (int32)        |                 |                                                        |
+| 14    | depthwise_conv_2d | 15x15x64 (int8)  | 7x7x64 (int8)   | Multiplier:1 padding:Valid stride:2x2 activation:Relu6 |
+|       |                   | 3x3x64 (int8)    |                 |                                                        |
+|       |                   | 64 (int32)       |                 |                                                        |
+| 15    | conv_2d           | 7x7x64 (int8)    | 7x7x128 (int8)  | Padding:Same stride:1x1 activation:Relu6               |
+|       |                   | 1x1x64 (int8)    |                 |                                                        |
+|       |                   | 128 (int32)      |                 |                                                        |
+| 16    | depthwise_conv_2d | 7x7x128 (int8)   | 7x7x128 (int8)  | Multiplier:1 padding:Same stride:1x1 activation:Relu6  |
+|       |                   | 3x3x128 (int8)   |                 |                                                        |
+|       |                   | 128 (int32)      |                 |                                                        |
+| 17    | conv_2d           | 7x7x128 (int8)   | 7x7x128 (int8)  | Padding:Same stride:1x1 activation:Relu6               |
+|       |                   | 1x1x128 (int8)   |                 |                                                        |
+|       |                   | 128 (int32)      |                 |                                                        |
+| 18    | depthwise_conv_2d | 7x7x128 (int8)   | 7x7x128 (int8)  | Multiplier:1 padding:Same stride:1x1 activation:Relu6  |
+|       |                   | 3x3x128 (int8)   |                 |                                                        |
+|       |                   | 128 (int32)      |                 |                                                        |
+| 19    | conv_2d           | 7x7x128 (int8)   | 7x7x128 (int8)  | Padding:Same stride:1x1 activation:Relu6               |
+|       |                   | 1x1x128 (int8)   |                 |                                                        |
+|       |                   | 128 (int32)      |                 |                                                        |
+| 20    | depthwise_conv_2d | 7x7x128 (int8)   | 7x7x128 (int8)  | Multiplier:1 padding:Same stride:1x1 activation:Relu6  |
+|       |                   | 3x3x128 (int8)   |                 |                                                        |
+|       |                   | 128 (int32)      |                 |                                                        |
+| 21    | conv_2d           | 7x7x128 (int8)   | 7x7x128 (int8)  | Padding:Same stride:1x1 activation:Relu6               |
+|       |                   | 1x1x128 (int8)   |                 |                                                        |
+|       |                   | 128 (int32)      |                 |                                                        |
+| 22    | depthwise_conv_2d | 7x7x128 (int8)   | 7x7x128 (int8)  | Multiplier:1 padding:Same stride:1x1 activation:Relu6  |
+|       |                   | 3x3x128 (int8)   |                 |                                                        |
+|       |                   | 128 (int32)      |                 |                                                        |
+| 23    | conv_2d           | 7x7x128 (int8)   | 7x7x128 (int8)  | Padding:Same stride:1x1 activation:Relu6               |
+|       |                   | 1x1x128 (int8)   |                 |                                                        |
+|       |                   | 128 (int32)      |                 |                                                        |
+| 24    | depthwise_conv_2d | 7x7x128 (int8)   | 7x7x128 (int8)  | Multiplier:1 padding:Same stride:1x1 activation:Relu6  |
+|       |                   | 3x3x128 (int8)   |                 |                                                        |
+|       |                   | 128 (int32)      |                 |                                                        |
+| 25    | conv_2d           | 7x7x128 (int8)   | 7x7x128 (int8)  | Padding:Same stride:1x1 activation:Relu6               |
+|       |                   | 1x1x128 (int8)   |                 |                                                        |
+|       |                   | 128 (int32)      |                 |                                                        |
+| 26    | pad               | 7x7x128 (int8)   | 8x8x128 (int8)  | Type=padoptions                                        |
+|       |                   | 2 (int32)        |                 |                                                        |
+| 27    | depthwise_conv_2d | 8x8x128 (int8)   | 3x3x128 (int8)  | Multiplier:1 padding:Valid stride:2x2 activation:Relu6 |
+|       |                   | 3x3x128 (int8)   |                 |                                                        |
+|       |                   | 128 (int32)      |                 |                                                        |
+| 28    | conv_2d           | 3x3x128 (int8)   | 3x3x256 (int8)  | Padding:Same stride:1x1 activation:Relu6               |
+|       |                   | 1x1x128 (int8)   |                 |                                                        |
+|       |                   | 256 (int32)      |                 |                                                        |
+| 29    | depthwise_conv_2d | 3x3x256 (int8)   | 3x3x256 (int8)  | Multiplier:1 padding:Same stride:1x1 activation:Relu6  |
+|       |                   | 3x3x256 (int8)   |                 |                                                        |
+|       |                   | 256 (int32)      |                 |                                                        |
+| 30    | conv_2d           | 3x3x256 (int8)   | 3x3x256 (int8)  | Padding:Same stride:1x1 activation:Relu6               |
+|       |                   | 1x1x256 (int8)   |                 |                                                        |
+|       |                   | 256 (int32)      |                 |                                                        |
+| 31    | mean              | 3x3x256 (int8)   | 256 (int8)      | Type=reduceroptions                                    |
+|       |                   | 2 (int32)        |                 |                                                        |
+| 32    | fully_connected   | 256 (int8)       | 2 (int8)        | Activation:None                                        |
+|       |                   | 256 (int8)       |                 |                                                        |
+|       |                   | 2 (int32)        |                 |                                                        |
+| 33    | softmax           | 2 (int8)         | 2 (int8)        | Type=softmaxoptions                                    |
++-------+-------------------+------------------+-----------------+--------------------------------------------------------+
+Total MACs: 9.412 M
+Total OPs: 19.745 M
+Name: train_model
+Version: 3
+Description: Generated by Silicon Lab's MLTK Python package
+Classes: face, noface
+Runtime memory size (RAM): 130.372 k
+hash: 2ecb5af53f4e7d0cfd4f4a99fe33dbed
+date: 2025-07-24T14:21:54.467Z
+samplewise_norm.rescale: 0.0
+samplewise_norm.mean_and_std: False
+.tflite file size: 301.6kB

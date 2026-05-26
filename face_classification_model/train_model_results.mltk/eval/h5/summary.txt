@@ -1,0 +1,10 @@
+Name: train_model
+Model Type: classification
+Overall accuracy: 92.188%
+Class accuracies:
+- noface = 99.734%
+- face = 84.978%
+Average ROC AUC: 98.382%
+Class ROC AUC:
+- noface = 98.382%
+- face = 98.382%

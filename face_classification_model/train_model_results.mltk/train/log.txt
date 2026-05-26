@@ -1,0 +1,293 @@
+CUDA_VISIBLE_DEVICES=
+No GPUs found, using CPU for training
+Model: "model"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_1 (InputLayer)        [(None, 112, 112, 1)]     0         
+                                                                 
+ conv1 (Conv2D)              (None, 56, 56, 8)         72        
+                                                                 
+ conv1_bn (BatchNormalizati  (None, 56, 56, 8)         32        
+ on)                                                             
+                                                                 
+ conv1_relu (ReLU)           (None, 56, 56, 8)         0         
+                                                                 
+ conv_dw_1 (DepthwiseConv2D  (None, 56, 56, 8)         72        
+ )                                                               
+                                                                 
+ conv_dw_1_bn (BatchNormali  (None, 56, 56, 8)         32        
+ zation)                                                         
+                                                                 
+ conv_dw_1_relu (ReLU)       (None, 56, 56, 8)         0         
+                                                                 
+ conv_pw_1 (Conv2D)          (None, 56, 56, 16)        128       
+                                                                 
+ conv_pw_1_bn (BatchNormali  (None, 56, 56, 16)        64        
+ zation)                                                         
+                                                                 
+ conv_pw_1_relu (ReLU)       (None, 56, 56, 16)        0         
+                                                                 
+ conv_pad_2 (ZeroPadding2D)  (None, 57, 57, 16)        0         
+                                                                 
+ conv_dw_2 (DepthwiseConv2D  (None, 28, 28, 16)        144       
+ )                                                               
+                                                                 
+ conv_dw_2_bn (BatchNormali  (None, 28, 28, 16)        64        
+ zation)                                                         
+                                                                 
+ conv_dw_2_relu (ReLU)       (None, 28, 28, 16)        0         
+                                                                 
+ conv_pw_2 (Conv2D)          (None, 28, 28, 32)        512       
+                                                                 
+ conv_pw_2_bn (BatchNormali  (None, 28, 28, 32)        128       
+ zation)                                                         
+                                                                 
+ conv_pw_2_relu (ReLU)       (None, 28, 28, 32)        0         
+                                                                 
+ conv_dw_3 (DepthwiseConv2D  (None, 28, 28, 32)        288       
+ )                                                               
+                                                                 
+ conv_dw_3_bn (BatchNormali  (None, 28, 28, 32)        128       
+ zation)                                                         
+                                                                 
+ conv_dw_3_relu (ReLU)       (None, 28, 28, 32)        0         
+                                                                 
+ conv_pw_3 (Conv2D)          (None, 28, 28, 32)        1024      
+                                                                 
+ conv_pw_3_bn (BatchNormali  (None, 28, 28, 32)        128       
+ zation)                                                         
+                                                                 
+ conv_pw_3_relu (ReLU)       (None, 28, 28, 32)        0         
+                                                                 
+ conv_pad_4 (ZeroPadding2D)  (None, 29, 29, 32)        0         
+                                                                 
+ conv_dw_4 (DepthwiseConv2D  (None, 14, 14, 32)        288       
+ )                                                               
+                                                                 
+ conv_dw_4_bn (BatchNormali  (None, 14, 14, 32)        128       
+ zation)                                                         
+                                                                 
+ conv_dw_4_relu (ReLU)       (None, 14, 14, 32)        0         
+                                                                 
+ conv_pw_4 (Conv2D)          (None, 14, 14, 64)        2048      
+                                                                 
+ conv_pw_4_bn (BatchNormali  (None, 14, 14, 64)        256       
+ zation)                                                         
+                                                                 
+ conv_pw_4_relu (ReLU)       (None, 14, 14, 64)        0         
+                                                                 
+ conv_dw_5 (DepthwiseConv2D  (None, 14, 14, 64)        576       
+ )                                                               
+                                                                 
+ conv_dw_5_bn (BatchNormali  (None, 14, 14, 64)        256       
+ zation)                                                         
+                                                                 
+ conv_dw_5_relu (ReLU)       (None, 14, 14, 64)        0         
+                                                                 
+ conv_pw_5 (Conv2D)          (None, 14, 14, 64)        4096      
+                                                                 
+ conv_pw_5_bn (BatchNormali  (None, 14, 14, 64)        256       
+ zation)                                                         
+                                                                 
+ conv_pw_5_relu (ReLU)       (None, 14, 14, 64)        0         
+                                                                 
+ conv_pad_6 (ZeroPadding2D)  (None, 15, 15, 64)        0         
+                                                                 
+ conv_dw_6 (DepthwiseConv2D  (None, 7, 7, 64)          576       
+ )                                                               
+                                                                 
+ conv_dw_6_bn (BatchNormali  (None, 7, 7, 64)          256       
+ zation)                                                         
+                                                                 
+ conv_dw_6_relu (ReLU)       (None, 7, 7, 64)          0         
+                                                                 
+ conv_pw_6 (Conv2D)          (None, 7, 7, 128)         8192      
+                                                                 
+ conv_pw_6_bn (BatchNormali  (None, 7, 7, 128)         512       
+ zation)                                                         
+                                                                 
+ conv_pw_6_relu (ReLU)       (None, 7, 7, 128)         0         
+                                                                 
+ conv_dw_7 (DepthwiseConv2D  (None, 7, 7, 128)         1152      
+ )                                                               
+                                                                 
+ conv_dw_7_bn (BatchNormali  (None, 7, 7, 128)         512       
+ zation)                                                         
+                                                                 
+ conv_dw_7_relu (ReLU)       (None, 7, 7, 128)         0         
+                                                                 
+ conv_pw_7 (Conv2D)          (None, 7, 7, 128)         16384     
+                                                                 
+ conv_pw_7_bn (BatchNormali  (None, 7, 7, 128)         512       
+ zation)                                                         
+                                                                 
+ conv_pw_7_relu (ReLU)       (None, 7, 7, 128)         0         
+                                                                 
+ conv_dw_8 (DepthwiseConv2D  (None, 7, 7, 128)         1152      
+ )                                                               
+                                                                 
+ conv_dw_8_bn (BatchNormali  (None, 7, 7, 128)         512       
+ zation)                                                         
+                                                                 
+ conv_dw_8_relu (ReLU)       (None, 7, 7, 128)         0         
+                                                                 
+ conv_pw_8 (Conv2D)          (None, 7, 7, 128)         16384     
+                                                                 
+ conv_pw_8_bn (BatchNormali  (None, 7, 7, 128)         512       
+ zation)                                                         
+                                                                 
+ conv_pw_8_relu (ReLU)       (None, 7, 7, 128)         0         
+                                                                 
+ conv_dw_9 (DepthwiseConv2D  (None, 7, 7, 128)         1152      
+ )                                                               
+                                                                 
+ conv_dw_9_bn (BatchNormali  (None, 7, 7, 128)         512       
+ zation)                                                         
+                                                                 
+ conv_dw_9_relu (ReLU)       (None, 7, 7, 128)         0         
+                                                                 
+ conv_pw_9 (Conv2D)          (None, 7, 7, 128)         16384     
+                                                                 
+ conv_pw_9_bn (BatchNormali  (None, 7, 7, 128)         512       
+ zation)                                                         
+                                                                 
+ conv_pw_9_relu (ReLU)       (None, 7, 7, 128)         0         
+                                                                 
+ conv_dw_10 (DepthwiseConv2  (None, 7, 7, 128)         1152      
+ D)                                                              
+                                                                 
+ conv_dw_10_bn (BatchNormal  (None, 7, 7, 128)         512       
+ ization)                                                        
+                                                                 
+ conv_dw_10_relu (ReLU)      (None, 7, 7, 128)         0         
+                                                                 
+ conv_pw_10 (Conv2D)         (None, 7, 7, 128)         16384     
+                                                                 
+ conv_pw_10_bn (BatchNormal  (None, 7, 7, 128)         512       
+ ization)                                                        
+                                                                 
+ conv_pw_10_relu (ReLU)      (None, 7, 7, 128)         0         
+                                                                 
+ conv_dw_11 (DepthwiseConv2  (None, 7, 7, 128)         1152      
+ D)                                                              
+                                                                 
+ conv_dw_11_bn (BatchNormal  (None, 7, 7, 128)         512       
+ ization)                                                        
+                                                                 
+ conv_dw_11_relu (ReLU)      (None, 7, 7, 128)         0         
+                                                                 
+ conv_pw_11 (Conv2D)         (None, 7, 7, 128)         16384     
+                                                                 
+ conv_pw_11_bn (BatchNormal  (None, 7, 7, 128)         512       
+ ization)                                                        
+                                                                 
+ conv_pw_11_relu (ReLU)      (None, 7, 7, 128)         0         
+                                                                 
+ conv_pad_12 (ZeroPadding2D  (None, 8, 8, 128)         0         
+ )                                                               
+                                                                 
+ conv_dw_12 (DepthwiseConv2  (None, 3, 3, 128)         1152      
+ D)                                                              
+                                                                 
+ conv_dw_12_bn (BatchNormal  (None, 3, 3, 128)         512       
+ ization)                                                        
+                                                                 
+ conv_dw_12_relu (ReLU)      (None, 3, 3, 128)         0         
+                                                                 
+ conv_pw_12 (Conv2D)         (None, 3, 3, 256)         32768     
+                                                                 
+ conv_pw_12_bn (BatchNormal  (None, 3, 3, 256)         1024      
+ ization)                                                        
+                                                                 
+ conv_pw_12_relu (ReLU)      (None, 3, 3, 256)         0         
+                                                                 
+ conv_dw_13 (DepthwiseConv2  (None, 3, 3, 256)         2304      
+ D)                                                              
+                                                                 
+ conv_dw_13_bn (BatchNormal  (None, 3, 3, 256)         1024      
+ ization)                                                        
+                                                                 
+ conv_dw_13_relu (ReLU)      (None, 3, 3, 256)         0         
+                                                                 
+ conv_pw_13 (Conv2D)         (None, 3, 3, 256)         65536     
+                                                                 
+ conv_pw_13_bn (BatchNormal  (None, 3, 3, 256)         1024      
+ ization)                                                        
+                                                                 
+ conv_pw_13_relu (ReLU)      (None, 3, 3, 256)         0         
+                                                                 
+ global_average_pooling2d (  (None, 256)               0         
+ GlobalAveragePooling2D)                                         
+                                                                 
+ dropout (Dropout)           (None, 256)               0         
+                                                                 
+ dense (Dense)               (None, 2)                 514       
+                                                                 
+=================================================================
+Total params: 218914 (855.13 KB)
+Trainable params: 213442 (833.76 KB)
+Non-trainable params: 5472 (21.38 KB)
+_________________________________________________________________
+
+Total MACs: 9.412 M
+Total OPs: 19.448 M
+Name: train_model
+Version: 3
+Description: Face classifier (112x112) using a custom Keras MobileNet
+Classes: face, noface
+Dataset: ./dataset/dataset
+Training dataset: Found 12033 samples belonging to 2 classes:
+      face = 6030
+    noface = 6003
+Validation dataset: Found 3009 samples belonging to 2 classes:
+      face = 1508
+    noface = 1501
+Using default ModelCheckpoint callback with following parameters:
+{'filepath': '/root/.mltk/models/train_model/train/weights/weights-{epoch:03d}-{val_accuracy:.4f}.h5',
+ 'mode': 'auto',
+ 'monitor': 'val_accuracy',
+ 'options': None,
+ 'save_best_only': True,
+ 'save_freq': 'epoch',
+ 'save_weights_only': True,
+ 'verbose': 0}
+Using default EarlyStopping callback with following parameters:
+{'monitor': 'val_accuracy', 'patience': 12}
+Using default ReduceLROnPlateau callback with following parameters:
+{'factor': 0.5, 'min_lr': 1e-06, 'monitor': 'val_loss', 'patience': 4}
+Enabling model checkpoints
+Using Keras callbacks: ModelCheckpoint, EarlyStopping, ReduceLROnPlateau, ModelCheckpoint
+Class weights:
+  face = 1.00
+noface = 1.00
+Train kwargs:
+{'batch_size': 64,
+ 'callbacks': [<tf_keras.src.callbacks.ModelCheckpoint object at 0x7b393dcbcbd0>,
+               <tf_keras.src.callbacks.EarlyStopping object at 0x7b393faee290>,
+               <tf_keras.src.callbacks.ReduceLROnPlateau object at 0x7b393db86c10>,
+               <tf_keras.src.callbacks.ModelCheckpoint object at 0x7b393f5a1f50>],
+ 'class_weight': {0: 0.9977611940298508, 1: 1.002248875562219},
+ 'epochs': 50,
+ 'initial_epoch': 0,
+ 'sample_weight': None,
+ 'shuffle': True,
+ 'steps_per_epoch': None,
+ 'validation_batch_size': None,
+ 'validation_data': <mltk.core.preprocess.image.parallel_generator.directory_iterator.ParallelDirectoryIterator object at 0x7b393ef73990>,
+ 'validation_freq': 1,
+ 'validation_split': 0.0,
+ 'validation_steps': None,
+ 'verbose': 1,
+ 'x': <mltk.core.preprocess.image.parallel_generator.directory_iterator.ParallelDirectoryIterator object at 0x7b394021c490>,
+ 'y': None}
+Starting model training ...
+Generating /root/.mltk/models/train_model/train_model.h5
+
+
+*** Best training val_accuracy = 0.960
+
+
+Generating /root/.mltk/models/train_model/train/training-history.json
+Generating /root/.mltk/models/train_model/train/training-history.png
+Creating /content/train_model.mltk.zip

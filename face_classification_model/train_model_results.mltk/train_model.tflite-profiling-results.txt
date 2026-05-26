@@ -1,0 +1,64 @@
+Profiling Summary
+Name: train_model
+Accelerator: mvp
+Input Shape: 1x112x112x1
+Input Data Type: int8
+Output Shape: 1x2
+Output Data Type: int8
+Flash, Model File Size (bytes): 301.6k
+RAM, Runtime Memory Size (bytes): 146.1k
+Operation Count: 20.4M
+Multiply-Accumulate Count: 9.4M
+Layer Count: 34.0
+Unsupported Layer Count: 0
+Accelerator Cycle Count: 7.3M
+CPU Cycle Count: 4.9M
+CPU Utilization (%): 45.2
+Clock Rate (hz): 78.0M
+Time (s): 139.9m
+Energy (J): 1.7m
+J/Op: 84.6p
+J/MAC: 183.1p
+Ops/s: 145.6M
+MACs/s: 67.3M
+Inference/s: 7.2
+
+Layer Summary
+.---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------.
+| Layer Index |      OpCode       | # Ops  | # MACs | # Acc Cycles | # CPU Cycles | Energy(J) | Time(s) |          Inputs           |  Outputs   |                        Options                         |
+|-------------|-------------------|--------|--------|--------------|--------------|-----------|---------|---------------------------|------------|--------------------------------------------------------|
+| 0           | conv_2d           | 526.8k | 225.8k | 311.0k       | 11.2k        | 45.7u     | 4.0m    | 1x112x112x1,8x3x3x1,8     | 1x56x56x8  | Padding:Same stride:2x2 activation:Relu6               |
+| 1           | depthwise_conv_2d | 526.8k | 225.8k | 736.7k       | 203.4k       | 122.5u    | 9.4m    | 1x56x56x8,1x3x3x8,8       | 1x56x56x8  | Multiplier:1 padding:Same stride:1x1 activation:Relu6  |
+| 2           | conv_2d           | 953.3k | 401.4k | 414.0k       | 3.8k         | 45.7u     | 5.3m    | 1x56x56x8,16x1x1x8,16     | 1x56x56x16 | Padding:Same stride:1x1 activation:Relu6               |
+| 3           | pad               | 311.9k | 0      | 0            | 1.3M         | 259.0u    | 16.0m   | 1x56x56x16,4x2            | 1x57x57x16 | Type=padoptions                                        |
+| 4           | depthwise_conv_2d | 263.4k | 112.9k | 377.2k       | 83.6k        | 24.0u     | 4.8m    | 1x57x57x16,1x3x3x16,16    | 1x28x28x16 | Multiplier:1 padding:Valid stride:2x2 activation:Relu6 |
+| 5           | conv_2d           | 878.1k | 401.4k | 307.4k       | 3.8k         | 45.7u     | 3.9m    | 1x28x28x16,32x1x1x16,32   | 1x28x28x32 | Padding:Same stride:1x1 activation:Relu6               |
+| 6           | depthwise_conv_2d | 526.8k | 225.8k | 360.4k       | 911.7k       | 134.3u    | 11.7m   | 1x28x28x32,1x3x3x32,32    | 1x28x28x32 | Multiplier:1 padding:Same stride:1x1 activation:Relu6  |
+| 7           | conv_2d           | 1.7M   | 802.8k | 514.3k       | 3.8k         | 45.7u     | 6.6m    | 1x28x28x32,32x1x1x32,32   | 1x28x28x32 | Padding:Same stride:1x1 activation:Relu6               |
+| 8           | pad               | 161.5k | 0      | 0            | 627.0k       | 125.1u    | 8.0m    | 1x28x28x32,4x2            | 1x29x29x32 | Type=padoptions                                        |
+| 9           | depthwise_conv_2d | 131.7k | 56.4k  | 94.1k        | 232.5k       | 77.8u     | 3.0m    | 1x29x29x32,1x3x3x32,32    | 1x14x14x32 | Multiplier:1 padding:Valid stride:2x2 activation:Relu6 |
+| 10          | conv_2d           | 840.4k | 401.4k | 254.1k       | 3.8k         | 45.7u     | 3.3m    | 1x14x14x32,64x1x1x32,64   | 1x14x14x64 | Padding:Same stride:1x1 activation:Relu6               |
+| 11          | depthwise_conv_2d | 263.4k | 112.9k | 172.4k       | 230.8k       | 74.5u     | 3.0m    | 1x14x14x64,1x3x3x64,64    | 1x14x14x64 | Multiplier:1 padding:Same stride:1x1 activation:Relu6  |
+| 12          | conv_2d           | 1.6M   | 802.8k | 457.9k       | 3.8k         | 45.7u     | 5.9m    | 1x14x14x64,64x1x1x64,64   | 1x14x14x64 | Padding:Same stride:1x1 activation:Relu6               |
+| 13          | pad               | 86.4k  | 0      | 0            | 329.3k       | 67.5u     | 4.2m    | 1x14x14x64,4x2            | 1x15x15x64 | Type=padoptions                                        |
+| 14          | depthwise_conv_2d | 65.9k  | 28.2k  | 47.0k        | 60.2k        | 20.5u     | 772.1u  | 1x15x15x64,1x3x3x64,64    | 1x7x7x64   | Multiplier:1 padding:Valid stride:2x2 activation:Relu6 |
+| 15          | conv_2d           | 821.6k | 401.4k | 227.5k       | 3.7k         | 45.7u     | 2.9m    | 1x7x7x64,128x1x1x64,128   | 1x7x7x128  | Padding:Same stride:1x1 activation:Relu6               |
+| 16          | depthwise_conv_2d | 131.7k | 56.4k  | 78.7k        | 58.4k        | 20.5u     | 1.0m    | 1x7x7x128,1x3x3x128,128   | 1x7x7x128  | Multiplier:1 padding:Same stride:1x1 activation:Relu6  |
+| 17          | conv_2d           | 1.6M   | 802.8k | 429.8k       | 3.7k         | 45.7u     | 5.5m    | 1x7x7x128,128x1x1x128,128 | 1x7x7x128  | Padding:Same stride:1x1 activation:Relu6               |
+| 18          | depthwise_conv_2d | 131.7k | 56.4k  | 78.7k        | 58.4k        | 20.5u     | 1.0m    | 1x7x7x128,1x3x3x128,128   | 1x7x7x128  | Multiplier:1 padding:Same stride:1x1 activation:Relu6  |
+| 19          | conv_2d           | 1.6M   | 802.8k | 429.8k       | 3.7k         | 45.7u     | 5.5m    | 1x7x7x128,128x1x1x128,128 | 1x7x7x128  | Padding:Same stride:1x1 activation:Relu6               |
+| 20          | depthwise_conv_2d | 131.7k | 56.4k  | 78.7k        | 58.4k        | 20.5u     | 1.0m    | 1x7x7x128,1x3x3x128,128   | 1x7x7x128  | Multiplier:1 padding:Same stride:1x1 activation:Relu6  |
+| 21          | conv_2d           | 1.6M   | 802.8k | 429.8k       | 3.7k         | 45.7u     | 5.5m    | 1x7x7x128,128x1x1x128,128 | 1x7x7x128  | Padding:Same stride:1x1 activation:Relu6               |
+| 22          | depthwise_conv_2d | 131.7k | 56.4k  | 78.7k        | 58.4k        | 20.5u     | 1.0m    | 1x7x7x128,1x3x3x128,128   | 1x7x7x128  | Multiplier:1 padding:Same stride:1x1 activation:Relu6  |
+| 23          | conv_2d           | 1.6M   | 802.8k | 429.8k       | 3.7k         | 45.7u     | 5.5m    | 1x7x7x128,128x1x1x128,128 | 1x7x7x128  | Padding:Same stride:1x1 activation:Relu6               |
+| 24          | depthwise_conv_2d | 131.7k | 56.4k  | 78.7k        | 58.4k        | 20.5u     | 1.0m    | 1x7x7x128,1x3x3x128,128   | 1x7x7x128  | Multiplier:1 padding:Same stride:1x1 activation:Relu6  |
+| 25          | conv_2d           | 1.6M   | 802.8k | 429.8k       | 3.7k         | 45.7u     | 5.5m    | 1x7x7x128,128x1x1x128,128 | 1x7x7x128  | Padding:Same stride:1x1 activation:Relu6               |
+| 26          | pad               | 49.2k  | 0      | 0            | 175.9k       | 31.8u     | 2.3m    | 1x7x7x128,4x2             | 1x8x8x128  | Type=padoptions                                        |
+| 27          | depthwise_conv_2d | 24.2k  | 10.4k  | 17.3k        | 11.1k        | 20.5u     | 221.5u  | 1x8x8x128,1x3x3x128,128   | 1x3x3x128  | Multiplier:1 padding:Valid stride:2x2 activation:Relu6 |
+| 28          | conv_2d           | 596.7k | 294.9k | 157.5k       | 3.8k         | 45.7u     | 2.0m    | 1x3x3x128,256x1x1x128,256 | 1x3x3x256  | Padding:Same stride:1x1 activation:Relu6               |
+| 29          | depthwise_conv_2d | 48.4k  | 20.7k  | 22.3k        | 11.2k        | 20.5u     | 285.5u  | 1x3x3x256,1x3x3x256,256   | 1x3x3x256  | Multiplier:1 padding:Same stride:1x1 activation:Relu6  |
+| 30          | conv_2d           | 1.2M   | 589.8k | 305.5k       | 3.8k         | 45.7u     | 3.9m    | 1x3x3x256,256x1x1x256,256 | 1x3x3x256  | Padding:Same stride:1x1 activation:Relu6               |
+| 31          | mean              | 0      | 0      | 0            | 439.6k       | 3.0u      | 5.6m    | 1x3x3x256,2               | 1x256      | Type=reduceroptions                                    |
+| 32          | fully_connected   | 1.0k   | 512.0  | 776.0        | 1.5k         | 49.2n     | 19.4u   | 1x256,2x256,2             | 1x2        | Activation:None                                        |
+| 33          | softmax           | 10.0   | 0      | 0            | 3.8k         | 16.5n     | 49.2u   | 1x2                       | 1x2        | Type=softmaxoptions                                    |
+'---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------'
